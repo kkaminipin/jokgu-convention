@@ -14,15 +14,15 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
     <script src="slick.min.js"></script>
   </head>
   <body>
-    <div class="wrap">
-      <div class="header">
+    <div id="fullpage">
+      <div class="quick">
         <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
         <ul>
-          <li class="on" class="a"><a href="#"></a></li>
+          <li><a href="#"></a></li>
           <li><a href="#">족구소개</a></li>
           <li><a href="#">족구기술</a></li>
           <li><a href="#">국제대회</a></li>
@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="content">
+      <div class="fullsection full1" pageNum="1">
         <div class="cnt01">
           <p>JOKGU WITH WORLD</p>
           <span
@@ -46,6 +46,8 @@
             <h3><img src="/img/down.png" alt="" /></h3
           ></span>
         </div>
+      </div>
+      <div class="fullsection full2" pageNum="2">
         <div class="cnt02">
           <p class="cnt02-title">ABOUT JOKGU</p>
           <div class="jokgu-info">
@@ -72,6 +74,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="fullsection full3" pageNum="3">
         <div class="cnt03">
           <p class="cnt03-title">OFFICIAL TECHNIQUE</p>
           <div class="jokgu-skill">
@@ -104,6 +108,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="fullsection full4" pageNum="4">
         <div class="cnt04">
           <p class="cnt04-title">INTERNATIONAL COMPETION</p>
           <div class="itc">
@@ -121,6 +127,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="fullsection full5" pageNum="5">
         <div class="cnt05">
           <p class="cnt05-title">INTERNATIONAL JOKGU FEDERATION</p>
           <div class="itc">
@@ -142,89 +150,104 @@
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+    ></script>
     <script>
-      var scroll = function () {
-        var $nav = null,
-          $cnt = null,
-          moveCnt = null,
-          moveIndex = 0,
-          moveCntTop = 0,
-          winH = 0,
-          time = false; // 새로 만든 변수
-
-        $(document).ready(function () {
-          init();
-          initEvent();
-        });
-
-        var init = function () {
-          $cnt = $(".content");
-          $nav = $(".header a");
-        };
-
-        var initEvent = function () {
-          $("html ,body").scrollTop(0);
-          winResize();
-          $(window).resize(function () {
-            winResize();
-          });
-          $nav.on("click", function () {
-            moveIndex = $(this).parent("li").index();
-            moving(moveIndex);
-            return false;
-          });
-          $cnt.on("mousewheel", function (e) {
-            if (time === false) {
-              // time 변수가 펄스일때만 휠 이벤트 실행
-              wheel(e);
+      $(document).ready(function () {
+        fullset();
+        quickClick();
+      });
+      function fullset() {
+        var pageindex = $("#fullpage > .fullsection").size(); //fullpage 안에 섹션이(.fullsection) 몇개인지 확인하기
+        for (var i = 1; i <= pageindex; i++) {
+          $("#fullpage > .quick > ul");
+        }
+        $("#fullpage .quick ul :first-child").addClass("on"); //일단 화면이 로드 되었을때는 퀵버튼에 1번째에 불이 들어오게
+        //마우스 휠 이벤트
+        $(window).bind("mousewheel", function (event) {
+          var page = $(".quick ul li.on");
+          //alert(page.index()+1);  // 현재 on 되어있는 페이지 번호
+          if ($("body").find("#fullpage:animated").length >= 1) return false;
+          //마우스 휠을 위로
+          if (event.originalEvent.wheelDelta >= 0) {
+            var before = page.index();
+            if (page.index() >= 0)
+              page.prev().addClass("on").siblings(".on").removeClass("on"); //퀵버튼옮기기
+            var pagelength = 0;
+            for (var i = 1; i < before; i++) {
+              pagelength += $(".full" + i).height();
             }
-          });
-        };
-
-        var winResize = function () {
-          winH = $(window).height();
-          $cnt.children("div").height(winH);
-          $("html ,body").scrollTop(moveIndex.scrollTop);
-        };
-
-        var wheel = function (e) {
-          if (e.originalEvent.wheelDelta < 0) {
-            if (moveIndex < 4) {
-              moveIndex += 1;
-              moving(moveIndex);
+            if (page.index() > 0) {
+              //첫번째 페이지가 아닐때 (index는 0부터 시작임)
+              page = page.index() - 1;
+              $("#fullpage").animate(
+                { top: -pagelength + "px" },
+                1000,
+                "swing"
+              );
+            } else {
             }
           } else {
-            if (moveIndex > 0) {
-              moveIndex -= 1;
-              moving(moveIndex);
+            // 마우스 휠을 아래로
+            var nextPage = parseInt(page.index() + 1); //다음페이지번호
+            var lastPageNum = parseInt($(".quick ul li").size()); //마지막 페이지번호
+            //현재페이지번호 <= (마지막 페이지 번호 - 1)
+            //이럴때 퀵버튼옮기기
+            if (page.index() <= $(".quick ul li").size() - 1) {
+              page.next().addClass("on").siblings(".on").removeClass("on");
+            }
+
+            if (nextPage < lastPageNum) {
+              //마지막 페이지가 아닐때만 animate !
+              var pagelength = 0;
+              for (var i = 1; i < nextPage + 1; i++) {
+                //총 페이지 길이 구하기
+                //ex) 현재 1번페이지에서 2번페이지로 내려갈때는 1번페이지 길이 + 2번페이지 길이가 더해짐
+                pagelength += $(".full" + i).height();
+              }
+              $("#fullpage").animate(
+                { top: -pagelength + "px" },
+                1000,
+                "swing"
+              );
+            } else {
+              // 현재 마지막 페이지 일때는
             }
           }
-        };
+        });
+        $(window).resize(function () {
+          //페이지가 100%이기때문에 브라우저가 resize 될때마다 스크롤 위치가 그대로 남아있는것을 방지하기 위해
+          var resizeindex = $(".quick ul li.on").index() + 1;
 
-        var moving = function (index) {
-          time = true; // 휠 이벤트가 실행 동시에 true로 변경
-          moveCnt = $cnt.children("div").eq(index);
-          moveCntTop = moveCnt.offset().top;
-          $("html ,body")
-            .stop()
-            .animate(
-              {
-                scrollTop: moveCntTop,
-              },
-              1000,
-              function () {
-                time = false; // 휠 이벤트가 끝나면 false로 변경
-              }
-            );
-          $nav
-            .parent("li")
-            .eq(index)
-            .addClass("on")
-            .siblings()
-            .removeClass("on");
-        };
-      };
-      scroll();
+          var pagelength = 0;
+          for (var i = 1; i < resizeindex; i++) {
+            //총 페이지 길이 구하기
+            //ex) 현재 1번페이지에서 2번페이지로 내려갈때는 1번페이지 길이 + 2번페이지 길이가 더해짐
+            pagelength += $(".full" + i).height();
+          }
+
+          $("#fullpage").animate({ top: -pagelength + "px" }, 0);
+        });
+      }
+      // 사이드 퀵버튼 클릭 이동
+      function quickClick() {
+        $(".quick li").click(function () {
+          var gnbindex = $(this).index() + 1;
+          var length = 0;
+          for (var i = 1; i < gnbindex; i++) {
+            length += $(".full" + i).height();
+          }
+          if ($("body").find("#fullpage:animated").length >= 1) return false;
+          $(this).addClass("on").siblings("li").removeClass("on");
+
+          $("#fullpage").animate({ top: -length + "px" }, 800, "swing");
+          return false;
+        });
+      }
 
       $(".responsive").slick({
         dots: true,
