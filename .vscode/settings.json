@@ -14,5 +14,12 @@
     }
   ],
 
-  "cSpell.words": ["fileupload", "purgecss", "swiper", "tailwindcss", "tailwindjs"]
+  "cSpell.words": [
+    "fileupload",
+    "purgecss",
+    "swiper",
+    "tailwindcss",
+    "tailwindjs"
+  ],
+  "liveServer.settings.port": 5501
 }
