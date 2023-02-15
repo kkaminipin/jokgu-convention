@@ -39,6 +39,15 @@
         </div>
       </div>
     </div>
+    <div class="bottom">
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
     <div id="fullpage">
       <div class="section full1" pageNum="1">
         <div class="cnt01">
@@ -115,7 +124,7 @@
           <p class="cnt04-title">INTERNATIONAL COMPETION</p>
           <div class="itc en">
             <h3>International Competition</h3>
-            <p class="world">The 1st Jokgu World Championship</p>
+            <p class="world en">The 1st Jokgu World Championship</p>
             <p>
               The five-day Jokgu Festival will be held in Korea with 300
               athletes from 20 different countries and 7million Korean club
@@ -152,6 +161,23 @@
             <img src="/img/jokgu2.png" alt="족구사진2" />
           </div>
         </div>
+        <span
+          >SCROLL UP
+          <h3><img src="/img/up.png" alt="" /></h3
+        ></span>
+        <footer class="footer">
+          <h3 class="footer-logo">
+            <img src="/img/footer_logo.png" alt="kja" />
+          </h3>
+          <div class="center">
+            <p>
+              (우)05540 서울송파구 올림픽로 424, 올림픽공원 SK핸드볼경기장 내
+              129호
+            </p>
+            <p>jokgu@sports.or.kr</p>
+          </div>
+          <h3><img src="/img/youtube.png" alt="유튜브 바로가기" /></h3>
+        </footer>
       </div>
     </div>
 
@@ -159,7 +185,13 @@
       $("#fullpage").fullpage({
         afterLoad: function (origin, destination, direction, trigger) {
           $(".quick ul li").removeClass("on");
-
+          $(".quick ul li").removeClass("wt");
+          if (destination == 1) {
+            $(".quick ul li").eq(1).addClass("wt");
+            $(".quick ul li").eq(2).addClass("wt");
+            $(".quick ul li").eq(3).addClass("wt");
+            $(".quick ul li").eq(4).addClass("wt");
+          }
           if (destination == 2) {
             $(".quick ul li").eq(1).addClass("on");
           }
@@ -167,10 +199,28 @@
             $(".quick ul li").eq(2).addClass("on");
           }
           if (destination == 4) {
-            $(".quick ul li").eq(3).addClass("on");
+            $(".quick ul li").eq(3).addClass("on wt");
           }
           if (destination == 5) {
             $(".quick ul li").eq(4).addClass("on");
+          }
+
+          $(".bottom ul li").removeClass("en");
+
+          if (destination == 1) {
+            $(".bottom ul li").eq(0).addClass("en");
+          }
+          if (destination == 2) {
+            $(".bottom ul li").eq(1).addClass("en black");
+          }
+          if (destination == 3) {
+            $(".bottom ul li").eq(2).addClass("en black");
+          }
+          if (destination == 4) {
+            $(".bottom ul li").eq(3).addClass("en");
+          }
+          if (destination == 5) {
+            $(".bottom ul li").eq(4).addClass("en black");
           }
         },
       });
@@ -182,6 +232,13 @@
         slidesToShow: 4,
         slidesToScroll: 4,
         responsive: [
+          {
+            breakpoint: 1250,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
           {
             breakpoint: 768,
             settings: {

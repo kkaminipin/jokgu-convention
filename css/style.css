@@ -26,8 +26,111 @@ li {
 
   cursor: pointer;
 }
-.quick li.on {
+
+.bottom {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  width: 2px;
+  height: 160px;
+  display: block !important;
+  justify-content: space-between;
+  padding: 0px;
+  border-bottom: 0px solid #eee;
+  right: 50px;
 }
+.bottom ul {
+  width: 2px;
+  height: 160px;
+  display: block;
+  gap: 40px;
+}
+.bottom li {
+  width: 2px;
+  height: 32px;
+  background-color: #ddd;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.bottom ul li.en {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.bottom ul li.en:nth-child(1)::before {
+  content: "MAIN";
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: -35px;
+  right: -15px;
+  -webkit-transform: rotate(90deg);
+
+  -moz-transform: rotate(90deg);
+}
+
+.bottom ul li.en:nth-child(2)::before {
+  content: "ABOUT";
+  font-size: 14px;
+  color: #000;
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  -webkit-transform: rotate(90deg);
+
+  -moz-transform: rotate(90deg);
+}
+
+.bottom ul li.en:nth-child(3)::before {
+  content: "TECHNIQUE";
+  font-size: 14px;
+  color: #000;
+  position: absolute;
+  top: -58px;
+  right: -38px;
+  -webkit-transform: rotate(90deg);
+
+  -moz-transform: rotate(90deg);
+}
+
+.bottom ul li.en:nth-child(4)::before {
+  content: "COMPETION";
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: -58px;
+  right: -38px;
+  -webkit-transform: rotate(90deg);
+
+  -moz-transform: rotate(90deg);
+}
+
+.bottom ul li.en:nth-child(5)::before {
+  content: "FEDERATION";
+  font-size: 14px;
+  color: #000;
+  position: absolute;
+  top: -58px;
+  right: -38px;
+  -webkit-transform: rotate(90deg);
+
+  -moz-transform: rotate(90deg);
+}
+
+.quick ul li.on.wt a {
+  color: #fff;
+}
+
+.quick ul li.wt a {
+  color: #fff;
+}
+
+.bottom ul li.en.black {
+  background-color: black;
+  opacity: 1;
+}
+
 html,
 body {
   width: 100%;
@@ -44,6 +147,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .section {
   width: 100%;
   height: 100%;
@@ -100,6 +204,7 @@ body {
   color: #000;
   border-bottom: 3px solid #0c4fff;
 }
+
 .quick ul li:first-child {
   display: none;
 }
@@ -404,6 +509,28 @@ body {
   left: 5%;
   z-index: 1;
 }
+
+.full5 .fp-tableCell {
+  height: 1080px !important;
+}
+.full5 span {
+  position: absolute;
+  bottom: 160px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #000;
+  z-index: 9999;
+}
+
+.full5 span h3 {
+  text-align: center;
+}
+.full5 span h3 img {
+  margin-top: 11px;
+  width: 24px;
+  height: 12px;
+}
+
 .full5 .cnt05 .itc {
   position: absolute;
   top: 350px;
@@ -462,7 +589,30 @@ body {
   left: 55%;
   top: 350px;
 }
+.footer {
+  width: 100%;
+  background-color: #26282e;
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 0 360px 0 360px;
+}
+.footer .footer-logo {
+  width: 15%;
+}
 
+.footer .center {
+  width: 85%;
+}
+
+.footer .center p {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #adb2b8;
+}
 @media screen and (max-width: 1644px) {
   .full5 .cnt05 .right {
     position: absolute;
@@ -486,6 +636,96 @@ body {
     height: 520px;
     margin-left: 20px;
   }
+  .slick-slider {
+    max-width: 1000px !important;
+    margin: 20px 0px 0px -10px !important;
+  }
+  .slick-next:before {
+    display: none;
+  }
+  .slick-next {
+    display: none;
+  }
+  .slick-dots {
+    max-width: 1000px !important;
+    left: 40px;
+  }
+  .slick-prev:before {
+    display: none;
+  }
+  .slick-prev {
+    display: none;
+  }
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track {
+    display: flex;
+  }
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont {
+    width: 330px !important;
+    height: 330px;
+    opacity: 0.7;
+    background-color: #111;
+    margin-right: 10px;
+  }
+  .full3 .cnt03 .jokgu-skill {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    top: 200px;
+  }
+  .full3 .cnt03 .jokgu-skill h3 {
+    width: 100%;
+    margin: 0px;
+
+    height: 94px;
+    font-size: 80px;
+    font-weight: 900;
+    color: #111;
+    padding-left: 35px;
+  }
+  .full3 .cnt03 .jokgu-skill p {
+    width: 100%;
+    margin: 25px 0;
+    font-size: 18px;
+    line-height: 1.78;
+    letter-spacing: -0.72px;
+    text-align: left;
+    color: #444;
+  }
+  .full3 .cnt03 .jokgu-skill .right {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .full3 .cnt03 .jokgu-skill .right a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 282px;
+    height: 60px;
+    justify-content: space-between;
+    border: solid 1px #222;
+    background-color: #fff;
+    margin-bottom: 4px;
+    color: #111;
+  }
+  .full3 .cnt03 .jokgu-skill .right a:nth-child(2) {
+    background-color: #111;
+    color: #fff;
+  }
+  .full3 .cnt03 .jokgu-skill-flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    padding-left: 35px;
+  }
   .full4 .cnt04 .itc {
     position: absolute;
     top: 270px;
@@ -504,7 +744,7 @@ body {
   }
   .full5 .cnt05 .right {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -514,6 +754,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .bottom {
+    right: 20px;
+  }
   .quick {
     padding: 16px 20px 16px 20px;
   }
@@ -604,9 +847,13 @@ body {
     font-weight: 900;
     color: #111;
   }
+  .full2 .cnt02 .jokgu-info.en h3 {
+    width: 300px;
+    font-size: 48px;
+  }
   .full2 .cnt02 .jokgu-info p {
     height: auto;
-    width: 406px;
+    width: 361px;
     margin: 25px 0;
     font-size: 16px;
     line-height: 1.78;
@@ -614,6 +861,9 @@ body {
     text-align: left;
     color: #444;
     word-break: break-all;
+  }
+  .full2 .cnt02 .jokgu-info.en p {
+    margin-top: 10px;
   }
   .full2 .cnt02 .jokgu-info div a {
     font-size: 16px;
@@ -642,11 +892,12 @@ body {
   .full3 .cnt03 .jokgu-skill {
     position: absolute;
     top: 140px;
-    left: 200px;
+    left: 235px;
     z-index: 2;
     width: 100%;
     max-width: 341px;
     height: 520px;
+    padding: 0px;
   }
   .full3 .cnt03 .jokgu-skill h3 {
     width: 100%;
@@ -656,7 +907,16 @@ body {
     font-size: 60px;
     font-weight: 900;
     color: #111;
+    padding-left: 0px;
   }
+  .full3 .cnt03 .jokgu-skill.en h3 {
+    font-size: 48px;
+  }
+
+  .full3 .cnt03 .jokgu-skill.en p {
+    margin-top: 10px;
+  }
+
   .full3 .cnt03 .jokgu-skill p {
     width: 100%;
     max-width: 341px;
@@ -699,6 +959,7 @@ body {
     width: 100%;
     display: block;
     justify-content: space-between;
+    padding-left: 0px;
   }
   .full3 .cnt03 .jokgu-skill .responsive .slick-list {
     display: flex;
@@ -710,6 +971,7 @@ body {
   }
   .slick-slider {
     max-width: 350px !important;
+    margin: 0px !important;
   }
   .slick-next:before {
     display: none;
@@ -756,6 +1018,11 @@ body {
     width: 504px;
     height: 520px;
   }
+
+  .full4 .cnt04 .itc.en h3 {
+    font-size: 48px;
+  }
+
   .full4 .cnt04 .itc h3 {
     width: 277px;
     height: 94px;
@@ -768,6 +1035,12 @@ body {
     font-size: 20px;
     height: 40px;
     border-bottom: 3px solid #fff;
+  }
+
+  .full4 .cnt04 .itc .world.en {
+    margin-top: 45px;
+    font-size: 20px;
+    width: 300px;
   }
   .full4 .cnt04 .itc p {
     width: 320px;
@@ -816,6 +1089,17 @@ body {
     font-weight: 900;
     color: #111;
   }
+
+  .full5 .cnt05 .itc.en h3 {
+    font-size: 48px;
+    width: 300px;
+  }
+
+  .full5 .cnt05 .itc.en p {
+    margin-top: 90px;
+    width: 340px;
+  }
+
   .full5 .cnt05 .itc p {
     margin-top: 80px;
     font-size: 16px;
