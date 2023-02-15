@@ -85,6 +85,71 @@
             </div>
           </div>
         </div>
+        <div class="popup" id="clubDetails" style="display: block">
+          <div class="popup-wrap" id="">
+            <div class="contents flex">
+              <div class="contents-head">
+                <h3 class="title">대한민국족구협회 연혁</h3>
+                <button type="button">
+                  <img src="./img/close.png" alt="닫기버튼" />
+                </button>
+              </div>
+              <div class="contents-main">
+                <div class="year"><strong>2021</strong></div>
+                <div class="line">
+                  <ul>
+                    <li>
+                      <div>
+                        <div class="title">2021년 11월</div>
+                        <div class="info">
+                          KBS 스포츠예술과학원 산학협력 MOU 체결
+                          국제풋넷연맹(UNIF) 업무협약 MOU 체결 대한민국족구협회
+                          홍보대사 가수 박군 위촉 시·도대항 족구최강전(전북
+                          부안) 한국스톤(주)(전기차) 후원사 체결
+                        </div>
+                      </div>
+                      <span class="blue"></span>
+                    </li>
+                    <li>
+                      <div>
+                        <span></span>
+                        <div class="title">Codify</div>
+                        <div class="info">
+                          Let's make coolest things in javascript
+                        </div>
+                        <div class="type">Presentation</div>
+                      </div>
+                      <span class="number"><span></span> <span></span></span>
+                    </li>
+                    <li>
+                      <div>
+                        <span></span>
+                        <div class="title">Codify</div>
+                        <div class="info">Let's make coolest things in css</div>
+                        <div class="type">Review</div>
+                      </div>
+                      <span class="number"><span></span> <span></span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="history"></div>
+              </div>
+              <script>
+                $(document).ready(function () {
+                  $("ul.tabs li").click(function () {
+                    var tab_id = $(this).attr("data-tab");
+
+                    $("ul.tabs li").removeClass("current");
+                    $(".content").removeClass("current");
+
+                    $(this).addClass("current");
+                    $("#" + tab_id).addClass("current");
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="section full3" pageNum="3">
         <div class="cnt03">
