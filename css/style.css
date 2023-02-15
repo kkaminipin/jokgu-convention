@@ -541,28 +541,20 @@ body {
     width: 24px;
     height: 12px;
   }
-  .full2 .cnt02 {
-    background-image: url(/img/jokgu_info.png);
+  .full2 {
+    background-color: #fff;
+    background-image: url(/img/m_jokgu_info.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
   }
   .full2 .cnt02-title {
-    width: 710px;
-    font-size: 200px;
-    font-weight: 900;
-    line-height: 1;
-    color: #f6f6f6;
-    position: absolute;
-    top: 160px;
-    left: 40px;
-    z-index: 1;
+    display: none;
   }
   .full2 .cnt02 .jokgu-info {
     position: absolute;
-    top: 250px !important;
-    left: 300px !important;
+    top: 140px;
+    left: 40px;
     z-index: 2;
     width: 406px;
     height: 520px;
@@ -570,20 +562,23 @@ body {
   .full2 .cnt02 .jokgu-info h3 {
     width: 277px;
     height: 94px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     color: #111;
   }
   .full2 .cnt02 .jokgu-info p {
+    height: auto;
+    width: 406px;
     margin: 25px 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.78;
     letter-spacing: -0.72px;
     text-align: left;
     color: #444;
+    word-break: break-all;
   }
   .full2 .cnt02 .jokgu-info div a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding: 20px;
     display: flex;
@@ -604,53 +599,45 @@ body {
     position: relative;
   }
   .full3 .cnt03-title {
-    width: 1160px;
-    font-size: 200px;
-    font-weight: 900;
-    line-height: 1;
-    color: #f6f6f6;
-    position: absolute;
-    top: 160px;
-    left: 40px;
-    z-index: 1;
+    display: none;
   }
   .full3 .cnt03 .jokgu-skill {
     position: absolute;
-    top: 270px;
-    left: 360px;
+    top: 140px;
+    left: 200px;
     z-index: 2;
     width: 100%;
-    max-width: 1280px;
+    max-width: 341px;
     height: 520px;
   }
   .full3 .cnt03 .jokgu-skill h3 {
     width: 100%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 341px;
     height: 94px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     color: #111;
   }
   .full3 .cnt03 .jokgu-skill p {
-    width: 40%;
-    max-width: 510px;
+    width: 100%;
+    max-width: 341px;
     margin: 25px 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.78;
     letter-spacing: -0.72px;
     text-align: left;
     color: #444;
   }
   .full3 .cnt03 .jokgu-skill .right {
-    width: 50%;
-    display: flex;
+    width: 100%;
+    display: block;
     justify-content: center;
     align-items: center;
     gap: 4px;
   }
   .full3 .cnt03 .jokgu-skill .right a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding: 20px;
     display: flex;
@@ -672,56 +659,61 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: space-between;
   }
   .full3 .cnt03 .jokgu-skill .responsive .slick-list {
     display: flex;
     justify-content: start;
     gap: 24px;
-    width: 1200px;
-    margin-left: 45px;
+    width: 350px;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+  .slick-slider {
+    max-width: 350px !important;
+  }
+  .slick-next:before {
+    display: none;
+  }
+  .slick-next {
+    display: none;
+  }
+  .slick-dots {
+    max-width: 350px !important;
+    left: 0px;
+  }
+  .slick-prev:before {
+    display: none;
+  }
+  .slick-prev {
+    display: none;
   }
   .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track {
     display: flex;
   }
-  .wrap
-    .content
-    .cnt03
-    .jokgu-skill
-    .responsive
-    .slick-list
-    .slick-track
-    .cont {
-    width: 282px !important;
-    height: 282px;
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont {
+    width: 170px !important;
+    height: 170px;
     opacity: 0.7;
     background-color: #111;
-    margin-right: 24px;
+    margin-right: 10px;
   }
-  .full4 .cnt04 {
-    background-image: url(/img/itc.png);
+  .full4 {
+    background-color: #000;
+    background-image: url(/img/m_itc.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
   }
   .full4 .cnt04-title {
-    width: 1604px;
-    font-size: 200px;
-    font-weight: 900;
-    line-height: 1;
-    opacity: 0.08;
-    color: #fff;
-    position: absolute;
-    top: 160px;
-    left: 40px;
-    z-index: 1;
+    display: none;
   }
   .full4 .cnt04 .itc {
     position: absolute;
-    top: 270px;
-    left: 360px;
+    top: 140px;
+    left: 40px;
     z-index: 2;
     width: 504px;
     height: 520px;
@@ -729,26 +721,27 @@ body {
   .full4 .cnt04 .itc h3 {
     width: 277px;
     height: 94px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     color: #fff;
   }
   .full4 .cnt04 .itc .world {
     width: 233px;
-    font-size: 24px;
+    font-size: 20px;
     height: 40px;
     border-bottom: 3px solid #fff;
   }
   .full4 .cnt04 .itc p {
+    width: 320px;
     margin: 30px 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.78;
     letter-spacing: -0.72px;
     text-align: left;
     color: #fff;
   }
   .full4 .cnt04 .itc div a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding: 20px;
     display: flex;
@@ -768,40 +761,33 @@ body {
     position: relative;
   }
   .full5 .cnt05-title {
-    width: 1604px;
-    font-size: 200px;
-    font-weight: 900;
-    line-height: 1;
-    color: #f6f6f6;
-    position: absolute;
-    top: 160px;
-    left: 40px;
-    z-index: 1;
+    display: none;
   }
   .full5 .cnt05 .itc {
     position: absolute;
-    top: 350px;
-    left: 360px;
+    top: 140px;
+    left: 40px;
     z-index: 2;
-    width: 614px;
+    width: 346px;
     height: 520px;
   }
   .full5 .cnt05 .itc h3 {
+    line-height: 1.2;
     height: 94px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     color: #111;
   }
   .full5 .cnt05 .itc p {
-    margin: 30px 0;
-    font-size: 18px;
+    margin-top: 80px;
+    font-size: 16px;
     line-height: 1.78;
     letter-spacing: -0.72px;
     text-align: left;
     color: #111;
   }
   .full5 .cnt05 .itc div a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding: 20px;
     display: flex;
@@ -818,7 +804,12 @@ body {
     z-index: 2;
     display: flex;
     gap: 20px;
-    right: 106px;
-    top: 350px;
+    left: 40px;
+    top: 545px;
+    flex-wrap: nowrap;
+  }
+  .full5 .cnt05 .right img {
+    width: 240px;
+    height: 240px;
   }
 } /*# sourceMappingURL=style.css.map */
