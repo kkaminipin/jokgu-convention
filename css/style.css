@@ -156,7 +156,7 @@ body {
 .full1 {
   width: 100%;
   height: 100vw;
-  background-image: url(/img/main_banner.png);
+  background-image: url("../img/main_banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -164,7 +164,7 @@ body {
 .full2 {
   width: 100%;
   height: 100vw;
-  background-image: url(/img/jokgu_info.png);
+  background-image: url("../img/jokgu_info.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -175,7 +175,7 @@ body {
 .full4 {
   width: 100%;
   height: 100vw;
-  background-image: url(/img/itc.png);
+  background-image: url("../img/itc.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
