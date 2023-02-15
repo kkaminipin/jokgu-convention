@@ -44,18 +44,22 @@ body {
   width: 100%;
   height: 100%;
 }
-.fullsection {
+.section {
   width: 100%;
   height: 100%;
   position: relative;
 }
 .full1 {
+  width: 100%;
+  height: 100vw;
   background-image: url(/img/main_banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .full2 {
+  width: 100%;
+  height: 100vw;
   background-image: url(/img/jokgu_info.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,6 +69,8 @@ body {
 .full3 {
 }
 .full4 {
+  width: 100%;
+  height: 100vw;
   background-image: url(/img/itc.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +84,7 @@ body {
   color: #000;
 }
 
-#fullpage .quick ul li a {
+.quick ul li a {
   display: block;
   height: 70px;
   text-align: center;
@@ -89,30 +95,30 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
-#fullpage .quick ul li.on a {
+.quick ul li.on a {
   padding-bottom: 0px;
   color: #000;
   border-bottom: 3px solid #0c4fff;
 }
-#fullpage .quick ul li:first-child {
+.quick ul li:first-child {
   display: none;
 }
-#fullpage .quick .btn-wrap {
+.quick .btn-wrap {
   margin-top: 10px;
   display: flex;
 }
-#fullpage .quick .btn-wrap button {
+.quick .btn-wrap button {
   width: 60px;
   height: 40px;
   border: solid 1px #666;
   color: #aaaaaa;
 }
-#fullpage .quick .btn-wrap button.on {
+.quick .btn-wrap button.on {
   background-color: #0c4fff;
   border: none;
   color: #fff;
 }
-#fullpage .quick .mob-btn {
+.quick .mob-btn {
   display: none;
 }
 .wrap .content div {
@@ -150,7 +156,7 @@ body {
 .full2 .cnt02-title {
   width: 100%;
   max-width: 710px;
-  font-size: 200px;
+  font-size: 11.5vw;
   font-weight: 900;
   line-height: 1;
   color: #f6f6f6;
@@ -162,11 +168,12 @@ body {
 .full2 .cnt02 .jokgu-info {
   position: absolute;
   top: 270px;
-  left: 360px;
+  right: 60%;
   z-index: 2;
   width: 100%;
   max-width: 406px;
   height: 520px;
+  margin-left: 20px;
 }
 .full2 .cnt02 .jokgu-info h3 {
   width: 100%;
@@ -209,7 +216,7 @@ body {
 .full3 .cnt03-title {
   width: 100%;
   max-width: 1160px;
-  font-size: 200px;
+  font-size: 11.5vw;
   font-weight: 900;
   line-height: 1;
   color: #f6f6f6;
@@ -298,17 +305,11 @@ body {
   background-color: #111;
   margin-right: 24px;
 }
-.full4 .cnt04 {
-  background-image: url(/img/itc.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+
 .full4 .cnt04-title {
   width: 100%;
   max-width: 1604px;
-  font-size: 200px;
+  font-size: 11.5vw;
   font-weight: 900;
   line-height: 1;
   opacity: 0.08;
@@ -321,7 +322,7 @@ body {
 .full4 .cnt04 .itc {
   position: absolute;
   top: 270px;
-  left: 360px;
+  right: 55%;
   z-index: 2;
   width: 504px;
   height: 520px;
@@ -371,7 +372,7 @@ body {
 .full5 .cnt05-title {
   width: 100%;
   max-width: 1604px;
-  font-size: 200px;
+  font-size: 11.5vw;
   font-weight: 900;
   line-height: 1;
   color: #f6f6f6;
@@ -383,7 +384,7 @@ body {
 .full5 .cnt05 .itc {
   position: absolute;
   top: 350px;
-  left: 360px;
+  right: 49%;
   z-index: 2;
   width: 614px;
   height: 520px;
@@ -420,35 +421,85 @@ body {
   z-index: 2;
   display: flex;
   gap: 20px;
-  right: 106px;
+  left: 55%;
   top: 350px;
 }
 
+@media screen and (max-width: 1644px) {
+  .full5 .cnt05 .right {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    left: 55%;
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .full2 .cnt02 .jokgu-info {
+    position: absolute;
+    top: 270px;
+    left: 80px;
+    z-index: 2;
+    width: 100%;
+    max-width: 406px;
+    height: 520px;
+    margin-left: 20px;
+  }
+  .full4 .cnt04 .itc {
+    position: absolute;
+    top: 270px;
+    left: 80px;
+    z-index: 2;
+    width: 504px;
+    height: 520px;
+  }
+  .full5 .cnt05 .itc {
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    z-index: 2;
+    width: 614px;
+    height: 520px;
+  }
+  .full5 .cnt05 .right {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    left: 65%;
+    top: 120px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  #fullpage .quick {
+  .quick {
     padding: 16px 20px 16px 20px;
   }
-  #fullpage .quick ul {
+  .quick ul {
     display: none;
   }
-  #fullpage .quick .btn-wrap {
+  .quick .btn-wrap {
     align-items: center;
   }
-  #fullpage .quick .btn-wrap button {
+  .quick .btn-wrap button {
     width: 50px !important;
     height: 32px !important;
     border: solid 1px #666;
     color: #aaaaaa;
   }
-  #fullpage .quick .btn-wrap button.on {
+  .quick .btn-wrap button.on {
     background-color: #0c4fff;
     border: 1px solid #0c4fff !important;
     color: #fff;
   }
-  #fullpage .quick .btn-wrap .mob-btn {
+  .quick .btn-wrap .mob-btn {
     display: block !important;
   }
-  #fullpage .quick .btn-wrap .mob-btn button {
+  .quick .btn-wrap .mob-btn button {
     padding-top: 5px;
     border: 0px;
   }

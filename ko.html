@@ -15,68 +15,32 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
     <script src="jquery-3.6.3.min.js"></script>
-    <script src="slick.min.js">
-       $(function () {
-        $(".responsive").slick({
-          dots: true,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ],
-        });
-      });
-    </script>
+
+    <script src="slick.min.js"></script>
+    <script src="fullpage.min.js"></script>
   </head>
   <body>
-    <div id="fullpage">
-      <div class="quick">
-        <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#">족구소개</a></li>
-          <li><a href="#">족구기술</a></li>
-          <li><a href="#">국제대회</a></li>
-          <li><a href="#">국제연맹</a></li>
-        </ul>
-        <div class="btn-wrap">
-          <button type="button" class="on">KR</button>
-          <button type="button">EN</button>
-          <div class="mob-btn">
-            <button type="button">
-              <img src="/img/hamberger.png" alt="" />
-            </button>
-          </div>
+    <div class="quick">
+      <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#">족구소개</a></li>
+        <li><a href="#">족구기술</a></li>
+        <li><a href="#">국제대회</a></li>
+        <li><a href="#">국제연맹</a></li>
+      </ul>
+      <div class="btn-wrap">
+        <button type="button" class="on">KR</button>
+        <button type="button">EN</button>
+        <div class="mob-btn">
+          <button type="button">
+            <img src="/img/hamberger.png" alt="" />
+          </button>
         </div>
       </div>
-      <div class="fullsection full1" pageNum="1">
+    </div>
+    <div id="fullpage">
+      <div class="section full1" pageNum="1">
         <div class="cnt01">
           <p>JOKGU WITH WORLD</p>
           <span
@@ -85,7 +49,7 @@
           ></span>
         </div>
       </div>
-      <div class="fullsection full2" pageNum="2">
+      <div class="section full2" pageNum="2">
         <div class="cnt02">
           <p class="cnt02-title">ABOUT JOKGU</p>
           <div class="jokgu-info">
@@ -113,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="fullsection full3" pageNum="3">
+      <div class="section full3" pageNum="3">
         <div class="cnt03">
           <p class="cnt03-title">OFFICIAL TECHNIQUE</p>
           <div class="jokgu-skill">
@@ -147,7 +111,7 @@
           </div>
         </div>
       </div>
-      <div class="fullsection full4" pageNum="4">
+      <div class="section full4" pageNum="4">
         <div class="cnt04">
           <p class="cnt04-title">INTERNATIONAL COMPETION</p>
           <div class="itc">
@@ -166,7 +130,7 @@
           </div>
         </div>
       </div>
-      <div class="fullsection full5" pageNum="5">
+      <div class="section full5" pageNum="5">
         <div class="cnt05">
           <p class="cnt05-title">INTERNATIONAL JOKGU FEDERATION</p>
           <div class="itc">
@@ -188,103 +152,62 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
-    ></script>
+
     <script>
-      $(document).ready(function () {
-        fullset();
-        quickClick();
+      $("#fullpage").fullpage({
+        afterLoad: function (origin, destination, direction, trigger) {
+          $(".quick ul li").removeClass("on");
+
+          if (destination == 2) {
+            $(".quick ul li").eq(1).addClass("on");
+          }
+          if (destination == 3) {
+            $(".quick ul li").eq(2).addClass("on");
+          }
+          if (destination == 4) {
+            $(".quick ul li").eq(3).addClass("on");
+          }
+          if (destination == 5) {
+            $(".quick ul li").eq(4).addClass("on");
+          }
+        },
       });
-      function fullset() {
-        var pageindex = $("#fullpage > .fullsection").size(); //fullpage 안에 섹션이(.fullsection) 몇개인지 확인하기
-        for (var i = 1; i <= pageindex; i++) {
-          $("#fullpage > .quick > ul");
-        }
-        $("#fullpage .quick ul :first-child").addClass("on"); //일단 화면이 로드 되었을때는 퀵버튼에 1번째에 불이 들어오게
-        //마우스 휠 이벤트
-        $(window).bind("mousewheel", function (event) {
-          var page = $(".quick ul li.on");
-          //alert(page.index()+1);  // 현재 on 되어있는 페이지 번호
-          if ($("body").find("#fullpage:animated").length >= 1) return false;
-          //마우스 휠을 위로
-          if (event.originalEvent.wheelDelta >= 0) {
-            var before = page.index();
-            if (page.index() >= 0)
-              page.prev().addClass("on").siblings(".on").removeClass("on"); //퀵버튼옮기기
-            var pagelength = 0;
-            for (var i = 1; i < before; i++) {
-              pagelength += $(".full" + i).height();
-            }
-            if (page.index() > 0) {
-              //첫번째 페이지가 아닐때 (index는 0부터 시작임)
-              page = page.index() - 1;
-              $("#fullpage").animate(
-                { top: -pagelength + "px" },
-                1000,
-                "swing"
-              );
-            } else {
-            }
-          } else {
-            // 마우스 휠을 아래로
-            var nextPage = parseInt(page.index() + 1); //다음페이지번호
-            var lastPageNum = parseInt($(".quick ul li").size()); //마지막 페이지번호
-            //현재페이지번호 <= (마지막 페이지 번호 - 1)
-            //이럴때 퀵버튼옮기기
-            if (page.index() <= $(".quick ul li").size() - 1) {
-              page.next().addClass("on").siblings(".on").removeClass("on");
-            }
 
-            if (nextPage < lastPageNum) {
-              //마지막 페이지가 아닐때만 animate !
-              var pagelength = 0;
-              for (var i = 1; i < nextPage + 1; i++) {
-                //총 페이지 길이 구하기
-                //ex) 현재 1번페이지에서 2번페이지로 내려갈때는 1번페이지 길이 + 2번페이지 길이가 더해짐
-                pagelength += $(".full" + i).height();
-              }
-              $("#fullpage").animate(
-                { top: -pagelength + "px" },
-                1000,
-                "swing"
-              );
-            } else {
-              // 현재 마지막 페이지 일때는
-            }
-          }
-        });
-        $(window).resize(function () {
-          //페이지가 100%이기때문에 브라우저가 resize 될때마다 스크롤 위치가 그대로 남아있는것을 방지하기 위해
-          var resizeindex = $(".quick ul li.on").index() + 1;
-
-          var pagelength = 0;
-          for (var i = 1; i < resizeindex; i++) {
-            //총 페이지 길이 구하기
-            //ex) 현재 1번페이지에서 2번페이지로 내려갈때는 1번페이지 길이 + 2번페이지 길이가 더해짐
-            pagelength += $(".full" + i).height();
-          }
-
-          $("#fullpage").animate({ top: -pagelength + "px" }, 0);
-        });
-      }
-      // 사이드 퀵버튼 클릭 이동
-      function quickClick() {
-        $(".quick li").click(function () {
-          var gnbindex = $(this).index() + 1;
-          var length = 0;
-          for (var i = 1; i < gnbindex; i++) {
-            length += $(".full" + i).height();
-          }
-          if ($("body").find("#fullpage:animated").length >= 1) return false;
-          $(this).addClass("on").siblings("li").removeClass("on");
-
-          $("#fullpage").animate({ top: -length + "px" }, 800, "swing");
-          return false;
-        });
-      }
+      $(".responsive").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
     </script>
   </body>
 </html>
