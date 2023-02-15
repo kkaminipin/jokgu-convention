@@ -597,18 +597,18 @@ body {
   height: 120px;
   display: flex;
   align-items: center;
-  padding: 0 360px 0 360px;
+  justify-content: center;
 }
 .footer .footer-logo {
-  width: 15%;
+  width: 7%;
 }
 
 .footer .center {
-  width: 85%;
+  width: 55%;
+  padding-left: 40px;
 }
 
 .footer .center p {
-  width: 100%;
   margin-bottom: 5px;
   font-size: 16px;
   color: #adb2b8;
@@ -673,6 +673,11 @@ body {
     max-width: 1000px;
     top: 200px;
   }
+
+  .full3 .cnt03 .jokgu-skill.en {
+    top: 140px;
+  }
+
   .full3 .cnt03 .jokgu-skill h3 {
     width: 100%;
     margin: 0px;
@@ -684,6 +689,7 @@ body {
     padding-left: 35px;
   }
   .full3 .cnt03 .jokgu-skill p {
+    max-width: 528px;
     width: 100%;
     margin: 25px 0;
     font-size: 18px;
@@ -750,6 +756,34 @@ body {
     flex-wrap: wrap;
     left: 65%;
     top: 120px;
+  }
+  .footer {
+    width: 100%;
+    background-color: #26282e;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer-logo {
+    width: 20%;
+    display: block;
+  }
+
+  .footer .center {
+    width: 70%;
+    padding-left: 40px;
+  }
+
+  .footer .center p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #adb2b8;
+  }
+  .footer h3 {
+    display: none;
   }
 }
 
@@ -1135,3 +1169,32 @@ body {
     height: 240px;
   }
 } /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 430px) {
+  .full2 .cnt02 .jokgu-info {
+    top: 100px;
+    left: 10px;
+    z-index: 2;
+  }
+  .full3 .cnt03 .jokgu-skill {
+    top: 100px;
+    left: 195px;
+  }
+  .full4 .cnt04 .itc {
+    top: 100px;
+    left: 15px;
+  }
+  .full5 .cnt05 .itc {
+    top: 100px;
+    left: 15px;
+  }
+  .full5 .cnt05 .right {
+    gap: 5px;
+    left: 15px;
+    top: 520px;
+    flex-wrap: nowrap;
+  }
+  .full3 .cnt03 .jokgu-skill.en {
+    top: 100px;
+  }
+}

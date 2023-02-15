@@ -23,11 +23,11 @@
     <div class="quick">
       <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
       <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#">족구소개</a></li>
-        <li><a href="#">족구기술</a></li>
-        <li><a href="#">국제대회</a></li>
-        <li><a href="#">국제연맹</a></li>
+        <li><a href="#firstPage"></a></li>
+        <li><a href="#secondPage">족구소개</a></li>
+        <li><a href="#3rdPage">족구기술</a></li>
+        <li><a href="#4thpage">국제대회</a></li>
+        <li><a href="#lastPage">국제연맹</a></li>
       </ul>
       <div class="btn-wrap">
         <button type="button" class="on">KR</button>
@@ -221,6 +221,7 @@
             $(".bottom ul li").eq(4).addClass("en black");
           }
         },
+        anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
       });
 
       $(".responsive").slick({
