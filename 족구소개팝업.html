@@ -85,6 +85,32 @@
             </div>
           </div>
         </div>
+        <div class="popup" id="videos" style="display: none">
+          <div class="popup-wrap" id="videos">
+            <div class="contents flex jsw">
+              <div class="videos"></div>
+              <div class="close-btn">
+                <button type="button">
+                  <img src="./img/close.png" alt="닫기버튼" />
+                </button>
+              </div>
+
+              <script>
+                $(document).ready(function () {
+                  $("ul.tabs li").click(function () {
+                    var tab_id = $(this).attr("data-tab");
+
+                    $("ul.tabs li").removeClass("current");
+                    $(".content").removeClass("current");
+
+                    $(this).addClass("current");
+                    $("#" + tab_id).addClass("current");
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
         <div class="popup" id="history" style="display: none">
           <div class="popup-wrap" id="history">
             <div class="contents flex">
@@ -203,7 +229,7 @@
             </div>
           </div>
         </div>
-        <div class="popup" id="Equipments" style="display: block">
+        <div class="popup" id="Equipments" style="display: none">
           <div class="popup-wrap" id="Equipments">
             <div class="contents flex">
               <div class="contents-head">
