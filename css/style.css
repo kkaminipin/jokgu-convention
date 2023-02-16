@@ -92,6 +92,104 @@ li {
   gap: 10px;
 }
 
+.popup-wrap .contents-main.rule .top-table {
+  margin-top: 20px;
+  border-top: 1px solid #111;
+}
+.popup-wrap .contents-main.rule .top-table tbody tr {
+  height: 60px;
+}
+.popup-wrap .contents-main.rule .top-table tbody tr th {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #111;
+  line-height: 1.75;
+  letter-spacing: -0.64px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+
+.popup-wrap .contents-main.rule .top-table tbody tr td {
+  text-align: left;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+  letter-spacing: -0.64px;
+  font-weight: normal;
+  border-bottom: 1px solid #eee;
+}
+
+.popup-wrap .contents-main.rule .btm-table {
+  padding-top: 20px;
+  background-color: #f6f6f6;
+}
+
+.popup-wrap .contents-main.rule .btm-table.padbtm {
+  padding-bottom: 20px;
+}
+
+.popup-wrap .contents-main.rule .btm-table tbody tr th {
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.64px;
+  vertical-align: text-top;
+  color: #111;
+}
+.popup-wrap .contents-main.rule .btm-table tbody tr td {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.64px;
+  text-align: left;
+  color: #444;
+  padding-left: 22px;
+  border-left: 1px solid #ccc;
+}
+.popup-wrap .contents-main.rule .schedule {
+  font-size: 16px;
+  color: #111;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.popup-wrap .contents-main.rule .schedule span {
+  font-size: 14px;
+  color: #0c4fff;
+  font-weight: normal;
+  margin-left: 10px;
+}
+.popup-wrap .contents-main.rule .rule-down button.participate {
+  width: 120px;
+  height: 40px;
+  background-color: #0c4fff;
+  color: #fff;
+  border: 0px;
+}
+
+.popup-wrap .contents-main.rule button.participate2 {
+  width: 120px;
+  height: 40px;
+  background-color: #0c4fff;
+  color: #fff;
+  border: 0px;
+  margin-top: 20px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .popup-wrap .contents-main.rule .enact {
   float: right;
   margin-top: 10px;
@@ -100,6 +198,9 @@ li {
   letter-spacing: -0.56px;
 }
 .popup-wrap .contents-main.rule .rule1 {
+  line-height: 1.6;
+  width: 100%;
+  max-width: 667px;
   margin-top: 36px;
   font-size: 20px;
   font-weight: bold;
@@ -1196,6 +1297,23 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .popup-wrap .contents-main.rule .top-table colgroup col:nth-child(1) {
+    width: 100px !important;
+  }
+
+  .popup-wrap .contents-main.rule .rule-down.world {
+    display: block;
+    height: auto;
+  }
+  .popup-wrap .contents-main.rule .rule-down.world h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: -1.6px;
+    line-height: 1.4;
+  }
+  .popup-wrap .contents-main.rule .btm-table colgroup col:nth-child(1) {
+    width: 100px !important;
+  }
   .popup-wrap .contents-main.rule .rule-down h1 {
     font-size: 32px;
   }
