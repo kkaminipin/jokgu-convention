@@ -48,6 +48,209 @@
         <li><a href="#"></a></li>
       </ul>
     </div>
+    <div class="popup" id="videos" style="display: block">
+      <div class="popup-wrap" id="videos">
+        <div class="contents flex jsw">
+          <div class="videos"></div>
+          <div class="close-btn">
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="history" style="display: block">
+      <div class="popup-wrap" id="history">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">대한민국족구협회 연혁</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main">
+            <div class="year"><strong>2021</strong></div>
+
+            <div class="line">
+              <ul>
+                <li>
+                  <div>
+                    <div class="title">2021년 11월</div>
+                    <div class="info">
+                      KBS 스포츠예술과학원 산학협력 MOU 체결 국제풋넷연맹(UNIF)
+                      업무협약 MOU 체결<br />
+                      대한민국족구협회 홍보대사 가수 박군 위촉
+                      <br />시·도대항 족구최강전(전북 부안)
+                      <br />한국스톤(주)(전기차) 후원사 체결
+                    </div>
+                  </div>
+                  <span class="blue"></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 10월</div>
+                    <div class="info">방송해설위원회 구성</div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 7월</div>
+                    <div class="info">
+                      (주)한아테크(족구전용시설물) 후원사 체결css
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 6월</div>
+                    <div class="info">
+                      AMS코퍼레이션(족구전용바닥재) 후원사 체결
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 5월</div>
+                    <div class="info">대한민국족구협회 장애인위원회 구성</div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 3월</div>
+                    <div class="info">조이킥스포츠 공식후원사 체결</div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 1월</div>
+                    <div class="info">
+                      제2대(사)대한민국족구협회 회장선거 제2대 홍기용 회장 취임
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contents-main">
+            <div class="year"><strong>2021</strong></div>
+
+            <div class="line">
+              <ul>
+                <li>
+                  <div>
+                    <div class="title">2020년 11월</div>
+                    <div class="info">시·도대항 족구최강전(충남 서천)</div>
+                  </div>
+                  <span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="Equipments" style="display: block">
+      <div class="popup-wrap" id="Equipments">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">족구 장비 소개</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main eq">
+            <ul class="equipments">
+              <li>
+                <img src="./img/ball.png" alt="공인구" />
+                <h3>공인구</h3>
+                <p>
+                  족구공은 빠른 속도와 신체 충격을 최소화하기 위해 과학적인
+                  데이터를 근거로 12조각 이내로 제작
+                </p>
+              </li>
+              <li>
+                <img src="./img/jokgu_shoes.png" alt="족구화" />
+                <h3>인증 족구화</h3>
+                <p>
+                  족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기 위한
+                  바닥면을 검증한 전용 족구화 인증
+                </p>
+              </li>
+              <li>
+                <img src="./img/net.png" alt="네트" />
+                <h3>인증 족구화</h3>
+                <p>
+                  족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기 위한
+                  바닥면을 검증한 전용 족구화 인증
+                </p>
+              </li>
+              <li>
+                <img src="./img/protector.png" alt="보호구" />
+                <h3>인증 족구화</h3>
+                <p>
+                  족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기 위한
+                  바닥면을 검증한 전용 족구화 인증
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
     <div id="fullpage">
       <div class="section full1" pageNum="1">
         <div class="cnt01">
@@ -82,212 +285,6 @@
               <a href="#"
                 >장비소개 <img src="./img/right_arrow_wt.png" alt=""
               /></a>
-            </div>
-          </div>
-        </div>
-        <div class="popup" id="videos" style="display: none">
-          <div class="popup-wrap" id="videos">
-            <div class="contents flex jsw">
-              <div class="videos"></div>
-              <div class="close-btn">
-                <button type="button">
-                  <img src="./img/close.png" alt="닫기버튼" />
-                </button>
-              </div>
-
-              <script>
-                $(document).ready(function () {
-                  $("ul.tabs li").click(function () {
-                    var tab_id = $(this).attr("data-tab");
-
-                    $("ul.tabs li").removeClass("current");
-                    $(".content").removeClass("current");
-
-                    $(this).addClass("current");
-                    $("#" + tab_id).addClass("current");
-                  });
-                });
-              </script>
-            </div>
-          </div>
-        </div>
-        <div class="popup" id="history" style="display: none">
-          <div class="popup-wrap" id="history">
-            <div class="contents flex">
-              <div class="contents-head">
-                <h3 class="title">대한민국족구협회 연혁</h3>
-                <button type="button">
-                  <img src="./img/close.png" alt="닫기버튼" />
-                </button>
-              </div>
-              <div class="contents-main">
-                <div class="year"><strong>2021</strong></div>
-
-                <div class="line">
-                  <ul>
-                    <li>
-                      <div>
-                        <div class="title">2021년 11월</div>
-                        <div class="info">
-                          KBS 스포츠예술과학원 산학협력 MOU 체결
-                          국제풋넷연맹(UNIF) 업무협약 MOU 체결<br />
-                          대한민국족구협회 홍보대사 가수 박군 위촉
-                          <br />시·도대항 족구최강전(전북 부안)
-                          <br />한국스톤(주)(전기차) 후원사 체결
-                        </div>
-                      </div>
-                      <span class="blue"></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021년 10월</div>
-                        <div class="info">방송해설위원회 구성</div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021년 7월</div>
-                        <div class="info">
-                          (주)한아테크(족구전용시설물) 후원사 체결css
-                        </div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021년 6월</div>
-                        <div class="info">
-                          AMS코퍼레이션(족구전용바닥재) 후원사 체결
-                        </div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021년 5월</div>
-                        <div class="info">
-                          대한민국족구협회 장애인위원회 구성
-                        </div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021년 3월</div>
-                        <div class="info">조이킥스포츠 공식후원사 체결</div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021년 1월</div>
-                        <div class="info">
-                          제2대(사)대한민국족구협회 회장선거 제2대 홍기용 회장
-                          취임
-                        </div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="contents-main">
-                <div class="year"><strong>2021</strong></div>
-
-                <div class="line">
-                  <ul>
-                    <li>
-                      <div>
-                        <div class="title">2020년 11월</div>
-                        <div class="info">시·도대항 족구최강전(충남 서천)</div>
-                      </div>
-                      <span></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <script>
-                $(document).ready(function () {
-                  $("ul.tabs li").click(function () {
-                    var tab_id = $(this).attr("data-tab");
-
-                    $("ul.tabs li").removeClass("current");
-                    $(".content").removeClass("current");
-
-                    $(this).addClass("current");
-                    $("#" + tab_id).addClass("current");
-                  });
-                });
-              </script>
-            </div>
-          </div>
-        </div>
-        <div class="popup" id="Equipments" style="display: none">
-          <div class="popup-wrap" id="Equipments">
-            <div class="contents flex">
-              <div class="contents-head">
-                <h3 class="title">족구 장비 소개</h3>
-                <button type="button">
-                  <img src="./img/close.png" alt="닫기버튼" />
-                </button>
-              </div>
-              <div class="contents-main eq">
-                <ul class="equipments">
-                  <li>
-                    <img src="./img/ball.png" alt="공인구" />
-                    <h3>공인구</h3>
-                    <p>
-                      족구공은 빠른 속도와 신체 충격을 최소화하기 위해 과학적인
-                      데이터를 근거로 12조각 이내로 제작
-                    </p>
-                  </li>
-                  <li>
-                    <img src="./img/jokgu_shoes.png" alt="족구화" />
-                    <h3>인증 족구화</h3>
-                    <p>
-                      족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기
-                      위한 바닥면을 검증한 전용 족구화 인증
-                    </p>
-                  </li>
-                  <li>
-                    <img src="./img/net.png" alt="네트" />
-                    <h3>인증 족구화</h3>
-                    <p>
-                      족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기
-                      위한 바닥면을 검증한 전용 족구화 인증
-                    </p>
-                  </li>
-                  <li>
-                    <img src="./img/protector.png" alt="보호구" />
-                    <h3>인증 족구화</h3>
-                    <p>
-                      족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기
-                      위한 바닥면을 검증한 전용 족구화 인증
-                    </p>
-                  </li>
-                </ul>
-              </div>
-
-              <script>
-                $(document).ready(function () {
-                  $("ul.tabs li").click(function () {
-                    var tab_id = $(this).attr("data-tab");
-
-                    $("ul.tabs li").removeClass("current");
-                    $(".content").removeClass("current");
-
-                    $(this).addClass("current");
-                    $("#" + tab_id).addClass("current");
-                  });
-                });
-              </script>
             </div>
           </div>
         </div>

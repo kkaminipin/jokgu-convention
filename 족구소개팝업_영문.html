@@ -48,6 +48,188 @@
         <li><a href="#"></a></li>
       </ul>
     </div>
+    <div class="popup" id="Equipments" style="display: block">
+      <div class="popup-wrap" id="Equipments">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">Information about Equipments</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main eq">
+            <ul class="equipments">
+              <li class="en">
+                <img src="./img/ball.png" alt="공인구" />
+                <h3>Official Ball</h3>
+                <p>
+                  Jokgu balls are built within 12 pieces based on scientific
+                  data to decrease speed and physical shock.
+                </p>
+              </li>
+              <li class="en">
+                <img src="./img/jokgu_shoes.png" alt="족구화" />
+                <h3>Certified Jokgu Shoes</h3>
+                <p>
+                  Proof of exclusive Jokgu shoes that have verified the floor
+                  surface to protect players based on an outsole for improving
+                  the function of Jokgu.
+                </p>
+              </li>
+              <li class="en">
+                <img src="./img/net.png" alt="네트" />
+                <h3>Net & Antenna</h3>
+                <p>
+                  족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기 위한
+                  바닥면을 검증한 전용 족구화 인증
+                </p>
+              </li>
+              <li class="en">
+                <img src="./img/protector.png" alt="보호구" />
+                <h3>인증 족구화</h3>
+                <p>
+                  족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기 위한
+                  바닥면을 검증한 전용 족구화 인증
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="videos" style="display: block">
+      <div class="popup-wrap" id="videos">
+        <div class="contents flex jsw">
+          <div class="videos"></div>
+          <div class="close-btn">
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="history" style="display: block">
+      <div class="popup-wrap" id="history">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">History of Korean Jokgu Association</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main">
+            <div class="year"><strong>2021</strong></div>
+
+            <div class="line">
+              <ul>
+                <li>
+                  <div>
+                    <div class="title">2021.11.</div>
+                    <div class="info en">
+                      Signed a MOU with KBS Sports Art Academy for
+                      Industry-Academic Cooperation<br />
+                      Signed a MOU with Union International de Futnet(UNIF) for
+                      Business agreement<br />
+                      Korean singer Park Kun was appointed for KJA honorary
+                      ambassador
+                      <br />Citiy and provincial Jokgu Strongest Team
+                      competition(Jeonbuk, Buan) <br />Korea Stone Ent.
+                      (Electric Car)) made a contract as a official sponsor
+                    </div>
+                  </div>
+                  <span class="blue"></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021.10.</div>
+                    <div class="info en">
+                      Composition of the Broadcasting Commission
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021.7.</div>
+                    <div class="info en">
+                      Hana Tech Ent. (Jokgu Official Facility) made a contract
+                      as a official sponsor
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021.6.</div>
+                    <div class="info en">
+                      AMS Corp.(Official Jokgu Floor Material) made a contract
+                      as a official Sponsor
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021.5.</div>
+                    <div class="info en">
+                      Composition of the Committee for the Disabled of the
+                      Korean Jokgu Association
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
     <div id="fullpage">
       <div class="section full1" pageNum="1">
         <div class="cnt01">
@@ -79,188 +261,6 @@
               <a href="#"
                 >Equipment <img src="./img/right_arrow_wt.png" alt=""
               /></a>
-            </div>
-          </div>
-        </div>
-        <div class="popup" id="videos" style="display: none">
-          <div class="popup-wrap" id="videos">
-            <div class="contents flex jsw">
-              <div class="videos"></div>
-              <div class="close-btn">
-                <button type="button">
-                  <img src="./img/close.png" alt="닫기버튼" />
-                </button>
-              </div>
-
-              <script>
-                $(document).ready(function () {
-                  $("ul.tabs li").click(function () {
-                    var tab_id = $(this).attr("data-tab");
-
-                    $("ul.tabs li").removeClass("current");
-                    $(".content").removeClass("current");
-
-                    $(this).addClass("current");
-                    $("#" + tab_id).addClass("current");
-                  });
-                });
-              </script>
-            </div>
-          </div>
-        </div>
-        <div class="popup" id="history" style="display: none">
-          <div class="popup-wrap" id="history">
-            <div class="contents flex">
-              <div class="contents-head">
-                <h3 class="title">History of Korean Jokgu Association</h3>
-                <button type="button">
-                  <img src="./img/close.png" alt="닫기버튼" />
-                </button>
-              </div>
-              <div class="contents-main">
-                <div class="year"><strong>2021</strong></div>
-
-                <div class="line">
-                  <ul>
-                    <li>
-                      <div>
-                        <div class="title">2021.11.</div>
-                        <div class="info en">
-                          Signed a MOU with KBS Sports Art Academy for
-                          Industry-Academic Cooperation<br />
-                          Signed a MOU with Union International de Futnet(UNIF)
-                          for Business agreement<br />
-                          Korean singer Park Kun was appointed for KJA honorary
-                          ambassador
-                          <br />Citiy and provincial Jokgu Strongest Team
-                          competition(Jeonbuk, Buan) <br />Korea Stone Ent.
-                          (Electric Car)) made a contract as a official sponsor
-                        </div>
-                      </div>
-                      <span class="blue"></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021.10.</div>
-                        <div class="info en">
-                          Composition of the Broadcasting Commission
-                        </div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021.7.</div>
-                        <div class="info en">
-                          Hana Tech Ent. (Jokgu Official Facility) made a
-                          contract as a official sponsor
-                        </div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021.6.</div>
-                        <div class="info en">
-                          AMS Corp.(Official Jokgu Floor Material) made a
-                          contract as a official Sponsor
-                        </div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                    <li>
-                      <div>
-                        <span></span>
-                        <div class="title">2021.5.</div>
-                        <div class="info en">
-                          Composition of the Committee for the Disabled of the
-                          Korean Jokgu Association
-                        </div>
-                      </div>
-                      <span class="number"><span></span> <span></span></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <script>
-                $(document).ready(function () {
-                  $("ul.tabs li").click(function () {
-                    var tab_id = $(this).attr("data-tab");
-
-                    $("ul.tabs li").removeClass("current");
-                    $(".content").removeClass("current");
-
-                    $(this).addClass("current");
-                    $("#" + tab_id).addClass("current");
-                  });
-                });
-              </script>
-            </div>
-          </div>
-        </div>
-        <div class="popup" id="Equipments" style="display: none">
-          <div class="popup-wrap" id="Equipments">
-            <div class="contents flex">
-              <div class="contents-head">
-                <h3 class="title">Information about Equipments</h3>
-                <button type="button">
-                  <img src="./img/close.png" alt="닫기버튼" />
-                </button>
-              </div>
-              <div class="contents-main eq">
-                <ul class="equipments">
-                  <li class="en">
-                    <img src="./img/ball.png" alt="공인구" />
-                    <h3>Official Ball</h3>
-                    <p>
-                      Jokgu balls are built within 12 pieces based on scientific
-                      data to decrease speed and physical shock.
-                    </p>
-                  </li>
-                  <li class="en">
-                    <img src="./img/jokgu_shoes.png" alt="족구화" />
-                    <h3>Certified Jokgu Shoes</h3>
-                    <p>
-                      Proof of exclusive Jokgu shoes that have verified the
-                      floor surface to protect players based on an outsole for
-                      improving the function of Jokgu.
-                    </p>
-                  </li>
-                  <li class="en">
-                    <img src="./img/net.png" alt="네트" />
-                    <h3>인증 족구화</h3>
-                    <p>
-                      족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기
-                      위한 바닥면을 검증한 전용 족구화 인증
-                    </p>
-                  </li>
-                  <li class="en">
-                    <img src="./img/protector.png" alt="보호구" />
-                    <h3>인증 족구화</h3>
-                    <p>
-                      족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기
-                      위한 바닥면을 검증한 전용 족구화 인증
-                    </p>
-                  </li>
-                </ul>
-              </div>
-
-              <script>
-                $(document).ready(function () {
-                  $("ul.tabs li").click(function () {
-                    var tab_id = $(this).attr("data-tab");
-
-                    $("ul.tabs li").removeClass("current");
-                    $(".content").removeClass("current");
-
-                    $(this).addClass("current");
-                    $("#" + tab_id).addClass("current");
-                  });
-                });
-              </script>
             </div>
           </div>
         </div>
