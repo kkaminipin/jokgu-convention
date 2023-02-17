@@ -89,7 +89,54 @@ li {
   text-align: left;
   color: #fff !important;
 }
+.popup-wrap .contents-main.two .line ul {
+  margin-left: -8px;
+}
 
+.popup-wrap .contents-main.three .line ul {
+  margin-left: -1px;
+}
+.popup-wrap .contents-main.six .line ul {
+  margin-left: 1px;
+}
+.popup-wrap .contents-main.nine .line ul {
+  margin-left: 2px;
+}
+
+.popup-wrap .contents-main.ten .line ul {
+  margin-left: 7px;
+}
+
+.popup-wrap .contents-main.twelve .line ul {
+  margin-left: -7px;
+}
+
+.popup-wrap .contents-main.thirteen .line ul {
+  margin-left: -7px;
+}
+
+.popup-wrap .contents-main.fourteen .line ul {
+  margin-left: -3px;
+}
+
+.popup-wrap .contents-main.fifteen .line ul {
+  margin-left: -6px;
+}
+.popup-wrap .contents-main.sixteen .line ul {
+  margin-left: -7px;
+}
+.popup-wrap .contents-main.seventeen .line ul {
+  margin-left: -6px;
+}
+.popup-wrap .contents-main.eighteen .line ul {
+  margin-left: -7px;
+}
+.popup-wrap .contents-main.twenty-three .line ul {
+  margin-left: 6px;
+}
+.popup-wrap .contents-main.twenty-four .line ul {
+  margin-left: -2px;
+}
 .popup-wrap .contents-main.rule .rule-down.en {
   flex-wrap: wrap;
   height: auto;
