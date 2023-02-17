@@ -260,14 +260,19 @@ li {
   color: #fff;
   border: 0px;
 }
-.popup-wrap .contents-main.rule button.participate2 {
+
+.popup-wrap .contents-main.rule .right-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.popup-wrap .contents-main.rule .right-btn button.participate2 {
   width: 120px;
   height: 40px;
   background-color: #0c4fff;
   color: #fff;
   border: 0px;
   margin-top: 20px;
-  float: right;
   display: flex;
   align-items: center;
   justify-content: center;
