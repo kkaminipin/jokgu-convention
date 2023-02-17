@@ -1,749 +1,845 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KJA</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/slick.css" />
-    <link rel="stylesheet" href="./css/slick-theme.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
-    />
-    <script src="jquery-3.6.3.min.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KJA</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/slick.css" />
+        <link rel="stylesheet" href="./css/slick-theme.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+        />
+        <script src="jquery-3.6.3.min.js"></script>
 
-    <script src="slick.min.js"></script>
-    <script src="fullpage.min.js"></script>
-  </head>
-  <body>
-    <div class="quick">
-      <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
-      <ul>
-        <li><a href="#firstPage"></a></li>
-        <li><a href="#secondPage">About</a></li>
-        <li><a href="#3rdPage">Technique</a></li>
-        <li><a href="#4thpage">Competition</a></li>
-        <li><a href="#lastPage">Federation</a></li>
-      </ul>
-      <div class="btn-wrap">
-        <button type="button" class="on">KR</button>
-        <button type="button">EN</button>
-        <div class="mob-btn">
-          <button type="button">
-            <img src="./img/hamberger.png" alt="" />
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="bottom">
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </ul>
-    </div>
-    <!-- 히스토리 -->
-    <div class="popup" id="history" style="display: block">
-      <div class="popup-wrap" id="history">
-        <div class="contents flex">
-          <div class="contents-head">
-            <h3 class="title">History of Korean Jokgu Association</h3>
-            <button type="button">
-              <img src="./img/close.png" alt="닫기버튼" />
-            </button>
-          </div>
-          <div class="contents-main">
-            <div class="year"><strong>2021</strong></div>
-
-            <div class="line">
-              <ul>
-                <li>
-                  <div>
-                    <div class="title">2021.11.</div>
-                    <div class="info en">
-                      Signed a MOU with KBS Sports Art Academy for
-                      Industry-Academic Cooperation<br />
-                      Signed a MOU with Union International de Futnet(UNIF) for
-                      Business agreement<br />
-                      Korean singer Park Kun was appointed for KJA honorary
-                      ambassador
-                      <br />Citiy and provincial Jokgu Strongest Team
-                      competition(Jeonbuk, Buan) <br />Korea Stone Ent.
-                      (Electric Car)) made a contract as a official sponsor
-                    </div>
-                  </div>
-                  <span class="blue"></span>
-                </li>
-                <li>
-                  <div>
-                    <span></span>
-                    <div class="title">2021.10.</div>
-                    <div class="info en">
-                      Composition of the Broadcasting Commission
-                    </div>
-                  </div>
-                  <span class="number"><span></span> <span></span></span>
-                </li>
-                <li>
-                  <div>
-                    <span></span>
-                    <div class="title">2021.7.</div>
-                    <div class="info en">
-                      Hana Tech Ent. (Jokgu Official Facility) made a contract
-                      as a official sponsor
-                    </div>
-                  </div>
-                  <span class="number"><span></span> <span></span></span>
-                </li>
-                <li>
-                  <div>
-                    <span></span>
-                    <div class="title">2021.6.</div>
-                    <div class="info en">
-                      AMS Corp.(Official Jokgu Floor Material) made a contract
-                      as a official Sponsor
-                    </div>
-                  </div>
-                  <span class="number"><span></span> <span></span></span>
-                </li>
-                <li>
-                  <div>
-                    <span></span>
-                    <div class="title">2021.5.</div>
-                    <div class="info en">
-                      Composition of the Committee for the Disabled of the
-                      Korean Jokgu Association
-                    </div>
-                  </div>
-                  <span class="number"><span></span> <span></span></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <script>
-            $(document).ready(function () {
-              $("ul.tabs li").click(function () {
-                var tab_id = $(this).attr("data-tab");
-
-                $("ul.tabs li").removeClass("current");
-                $(".content").removeClass("current");
-
-                $(this).addClass("current");
-                $("#" + tab_id).addClass("current");
-              });
-            });
-          </script>
-        </div>
-      </div>
-    </div>
-    <!-- /히스토리 -->
-    <!-- 족구장비 -->
-    <div class="popup" id="Equipments" style="display: block">
-      <div class="popup-wrap" id="Equipments">
-        <div class="contents flex">
-          <div class="contents-head">
-            <h3 class="title">Information about Equipments</h3>
-            <button type="button">
-              <img src="./img/close.png" alt="닫기버튼" />
-            </button>
-          </div>
-          <div class="contents-main eq">
-            <ul class="equipments">
-              <li class="en">
-                <img src="./img/ball.png" alt="공인구" />
-                <h3>Official Ball</h3>
-                <p>
-                  Jokgu balls are built within 12 pieces based on scientific
-                  data to decrease speed and physical shock.
-                </p>
-              </li>
-              <li class="en">
-                <img src="./img/jokgu_shoes.png" alt="족구화" />
-                <h3>Certified Jokgu Shoes</h3>
-                <p>
-                  Proof of exclusive Jokgu shoes that have verified the floor
-                  surface to protect players based on an outsole for improving
-                  the function of Jokgu.
-                </p>
-              </li>
-              <li class="en">
-                <img src="./img/net.png" alt="네트" />
-                <h3>Net & Antenna</h3>
-                <p>
-                  Dedicated net of stable material considering net play and
-                  antenna for determining accurate overnet
-                </p>
-              </li>
-              <li class="en">
-                <img src="./img/protector.png" alt="보호구" />
-                <h3>pillar and Protectors</h3>
-                <p>
-                  Authorised use of protective finishes for stable performance
-                  and safety in the event of a competitor's collision
-                </p>
-              </li>
+        <script src="slick.min.js"></script>
+        <script src="fullpage.min.js"></script>
+    </head>
+    <body>
+        <div class="quick">
+            <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
+            <ul>
+                <li><a href="#firstPage"></a></li>
+                <li><a href="#secondPage">About</a></li>
+                <li><a href="#3rdPage">Technique</a></li>
+                <li><a href="#4thpage">Competition</a></li>
+                <li><a href="#lastPage">Federation</a></li>
             </ul>
-          </div>
+            <div class="btn-wrap">
+                <button type="button" class="on">KR</button>
+                <button type="button">EN</button>
+                <div class="mob-btn">
+                    <button type="button">
+                        <img src="./img/hamberger.png" alt="" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <!-- 히스토리 -->
+        <div class="popup" id="history" style="display: block">
+            <div class="popup-wrap" id="history">
+                <div class="contents flex">
+                    <div class="contents-head">
+                        <h3 class="title">
+                            History of Korean Jokgu Association
+                        </h3>
+                        <button type="button">
+                            <img src="./img/close.png" alt="닫기버튼" />
+                        </button>
+                    </div>
+                    <div class="contents-main">
+                        <div class="year"><strong>2021</strong></div>
 
-          <script>
-            $(document).ready(function () {
-              $("ul.tabs li").click(function () {
-                var tab_id = $(this).attr("data-tab");
+                        <div class="line">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div class="title">2021.11.</div>
+                                        <div class="info en">
+                                            Signed a MOU with KBS Sports Art
+                                            Academy for Industry-Academic
+                                            Cooperation<br />
+                                            Signed a MOU with Union
+                                            International de Futnet(UNIF) for
+                                            Business agreement<br />
+                                            Korean singer Park Kun was appointed
+                                            for KJA honorary ambassador
+                                            <br />Citiy and provincial Jokgu
+                                            Strongest Team competition(Jeonbuk,
+                                            Buan) <br />Korea Stone Ent.
+                                            (Electric Car)) made a contract as a
+                                            official sponsor
+                                        </div>
+                                    </div>
+                                    <span class="blue"></span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title">2021.10.</div>
+                                        <div class="info en">
+                                            Composition of the Broadcasting
+                                            Commission
+                                        </div>
+                                    </div>
+                                    <span class="number"
+                                        ><span></span> <span></span
+                                    ></span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title">2021.7.</div>
+                                        <div class="info en">
+                                            Hana Tech Ent. (Jokgu Official
+                                            Facility) made a contract as a
+                                            official sponsor
+                                        </div>
+                                    </div>
+                                    <span class="number"
+                                        ><span></span> <span></span
+                                    ></span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title">2021.6.</div>
+                                        <div class="info en">
+                                            AMS Corp.(Official Jokgu Floor
+                                            Material) made a contract as a
+                                            official Sponsor
+                                        </div>
+                                    </div>
+                                    <span class="number"
+                                        ><span></span> <span></span
+                                    ></span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <div class="title">2021.5.</div>
+                                        <div class="info en">
+                                            Composition of the Committee for the
+                                            Disabled of the Korean Jokgu
+                                            Association
+                                        </div>
+                                    </div>
+                                    <span class="number"
+                                        ><span></span> <span></span
+                                    ></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $("ul.tabs li").click(function () {
+                                var tab_id = $(this).attr("data-tab");
 
-                $("ul.tabs li").removeClass("current");
-                $(".content").removeClass("current");
+                                $("ul.tabs li").removeClass("current");
+                                $(".content").removeClass("current");
 
-                $(this).addClass("current");
-                $("#" + tab_id).addClass("current");
-              });
+                                $(this).addClass("current");
+                                $("#" + tab_id).addClass("current");
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- /히스토리 -->
+        <!-- 족구장비 -->
+        <div class="popup" id="Equipments" style="display: block">
+            <div class="popup-wrap" id="Equipments">
+                <div class="contents flex">
+                    <div class="contents-head">
+                        <h3 class="title">Information about Equipments</h3>
+                        <button type="button">
+                            <img src="./img/close.png" alt="닫기버튼" />
+                        </button>
+                    </div>
+                    <div class="contents-main eq">
+                        <ul class="equipments">
+                            <li class="en">
+                                <img src="./img/ball.png" alt="공인구" />
+                                <h3>Official Ball</h3>
+                                <p>
+                                    Jokgu balls are built within 12 pieces based
+                                    on scientific data to decrease speed and
+                                    physical shock.
+                                </p>
+                            </li>
+                            <li class="en">
+                                <img src="./img/jokgu_shoes.png" alt="족구화" />
+                                <h3>Certified Jokgu Shoes</h3>
+                                <p>
+                                    Proof of exclusive Jokgu shoes that have
+                                    verified the floor surface to protect
+                                    players based on an outsole for improving
+                                    the function of Jokgu.
+                                </p>
+                            </li>
+                            <li class="en">
+                                <img src="./img/net.png" alt="네트" />
+                                <h3>Net & Antenna</h3>
+                                <p>
+                                    Dedicated net of stable material considering
+                                    net play and antenna for determining
+                                    accurate overnet
+                                </p>
+                            </li>
+                            <li class="en">
+                                <img src="./img/protector.png" alt="보호구" />
+                                <h3>pillar and Protectors</h3>
+                                <p>
+                                    Authorised use of protective finishes for
+                                    stable performance and safety in the event
+                                    of a competitor's collision
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <script>
+                        $(document).ready(function () {
+                            $("ul.tabs li").click(function () {
+                                var tab_id = $(this).attr("data-tab");
+
+                                $("ul.tabs li").removeClass("current");
+                                $(".content").removeClass("current");
+
+                                $(this).addClass("current");
+                                $("#" + tab_id).addClass("current");
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- /족구장비 -->
+        <!-- 동영상 -->
+        <div class="popup" id="videos" style="display: block">
+            <div class="popup-wrap" id="videos">
+                <div class="contents flex jsw">
+                    <div class="videos"></div>
+                    <div class="close-btn">
+                        <button type="button">
+                            <img src="./img/close.png" alt="닫기버튼" />
+                        </button>
+                    </div>
+
+                    <script>
+                        $(document).ready(function () {
+                            $("ul.tabs li").click(function () {
+                                var tab_id = $(this).attr("data-tab");
+
+                                $("ul.tabs li").removeClass("current");
+                                $(".content").removeClass("current");
+
+                                $(this).addClass("current");
+                                $("#" + tab_id).addClass("current");
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- /동영상 -->
+        <!-- 경기규칙 -->
+        <div class="popup" id="rule" style="display: block">
+            <div class="popup-wrap" id="rule">
+                <div class="contents flex">
+                    <div class="contents-head">
+                        <h3 class="title">OFFICIAL JOKGU RULES</h3>
+                        <button type="button">
+                            <img src="./img/close.png" alt="닫기버튼" />
+                        </button>
+                    </div>
+                    <div class="contents-main rule">
+                        <div class="rule-down en">
+                            <h1>OFFICIAL JOKGU RULES</h1>
+                            <button type="button">
+                                Download Rules
+                                <img src="./img/downlode.png" alt="" />
+                            </button>
+                        </div>
+                        <span class="enact"
+                            >Established on January 12, 2017</span
+                        >
+                        <h3 class="rule1">CHAPTER 1: THE GAME</h3>
+                        <div class="definition btb ttb">
+                            <strong>Article 1 (Definitions)</strong>
+                            <div>
+                                <p>
+                                    A game of JOKGU is played between two teams
+                                    comprised of four players each. The purpose
+                                    is to use only the lower legs (below the
+                                    knees) and the head (above the chin) to get
+                                    the ball over the net and ground it on the
+                                    other team’s court to score a point or to
+                                    prevent the other team from scoring.
+                                </p>
+                                <p>
+                                    The team that scores 15 points first wins
+                                    the set, and the team that wins two sets
+                                    first wins the game.
+                                </p>
+                                <p>
+                                    JOKGU is played in the presence of an
+                                    official referee using official facilities
+                                    and equipment.
+                                </p>
+                            </div>
+                        </div>
+                        <h3 class="rule1">
+                            CHAPTER 2: COURT, FACILITIES AND EQUIPMENT
+                        </h3>
+                        <div class="definition ttb">
+                            <strong>Article 2 (Court)</strong>
+                            <div>
+                                <p>
+                                    The court is comprised of a rectangular
+                                    playing court and a free zone. There should
+                                    be no obstacles in the free zone, and there
+                                    should be at least 5m of space from the
+                                    sideline and at least 8m of space from the
+                                    endline. However, in the case of a game
+                                    facility dedicated to JOKGU, there should be
+                                    at least 10m of space from the sideline and
+                                    at least 15m of space from the endline.
+                                </p>
+                                <p>The court dimensions are as follows:</p>
+                                <ul>
+                                    <li>
+                                        1. The sidelines should be 7.5m long on
+                                        each side of the court for a total of
+                                        15m.
+                                    </li>
+                                    <li>
+                                        2. The endline should measure 6.5m long.
+                                    </li>
+                                    <li>
+                                        3. The service area is located 3m behind
+                                        the endline and the extention line of
+                                        the sidelines.
+                                    </li>
+                                    <li>
+                                        4. The height of the net is 105cm from
+                                        the ground, but it is 90cm for the 60s
+                                        age group and women.
+                                    </li>
+                                    <li>
+                                        5. The height of the antennae is 150m
+                                        from the ground.
+                                    </li>
+                                    <li>
+                                        6. An antenna should be installed 21cm
+                                        (diameter of the ball) from the
+                                        sideline.
+                                    </li>
+                                    <li>
+                                        7. The area for substituting players is
+                                        2m from the assistant referee line.
+                                    </li>
+                                    <li>
+                                        8. As for the court dimensions for
+                                        elementary school students, the
+                                        sidelines should be 6.5m long and the
+                                        endlines 5.5m long, and the height of
+                                        the net should be 80cm.
+                                    </li>
+                                </ul>
+                                <img src="./img/court.png" alt="" />
+                                전용 (JOKGU-exclusive court)<br />
+                                자유지역 Free zone <br />선수교대지역 Player
+                                substitution area<br />
+                                경기코트 Playing court<br />
+                                서브지역 Service area
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <strong>Article 3 (Net)</strong>
+                            <div>
+                                The net should be 7.5m long and 75cm wide and
+                                allow net play (each square measuring 10cm on
+                                each side), with the horizontal band at the top
+                                measuring 5cm in width. The net installation
+                                should be checked and adjusted by the referee
+                                and the team captains.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <strong
+                                >Article 4 <br />(Supports and Antennae)</strong
+                            >
+                            <div>
+                                The supports should be sturdy and measure
+                                7.5±2.5cm in diameter. The supports should be
+                                set up at least 1m from the sidelines, while the
+                                antennae should be installed vertically on the
+                                net at 21cm (diameter of the ball) from the
+                                sidelines. Contrasting colors such as red and
+                                white should be used so that the upper part of
+                                the net is conspicuous.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <strong>Article 5 (Lines)</strong>
+                            <div>
+                                All lines should be 5cm in width and be created
+                                using a piece of cloth or tape in a color that
+                                contrasts with that of the floor or ground.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <strong>Article 6 (Ball)</strong>
+                            <div>
+                                The ball should be one that has been examined
+                                and officially approved in accordance with the
+                                regulations of the KOREA JOKGU ASSOCIATION
+                                <p style="padding-top: 15px">
+                                    The ball should have no more than 12 faces
+                                    and weigh 330~360g, with an air pressure of
+                                    0.4∼0.5kg/㎠ (±10% depending on the court
+                                    conditions). It should have a bounce of
+                                    around 30∼35% on an unpaved surface and
+                                    measure 200~205mm in diameter. However, it
+                                    should weigh 290±10g for elementary school
+                                    students, with all other specifications
+                                    being identical.
+                                </p>
+                                <p>
+                                    At an official JOKGU competition hosted and
+                                    supervised by the KOREA JOKGU ASSOCIATION
+                                    and/or affiliated organizations, a ball
+                                    designated as the official competition ball
+                                    in accordance with the official regulations
+                                    should be used.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <strong>Article 7 (Jokgu Shoes)</strong>
+                            <div>
+                                Jokgu shoes should be ones that have been
+                                examined and approved in accordane with the
+                                regulations of the Technical Committee of the
+                                KOREA JOKGU ASSOCIATION, and they should be an
+                                integrated type that has not been modified.
+                                <p style="padding-top: 15px">
+                                    As for the specifications, jokgu shoes
+                                    should be made of a strong material such as
+                                    leather and artificial leather, while the
+                                    soles should be synthetic rubber and consist
+                                    of tread in triangular, retangular or
+                                    circular shapes. The space of the grooves
+                                    should measure no more than 20mm each and
+                                    the height of the protrusions should be no
+                                    more than 5mm.
+                                </p>
+                                <p>
+                                    Jokgu shoes should be ones that have been
+                                    designated as jokgu shoes in consideration
+                                    of player safety, the classiness of the
+                                    competition, etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="definition btb">
+                            <strong>Article 8 (Proper Attire)</strong>
+                            <div>
+                                <p>
+                                    Player uniforms should match within the
+                                    team. Players should wear shorts for the
+                                    bottom, with the top displaying their
+                                    uniform number. The numbers shown on the top
+                                    and bottom pieces of the uniform should
+                                    match. Players must also wear designated
+                                    jokgu shoes.
+                                </p>
+                                <p>
+                                    Referees’ attire and accessories should be
+                                    specified in the JOKGU referee manual.
+                                </p>
+                                <p>
+                                    The team captains must put on the captain
+                                    band around their left arm before the start
+                                    of the game.
+                                </p>
+                                <p>
+                                    Wearing tights and knee guards is permitted.
+                                </p>
+                                <p>
+                                    A kerchief should be no more than 1mm thick,
+                                    and a headband should be no more than 5cm
+                                    wide and 3mm thick. However, hats are not
+                                    allowed.
+                                </p>
+                                <span></span>
+                                <p>Wearing eye protection is permitted.</p>
+                                <p>
+                                    Other types of gear, etc. are not permitted.
+                                </p>
+                            </div>
+                        </div>
+                        <h3 class="rule1">CHAPTER 3: TEAM COMPOSITION</h3>
+                        <div class="definition ttb"></div>
+                        <script>
+                            $(document).ready(function () {
+                                $("ul.tabs li").click(function () {
+                                    var tab_id = $(this).attr("data-tab");
+
+                                    $("ul.tabs li").removeClass("current");
+                                    $(".content").removeClass("current");
+
+                                    $(this).addClass("current");
+                                    $("#" + tab_id).addClass("current");
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /경기규칙 -->
+        <!-- 대회상세 -->
+        <div class="popup" id="details" style="display: block">
+            <div class="popup-wrap" id="details">
+                <div class="contents flex">
+                    <div class="contents-head">
+                        <h3 class="title">The 1st Jokgu World Championship</h3>
+                        <button type="button">
+                            <img src="./img/close.png" alt="닫기버튼" />
+                        </button>
+                    </div>
+                    <div class="contents-main rule">
+                        <div class="rule-down world">
+                            <h1>The 1st Jokgu World Championship</h1>
+                            <button type="button" class="participate">
+                                Participate
+                                <img src="./img/right_arrow_wt.png" alt="" />
+                            </button>
+                        </div>
+                        <h3 class="rule1">
+                            The five-day Jokgu Festival will be held in Korea
+                            with 300 athletes from 20 different countries and
+                            7million Korean club members along with overseas
+                            branches.
+                        </h3>
+                        <table class="top-table">
+                            <caption>
+                                The 1st Jokgu World Championship
+                            </caption>
+                            <colgroup>
+                                <col style="width: 180px" />
+                                <col style="width: auto" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>Event</th>
+                                    <td>The 1st Jokgu World Championship</td>
+                                </tr>
+                                <tr>
+                                    <th>Date</th>
+                                    <td>2023. 8. 20~28 (5days)</td>
+                                </tr>
+                                <tr>
+                                    <th>Place</th>
+                                    <td>unknown</td>
+                                </tr>
+                                <tr>
+                                    <th>Contents</th>
+                                    <td>
+                                        Welcome Dinner / International
+                                        Competition / Culture experience etc.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Participants</th>
+                                    <td>all athletes from 20 countries</td>
+                                </tr>
+                                <tr>
+                                    <th>Host</th>
+                                    <td>Korea Jokgu Association</td>
+                                </tr>
+                                <tr>
+                                    <th>Support</th>
+                                    <td>unknown</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /대회상세 -->
+        <div id="fullpage">
+            <div class="section full1" pageNum="1">
+                <div class="cnt01">
+                    <p>JOKGU WITH WORLD</p>
+                    <span
+                        >SCROLL DOWN
+                        <h3><img src="./img/down.png" alt="" /></h3
+                    ></span>
+                </div>
+            </div>
+            <div class="section full2" pageNum="2">
+                <div class="cnt02">
+                    <p class="cnt02-title">ABOUT JOKGU</p>
+                    <div class="jokgu-info en">
+                        <h3>About Jokgu</h3>
+                        <p>
+                            Jokgu is a traditional sport that has grown into
+                            Korea's representative sport for 1,300 years. Jokgu
+                            is a sport that uses only head and foot, which is
+                            the narrowest part of the body and exchanges defense
+                            and attack between the net.
+                        </p>
+                        <p>
+                            Now Jokgu is putting every effort to be developed
+                            into a sport for not only by Koreans but also by
+                            every people all over the world.
+                        </p>
+                        <div>
+                            <a href="#"
+                                >Youtube
+                                <img src="./img/right_arrow.png" alt=""
+                            /></a>
+                            <a href="#"
+                                >Histoty
+                                <img src="./img/right_arrow.png" alt=""
+                            /></a>
+                            <a href="#"
+                                >Equipment
+                                <img src="./img/right_arrow_wt.png" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section full3" pageNum="3">
+                <div class="cnt03">
+                    <p class="cnt03-title">OFFICIAL TECHNIQUE</p>
+                    <div class="jokgu-skill en">
+                        <h3>Techniques</h3>
+                        <div class="jokgu-skill-flex">
+                            <p>
+                                Jokgu is a tactical comprehensive sport that
+                                receives strong offensive skills such as
+                                Standing Kick, Overhead Kick, overhead Jumping
+                                Kick by using only the head and inside foot and
+                                then comprehensively connects to setting skills
+                                such as fastball attack, movements and direct
+                                attack.
+                            </p>
+                            <div class="right">
+                                <a href="#"
+                                    >Youtube
+                                    <img src="./img/right_arrow.png" alt=""
+                                /></a>
+                                <a href="#"
+                                    >Official Jokgu Rules
+                                    <img src="./img/right_arrow_wt.png" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="cont">
+                                <img src="./img/skill1.png" alt="" />
+                                <div class="opcity-bg"></div>
+                                <em>뛰어차기</em>
+                            </div>
+                            <div class="cont">
+                                <img src="./img/skill2.png" alt="" />
+                                <div class="opcity-bg"></div>
+                                <em>서서차기</em>
+                            </div>
+                            <div class="cont">
+                                <img src="./img/skill3.png" alt="" />
+                                <div class="opcity-bg"></div>
+                                <em>안축받기</em>
+                            </div>
+                            <div class="cont">
+                                <img src="./img/skill4.png" alt="" />
+                                <div class="opcity-bg"></div>
+                                <em>머리받기</em>
+                            </div>
+                            <div class="cont">
+                                <img src="./img/skill5.png" alt="" />
+                                <div class="opcity-bg"></div>
+                                <em>넘어차기</em>
+                            </div>
+                            <div class="cont"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section full4" pageNum="4">
+                <div class="cnt04">
+                    <p class="cnt04-title">INTERNATIONAL COMPETION</p>
+                    <div class="itc en">
+                        <h3>International Competition</h3>
+                        <p class="world en">The 1st Jokgu World Championship</p>
+                        <p>
+                            The five-day Jokgu Festival will be held in Korea
+                            with 300 athletes from 20 different countries and
+                            7million Korean club members along with overseas
+                            branches
+                        </p>
+                        <div>
+                            <a href="#"
+                                >Details
+                                <img src="./img/right_arrow.png" alt=""
+                            /></a>
+                            <a href="#"
+                                >Participate
+                                <img src="./img/right_arrow_wt.png" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section full5" pageNum="5">
+                <div class="cnt05">
+                    <p class="cnt05-title">INTERNATIONAL JOKGU FEDERATION</p>
+                    <div class="itc en">
+                        <h3>International Jokgu Federation</h3>
+                        <p>
+                            The Korea Jokgu Association is working with Jokgu
+                            Organizations all over the world to prepare for the
+                            International Jokgu Federation.
+                        </p>
+                        <div>
+                            <a href="#"
+                                >International Organization
+                                <img src="./img/right_arrow_wt.png" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="./img/jokgu1.png" alt="족구사진1" />
+                        <img src="./img/jokgu2.png" alt="족구사진2" />
+                    </div>
+                </div>
+                <span
+                    >SCROLL UP
+                    <h3><img src="./img/up.png" alt="" /></h3
+                ></span>
+                <footer class="footer">
+                    <h3 class="footer-logo">
+                        <img src="./img/footer_logo.png" alt="kja" />
+                    </h3>
+                    <div class="center">
+                        <p>
+                            (우)05540 서울송파구 올림픽로 424, 올림픽공원
+                            SK핸드볼경기장 내 129호
+                        </p>
+                        <p>jokgu@sports.or.kr</p>
+                    </div>
+                    <h3>
+                        <img src="./img/youtube.png" alt="유튜브 바로가기" />
+                    </h3>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            $("#fullpage").fullpage({
+                afterLoad: function (origin, destination, direction, trigger) {
+                    $(".quick ul li").removeClass("on");
+                    $(".quick ul li").removeClass("wt");
+                    if (destination == 1) {
+                        $(".quick ul li").eq(1).addClass("wt");
+                        $(".quick ul li").eq(2).addClass("wt");
+                        $(".quick ul li").eq(3).addClass("wt");
+                        $(".quick ul li").eq(4).addClass("wt");
+                    }
+                    if (destination == 2) {
+                        $(".quick ul li").eq(1).addClass("on");
+                    }
+                    if (destination == 3) {
+                        $(".quick ul li").eq(2).addClass("on");
+                    }
+                    if (destination == 4) {
+                        $(".quick ul li").eq(3).addClass("on wt");
+                    }
+                    if (destination == 5) {
+                        $(".quick ul li").eq(4).addClass("on");
+                    }
+
+                    $(".bottom ul li").removeClass("en");
+
+                    if (destination == 1) {
+                        $(".bottom ul li").eq(0).addClass("en");
+                    }
+                    if (destination == 2) {
+                        $(".bottom ul li").eq(1).addClass("en black");
+                    }
+                    if (destination == 3) {
+                        $(".bottom ul li").eq(2).addClass("en black");
+                    }
+                    if (destination == 4) {
+                        $(".bottom ul li").eq(3).addClass("en");
+                    }
+                    if (destination == 5) {
+                        $(".bottom ul li").eq(4).addClass("en black");
+                    }
+                },
+                anchors: [
+                    "firstPage",
+                    "secondPage",
+                    "3rdPage",
+                    "4thpage",
+                    "lastPage",
+                ],
+                responsiveWidth: 769,
             });
-          </script>
-        </div>
-      </div>
-    </div>
-    <!-- /족구장비 -->
-    <!-- 동영상 -->
-    <div class="popup" id="videos" style="display: block">
-      <div class="popup-wrap" id="videos">
-        <div class="contents flex jsw">
-          <div class="videos"></div>
-          <div class="close-btn">
-            <button type="button">
-              <img src="./img/close.png" alt="닫기버튼" />
-            </button>
-          </div>
-
-          <script>
-            $(document).ready(function () {
-              $("ul.tabs li").click(function () {
-                var tab_id = $(this).attr("data-tab");
-
-                $("ul.tabs li").removeClass("current");
-                $(".content").removeClass("current");
-
-                $(this).addClass("current");
-                $("#" + tab_id).addClass("current");
-              });
+            $(".popup").on("click", function () {
+                $(this).attr("id");
             });
-          </script>
-        </div>
-      </div>
-    </div>
-    <!-- /동영상 -->
-    <!-- 경기규칙 -->
-    <div class="popup" id="rule" style="display: block">
-      <div class="popup-wrap" id="rule">
-        <div class="contents flex">
-          <div class="contents-head">
-            <h3 class="title">OFFICIAL JOKGU RULES</h3>
-            <button type="button">
-              <img src="./img/close.png" alt="닫기버튼" />
-            </button>
-          </div>
-          <div class="contents-main rule">
-            <div class="rule-down en">
-              <h1>OFFICIAL JOKGU RULES</h1>
-              <button type="button">
-                Download Rules <img src="./img/downlode.png" alt="" />
-              </button>
-            </div>
-            <span class="enact">Established on January 12, 2017</span>
-            <h3 class="rule1">CHAPTER 1: THE GAME</h3>
-            <div class="definition btb ttb">
-              <strong>Article 1 (Definitions)</strong>
-              <div>
-                <p>
-                  A game of JOKGU is played between two teams comprised of four
-                  players each. The purpose is to use only the lower legs (below
-                  the knees) and the head (above the chin) to get the ball over
-                  the net and ground it on the other team’s court to score a
-                  point or to prevent the other team from scoring.
-                </p>
-                <p>
-                  The team that scores 15 points first wins the set, and the
-                  team that wins two sets first wins the game.
-                </p>
-                <p>
-                  JOKGU is played in the presence of an official referee using
-                  official facilities and equipment.
-                </p>
-              </div>
-            </div>
-            <h3 class="rule1">CHAPTER 2: COURT, FACILITIES AND EQUIPMENT</h3>
-            <div class="definition ttb">
-              <strong>Article 2 (Court)</strong>
-              <div>
-                <p>
-                  The court is comprised of a rectangular playing court and a
-                  free zone. There should be no obstacles in the free zone, and
-                  there should be at least 5m of space from the sideline and at
-                  least 8m of space from the endline. However, in the case of a
-                  game facility dedicated to JOKGU, there should be at least 10m
-                  of space from the sideline and at least 15m of space from the
-                  endline.
-                </p>
-                <p>The court dimensions are as follows:</p>
-                <ul>
-                  <li>
-                    1. The sidelines should be 7.5m long on each side of the
-                    court for a total of 15m.
-                  </li>
-                  <li>2. The endline should measure 6.5m long.</li>
-                  <li>
-                    3. The service area is located 3m behind the endline and the
-                    extention line of the sidelines.
-                  </li>
-                  <li>
-                    4. The height of the net is 105cm from the ground, but it is
-                    90cm for the 60s age group and women.
-                  </li>
-                  <li>
-                    5. The height of the antennae is 150m from the ground.
-                  </li>
-                  <li>
-                    6. An antenna should be installed 21cm (diameter of the
-                    ball) from the sideline.
-                  </li>
-                  <li>
-                    7. The area for substituting players is 2m from the
-                    assistant referee line.
-                  </li>
-                  <li>
-                    8. As for the court dimensions for elementary school
-                    students, the sidelines should be 6.5m long and the endlines
-                    5.5m long, and the height of the net should be 80cm.
-                  </li>
-                </ul>
-                <img src="./img/court.png" alt="" />
-                전용 (JOKGU-exclusive court)<br />
-                자유지역 Free zone <br />선수교대지역 Player substitution
-                area<br />
-                경기코트 Playing court<br />
-                서브지역 Service area
-              </div>
-            </div>
-            <div class="definition">
-              <strong>Article 3 (Net)</strong>
-              <div>
-                The net should be 7.5m long and 75cm wide and allow net play
-                (each square measuring 10cm on each side), with the horizontal
-                band at the top measuring 5cm in width. The net installation
-                should be checked and adjusted by the referee and the team
-                captains.
-              </div>
-            </div>
-            <div class="definition">
-              <strong>Article 4 <br />(Supports and Antennae)</strong>
-              <div>
-                The supports should be sturdy and measure 7.5±2.5cm in diameter.
-                The supports should be set up at least 1m from the sidelines,
-                while the antennae should be installed vertically on the net at
-                21cm (diameter of the ball) from the sidelines. Contrasting
-                colors such as red and white should be used so that the upper
-                part of the net is conspicuous.
-              </div>
-            </div>
-            <div class="definition">
-              <strong>Article 5 (Lines)</strong>
-              <div>
-                All lines should be 5cm in width and be created using a piece of
-                cloth or tape in a color that contrasts with that of the floor
-                or ground.
-              </div>
-            </div>
-            <div class="definition">
-              <strong>Article 6 (Ball)</strong>
-              <div>
-                The ball should be one that has been examined and officially
-                approved in accordance with the regulations of the KOREA JOKGU
-                ASSOCIATION
-                <p style="padding-top: 15px">
-                  The ball should have no more than 12 faces and weigh 330~360g,
-                  with an air pressure of 0.4∼0.5kg/㎠ (±10% depending on the
-                  court conditions). It should have a bounce of around 30∼35% on
-                  an unpaved surface and measure 200~205mm in diameter. However,
-                  it should weigh 290±10g for elementary school students, with
-                  all other specifications being identical.
-                </p>
-                <p>
-                  At an official JOKGU competition hosted and supervised by the
-                  KOREA JOKGU ASSOCIATION and/or affiliated organizations, a
-                  ball designated as the official competition ball in accordance
-                  with the official regulations should be used.
-                </p>
-              </div>
-            </div>
-            <div class="definition">
-              <strong>Article 7 (Jokgu Shoes)</strong>
-              <div>
-                Jokgu shoes should be ones that have been examined and approved
-                in accordane with the regulations of the Technical Committee of
-                the KOREA JOKGU ASSOCIATION, and they should be an integrated
-                type that has not been modified.
-                <p style="padding-top: 15px">
-                  As for the specifications, jokgu shoes should be made of a
-                  strong material such as leather and artificial leather, while
-                  the soles should be synthetic rubber and consist of tread in
-                  triangular, retangular or circular shapes. The space of the
-                  grooves should measure no more than 20mm each and the height
-                  of the protrusions should be no more than 5mm.
-                </p>
-                <p>
-                  Jokgu shoes should be ones that have been designated as jokgu
-                  shoes in consideration of player safety, the classiness of the
-                  competition, etc.
-                </p>
-              </div>
-            </div>
-            <div class="definition btb">
-              <strong>Article 8 (Proper Attire)</strong>
-              <div>
-                <p>
-                  Player uniforms should match within the team. Players should
-                  wear shorts for the bottom, with the top displaying their
-                  uniform number. The numbers shown on the top and bottom pieces
-                  of the uniform should match. Players must also wear designated
-                  jokgu shoes.
-                </p>
-                <p>
-                  Referees’ attire and accessories should be specified in the
-                  JOKGU referee manual.
-                </p>
-                <p>
-                  The team captains must put on the captain band around their
-                  left arm before the start of the game.
-                </p>
-                <p>Wearing tights and knee guards is permitted.</p>
-                <p>
-                  A kerchief should be no more than 1mm thick, and a headband
-                  should be no more than 5cm wide and 3mm thick. However, hats
-                  are not allowed.
-                </p>
-                <span></span>
-                <p>Wearing eye protection is permitted.</p>
-                <p>Other types of gear, etc. are not permitted.</p>
-              </div>
-            </div>
-            <h3 class="rule1">CHAPTER 3: TEAM COMPOSITION</h3>
-            <div class="definition ttb"></div>
-            <script>
-              $(document).ready(function () {
-                $("ul.tabs li").click(function () {
-                  var tab_id = $(this).attr("data-tab");
+            $(".btn-l").on("click", function () {
+                $(`#${$(this).attr("data-btn")}`).show();
+            });
+            $(".responsive").slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                    {
+                        breakpoint: 1250,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
 
-                  $("ul.tabs li").removeClass("current");
-                  $(".content").removeClass("current");
-
-                  $(this).addClass("current");
-                  $("#" + tab_id).addClass("current");
-                });
-              });
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /경기규칙 -->
-    <!-- 대회상세 -->
-    <div class="popup" id="details" style="display: block">
-      <div class="popup-wrap" id="details">
-        <div class="contents flex">
-          <div class="contents-head">
-            <h3 class="title">The 1st Jokgu World Championship</h3>
-            <button type="button">
-              <img src="./img/close.png" alt="닫기버튼" />
-            </button>
-          </div>
-          <div class="contents-main rule">
-            <div class="rule-down world">
-              <h1>The 1st Jokgu World Championship</h1>
-              <button type="button" class="participate">
-                Participate
-                <img src="./img/right_arrow_wt.png" alt="" />
-              </button>
-            </div>
-            <h3 class="rule1">
-              The five-day Jokgu Festival will be held in Korea with 300
-              athletes from 20 different countries and 7million Korean club
-              members along with overseas branches.
-            </h3>
-            <table class="top-table">
-              <caption>
-                The 1st Jokgu World Championship
-              </caption>
-              <colgroup>
-                <col style="width: 180px" />
-                <col style="width: auto" />
-              </colgroup>
-              <tbody>
-                <tr>
-                  <th>Event</th>
-                  <td>The 1st Jokgu World Championship</td>
-                </tr>
-                <tr>
-                  <th>Date</th>
-                  <td>2023. 8. 20~28 (5days)</td>
-                </tr>
-                <tr>
-                  <th>Place</th>
-                  <td>unknown</td>
-                </tr>
-                <tr>
-                  <th>Contents</th>
-                  <td>
-                    Welcome Dinner / International Competition / Culture
-                    experience etc.
-                  </td>
-                </tr>
-                <tr>
-                  <th>Participants</th>
-                  <td>all athletes from 20 countries</td>
-                </tr>
-                <tr>
-                  <th>Host</th>
-                  <td>Korea Jokgu Association</td>
-                </tr>
-                <tr>
-                  <th>Support</th>
-                  <td>unknown</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /대회상세 -->
-    <div id="fullpage">
-      <div class="section full1" pageNum="1">
-        <div class="cnt01">
-          <p>JOKGU WITH WORLD</p>
-          <span
-            >SCROLL DOWN
-            <h3><img src="./img/down.png" alt="" /></h3
-          ></span>
-        </div>
-      </div>
-      <div class="section full2" pageNum="2">
-        <div class="cnt02">
-          <p class="cnt02-title">ABOUT JOKGU</p>
-          <div class="jokgu-info en">
-            <h3>About Jokgu</h3>
-            <p>
-              Jokgu is a traditional sport that has grown into Korea's
-              representative sport for 1,300 years. Jokgu is a sport that uses
-              only head and foot, which is the narrowest part of the body and
-              exchanges defense and attack between the net.
-            </p>
-            <p>
-              Now Jokgu is putting every effort to be developed into a sport for
-              not only by Koreans but also by every people all over the world.
-            </p>
-            <div>
-              <a href="#">Youtube <img src="./img/right_arrow.png" alt="" /></a>
-              <a href="#">Histoty <img src="./img/right_arrow.png" alt="" /></a>
-              <a href="#"
-                >Equipment <img src="./img/right_arrow_wt.png" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section full3" pageNum="3">
-        <div class="cnt03">
-          <p class="cnt03-title">OFFICIAL TECHNIQUE</p>
-          <div class="jokgu-skill en">
-            <h3>Techniques</h3>
-            <div class="jokgu-skill-flex">
-              <p>
-                Jokgu is a tactical comprehensive sport that receives strong
-                offensive skills such as Standing Kick, Overhead Kick, overhead
-                Jumping Kick by using only the head and inside foot and then
-                comprehensively connects to setting skills such as fastball
-                attack, movements and direct attack.
-              </p>
-              <div class="right">
-                <a href="#"
-                  >Youtube <img src="./img/right_arrow.png" alt=""
-                /></a>
-                <a href="#"
-                  >Official Jokgu Rules
-                  <img src="./img/right_arrow_wt.png" alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="responsive">
-              <div class="cont">
-                <img src="./img/skill1.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>뛰어차기</em>
-              </div>
-              <div class="cont">
-                <img src="./img/skill2.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>서서차기</em>
-              </div>
-              <div class="cont">
-                <img src="./img/skill3.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>안축받기</em>
-              </div>
-              <div class="cont">
-                <img src="./img/skill4.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>머리받기</em>
-              </div>
-              <div class="cont">
-                <img src="./img/skill5.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>넘어차기</em>
-              </div>
-              <div class="cont"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section full4" pageNum="4">
-        <div class="cnt04">
-          <p class="cnt04-title">INTERNATIONAL COMPETION</p>
-          <div class="itc en">
-            <h3>International Competition</h3>
-            <p class="world en">The 1st Jokgu World Championship</p>
-            <p>
-              The five-day Jokgu Festival will be held in Korea with 300
-              athletes from 20 different countries and 7million Korean club
-              members along with overseas branches
-            </p>
-            <div>
-              <a href="#">Details <img src="./img/right_arrow.png" alt="" /></a>
-              <a href="#"
-                >Participate <img src="./img/right_arrow_wt.png" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section full5" pageNum="5">
-        <div class="cnt05">
-          <p class="cnt05-title">INTERNATIONAL JOKGU FEDERATION</p>
-          <div class="itc en">
-            <h3>International Jokgu Federation</h3>
-            <p>
-              The Korea Jokgu Association is working with Jokgu Organizations
-              all over the world to prepare for the International Jokgu
-              Federation.
-            </p>
-            <div>
-              <a href="#"
-                >International Organization
-                <img src="./img/right_arrow_wt.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="right">
-            <img src="./img/jokgu1.png" alt="족구사진1" />
-            <img src="./img/jokgu2.png" alt="족구사진2" />
-          </div>
-        </div>
-        <span
-          >SCROLL UP
-          <h3><img src="./img/up.png" alt="" /></h3
-        ></span>
-        <footer class="footer">
-          <h3 class="footer-logo">
-            <img src="./img/footer_logo.png" alt="kja" />
-          </h3>
-          <div class="center">
-            <p>
-              (우)05540 서울송파구 올림픽로 424, 올림픽공원 SK핸드볼경기장 내
-              129호
-            </p>
-            <p>jokgu@sports.or.kr</p>
-          </div>
-          <h3><img src="./img/youtube.png" alt="유튜브 바로가기" /></h3>
-        </footer>
-      </div>
-    </div>
-
-    <script>
-      $("#fullpage").fullpage({
-        afterLoad: function (origin, destination, direction, trigger) {
-          $(".quick ul li").removeClass("on");
-          $(".quick ul li").removeClass("wt");
-          if (destination == 1) {
-            $(".quick ul li").eq(1).addClass("wt");
-            $(".quick ul li").eq(2).addClass("wt");
-            $(".quick ul li").eq(3).addClass("wt");
-            $(".quick ul li").eq(4).addClass("wt");
-          }
-          if (destination == 2) {
-            $(".quick ul li").eq(1).addClass("on");
-          }
-          if (destination == 3) {
-            $(".quick ul li").eq(2).addClass("on");
-          }
-          if (destination == 4) {
-            $(".quick ul li").eq(3).addClass("on wt");
-          }
-          if (destination == 5) {
-            $(".quick ul li").eq(4).addClass("on");
-          }
-
-          $(".bottom ul li").removeClass("en");
-
-          if (destination == 1) {
-            $(".bottom ul li").eq(0).addClass("en");
-          }
-          if (destination == 2) {
-            $(".bottom ul li").eq(1).addClass("en black");
-          }
-          if (destination == 3) {
-            $(".bottom ul li").eq(2).addClass("en black");
-          }
-          if (destination == 4) {
-            $(".bottom ul li").eq(3).addClass("en");
-          }
-          if (destination == 5) {
-            $(".bottom ul li").eq(4).addClass("en black");
-          }
-        },
-        anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
-        responsiveWidth: 769,
-      });
-
-      $(".responsive").slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-          {
-            breakpoint: 1250,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ],
-      });
-    </script>
-  </body>
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ],
+            });
+        </script>
+    </body>
 </html>
