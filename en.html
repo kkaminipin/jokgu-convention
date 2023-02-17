@@ -1,823 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>KJA</title>
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/slick.css" />
-        <link rel="stylesheet" href="./css/slick-theme.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
-        />
-        <script src="jquery-3.6.3.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KJA</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <script src="jquery-3.6.3.min.js"></script>
 
-        <script src="slick.min.js"></script>
-        <script src="fullpage.min.js"></script>
-    </head>
-    <body>
-        <div class="quick">
-            <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
-            <ul>
-                <li><a href="#firstPage"></a></li>
-                <li><a href="#secondPage">About</a></li>
-                <li><a href="#3rdPage">Technique</a></li>
-                <li><a href="#4thpage">Competition</a></li>
-                <li><a href="#lastPage">Federation</a></li>
-            </ul>
-            <div class="btn-wrap">
-                <button type="button" class="on">KR</button>
-                <button type="button">EN</button>
-                <div class="mob-btn">
-                    <button type="button">
-                        <img src="./img/hamberger.png" alt="" />
-                    </button>
-                </div>
-            </div>
+    <script src="slick.min.js"></script>
+    <script src="fullpage.min.js"></script>
+  </head>
+  <body>
+    <div class="quick">
+      <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
+      <ul>
+        <li><a href="#firstPage"></a></li>
+        <li><a href="#secondPage">About</a></li>
+        <li><a href="#3rdPage">Technique</a></li>
+        <li><a href="#4thpage">Competition</a></li>
+        <li><a href="#lastPage">Federation</a></li>
+      </ul>
+      <div class="btn-wrap">
+        <button type="button" class="on">KR</button>
+        <button type="button">EN</button>
+        <div class="mob-btn">
+          <button type="button">
+            <img src="./img/hamberger.png" alt="" />
+          </button>
         </div>
-        <div class="bottom">
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <!-- 히스토리 -->
-        <div class="popup" id="history" style="display: block">
-            <div class="popup-wrap" id="history">
-                <div class="contents flex">
-                    <div class="contents-head">
-                        <h3 class="title">
-                            History of Korean Jokgu Association
-                        </h3>
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
+      </div>
+    </div>
+    <div class="bottom">
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <!-- 히스토리 -->
+    <div class="popup" id="history">
+      <div class="popup-wrap" id="history">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">History of Korean Jokgu Association</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main">
+            <div class="year"><strong>2021</strong></div>
+
+            <div class="line">
+              <ul>
+                <li>
+                  <div>
+                    <div class="title">2021.11.</div>
+                    <div class="info en">
+                      Signed a MOU with KBS Sports Art Academy for
+                      Industry-Academic Cooperation<br />
+                      Signed a MOU with Union International de Futnet(UNIF) for
+                      Business agreement<br />
+                      Korean singer Park Kun was appointed for KJA honorary
+                      ambassador
+                      <br />Citiy and provincial Jokgu Strongest Team
+                      competition(Jeonbuk, Buan) <br />Korea Stone Ent.
+                      (Electric Car)) made a contract as a official sponsor
                     </div>
-                    <div class="contents-main">
-                        <div class="year"><strong>2021</strong></div>
-
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <div>
-                                        <div class="title">2021.11.</div>
-                                        <div class="info en">
-                                            Signed a MOU with KBS Sports Art
-                                            Academy for Industry-Academic
-                                            Cooperation<br />
-                                            Signed a MOU with Union
-                                            International de Futnet(UNIF) for
-                                            Business agreement<br />
-                                            Korean singer Park Kun was appointed
-                                            for KJA honorary ambassador
-                                            <br />Citiy and provincial Jokgu
-                                            Strongest Team competition(Jeonbuk,
-                                            Buan) <br />Korea Stone Ent.
-                                            (Electric Car)) made a contract as a
-                                            official sponsor
-                                        </div>
-                                    </div>
-                                    <span class="blue"></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021.10.</div>
-                                        <div class="info en">
-                                            Composition of the Broadcasting
-                                            Commission
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021.7.</div>
-                                        <div class="info en">
-                                            Hana Tech Ent. (Jokgu Official
-                                            Facility) made a contract as a
-                                            official sponsor
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021.6.</div>
-                                        <div class="info en">
-                                            AMS Corp.(Official Jokgu Floor
-                                            Material) made a contract as a
-                                            official Sponsor
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021.5.</div>
-                                        <div class="info en">
-                                            Composition of the Committee for the
-                                            Disabled of the Korean Jokgu
-                                            Association
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                            </ul>
-                        </div>
+                  </div>
+                  <span class="blue"></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021.10.</div>
+                    <div class="info en">
+                      Composition of the Broadcasting Commission
                     </div>
-                    <script>
-                        $(document).ready(function () {
-                            $("ul.tabs li").click(function () {
-                                var tab_id = $(this).attr("data-tab");
-
-                                $("ul.tabs li").removeClass("current");
-                                $(".content").removeClass("current");
-
-                                $(this).addClass("current");
-                                $("#" + tab_id).addClass("current");
-                            });
-                        });
-                    </script>
-                </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021.7.</div>
+                    <div class="info en">
+                      Hana Tech Ent. (Jokgu Official Facility) made a contract
+                      as a official sponsor
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021.6.</div>
+                    <div class="info en">
+                      AMS Corp.(Official Jokgu Floor Material) made a contract
+                      as a official Sponsor
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021.5.</div>
+                    <div class="info en">
+                      Composition of the Committee for the Disabled of the
+                      Korean Jokgu Association
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+              </ul>
             </div>
-        </div>
-        <!-- /히스토리 -->
-        <!-- 족구장비 -->
-        <div class="popup" id="Equipments" style="display: block">
-            <div class="popup-wrap" id="Equipments">
-                <div class="contents flex">
-                    <div class="contents-head">
-                        <h3 class="title">Information about Equipments</h3>
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-                    <div class="contents-main eq">
-                        <ul class="equipments">
-                            <li class="en">
-                                <img src="./img/ball.png" alt="공인구" />
-                                <h3>Official Ball</h3>
-                                <p>
-                                    Jokgu balls are built within 12 pieces based
-                                    on scientific data to decrease speed and
-                                    physical shock.
-                                </p>
-                            </li>
-                            <li class="en">
-                                <img src="./img/jokgu_shoes.png" alt="족구화" />
-                                <h3>Certified Jokgu Shoes</h3>
-                                <p>
-                                    Proof of exclusive Jokgu shoes that have
-                                    verified the floor surface to protect
-                                    players based on an outsole for improving
-                                    the function of Jokgu.
-                                </p>
-                            </li>
-                            <li class="en">
-                                <img src="./img/net.png" alt="네트" />
-                                <h3>Net & Antenna</h3>
-                                <p>
-                                    Dedicated net of stable material considering
-                                    net play and antenna for determining
-                                    accurate overnet
-                                </p>
-                            </li>
-                            <li class="en">
-                                <img src="./img/protector.png" alt="보호구" />
-                                <h3>pillar and Protectors</h3>
-                                <p>
-                                    Authorised use of protective finishes for
-                                    stable performance and safety in the event
-                                    of a competitor's collision
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
 
-                    <script>
-                        $(document).ready(function () {
-                            $("ul.tabs li").click(function () {
-                                var tab_id = $(this).attr("data-tab");
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
 
-                                $("ul.tabs li").removeClass("current");
-                                $(".content").removeClass("current");
-
-                                $(this).addClass("current");
-                                $("#" + tab_id).addClass("current");
-                            });
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <!-- /족구장비 -->
-        <!-- 동영상 -->
-        <div class="popup" id="videos" style="display: block">
-            <div class="popup-wrap" id="videos">
-                <div class="contents flex jsw">
-                    <div class="videos"></div>
-                    <div class="close-btn">
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-
-                    <script>
-                        $(document).ready(function () {
-                            $("ul.tabs li").click(function () {
-                                var tab_id = $(this).attr("data-tab");
-
-                                $("ul.tabs li").removeClass("current");
-                                $(".content").removeClass("current");
-
-                                $(this).addClass("current");
-                                $("#" + tab_id).addClass("current");
-                            });
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <!-- /동영상 -->
-        <!-- 경기규칙 -->
-        <div class="popup" id="rule" style="display: block">
-            <div class="popup-wrap" id="rule">
-                <div class="contents flex">
-                    <div class="contents-head">
-                        <h3 class="title">OFFICIAL JOKGU RULES</h3>
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-                    <div class="contents-main rule">
-                        <div class="rule-down en">
-                            <h1>OFFICIAL JOKGU RULES</h1>
-                            <button type="button">
-                                Download Rules
-                                <img src="./img/downlode.png" alt="" />
-                            </button>
-                        </div>
-                        <span class="enact"
-                            >Established on January 12, 2017</span
-                        >
-                        <h3 class="rule1">CHAPTER 1: THE GAME</h3>
-                        <div class="definition btb ttb">
-                            <strong>Article 1 (Definitions)</strong>
-                            <div>
-                                <p>
-                                    A game of JOKGU is played between two teams
-                                    comprised of four players each. The purpose
-                                    is to use only the lower legs (below the
-                                    knees) and the head (above the chin) to get
-                                    the ball over the net and ground it on the
-                                    other team’s court to score a point or to
-                                    prevent the other team from scoring.
-                                </p>
-                                <p>
-                                    The team that scores 15 points first wins
-                                    the set, and the team that wins two sets
-                                    first wins the game.
-                                </p>
-                                <p>
-                                    JOKGU is played in the presence of an
-                                    official referee using official facilities
-                                    and equipment.
-                                </p>
-                            </div>
-                        </div>
-                        <h3 class="rule1">
-                            CHAPTER 2: COURT, FACILITIES AND EQUIPMENT
-                        </h3>
-                        <div class="definition ttb">
-                            <strong>Article 2 (Court)</strong>
-                            <div>
-                                <p>
-                                    The court is comprised of a rectangular
-                                    playing court and a free zone. There should
-                                    be no obstacles in the free zone, and there
-                                    should be at least 5m of space from the
-                                    sideline and at least 8m of space from the
-                                    endline. However, in the case of a game
-                                    facility dedicated to JOKGU, there should be
-                                    at least 10m of space from the sideline and
-                                    at least 15m of space from the endline.
-                                </p>
-                                <p>The court dimensions are as follows:</p>
-                                <ul>
-                                    <li>
-                                        1. The sidelines should be 7.5m long on
-                                        each side of the court for a total of
-                                        15m.
-                                    </li>
-                                    <li>
-                                        2. The endline should measure 6.5m long.
-                                    </li>
-                                    <li>
-                                        3. The service area is located 3m behind
-                                        the endline and the extention line of
-                                        the sidelines.
-                                    </li>
-                                    <li>
-                                        4. The height of the net is 105cm from
-                                        the ground, but it is 90cm for the 60s
-                                        age group and women.
-                                    </li>
-                                    <li>
-                                        5. The height of the antennae is 150m
-                                        from the ground.
-                                    </li>
-                                    <li>
-                                        6. An antenna should be installed 21cm
-                                        (diameter of the ball) from the
-                                        sideline.
-                                    </li>
-                                    <li>
-                                        7. The area for substituting players is
-                                        2m from the assistant referee line.
-                                    </li>
-                                    <li>
-                                        8. As for the court dimensions for
-                                        elementary school students, the
-                                        sidelines should be 6.5m long and the
-                                        endlines 5.5m long, and the height of
-                                        the net should be 80cm.
-                                    </li>
-                                </ul>
-                                <img src="./img/court.png" alt="" />
-                                전용 (JOKGU-exclusive court)<br />
-                                자유지역 Free zone <br />선수교대지역 Player
-                                substitution area<br />
-                                경기코트 Playing court<br />
-                                서브지역 Service area
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>Article 3 (Net)</strong>
-                            <div>
-                                The net should be 7.5m long and 75cm wide and
-                                allow net play (each square measuring 10cm on
-                                each side), with the horizontal band at the top
-                                measuring 5cm in width. The net installation
-                                should be checked and adjusted by the referee
-                                and the team captains.
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong
-                                >Article 4 <br />(Supports and Antennae)</strong
-                            >
-                            <div>
-                                The supports should be sturdy and measure
-                                7.5±2.5cm in diameter. The supports should be
-                                set up at least 1m from the sidelines, while the
-                                antennae should be installed vertically on the
-                                net at 21cm (diameter of the ball) from the
-                                sidelines. Contrasting colors such as red and
-                                white should be used so that the upper part of
-                                the net is conspicuous.
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>Article 5 (Lines)</strong>
-                            <div>
-                                All lines should be 5cm in width and be created
-                                using a piece of cloth or tape in a color that
-                                contrasts with that of the floor or ground.
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>Article 6 (Ball)</strong>
-                            <div>
-                                The ball should be one that has been examined
-                                and officially approved in accordance with the
-                                regulations of the KOREA JOKGU ASSOCIATION
-                                <p style="padding-top: 15px">
-                                    The ball should have no more than 12 faces
-                                    and weigh 330~360g, with an air pressure of
-                                    0.4∼0.5kg/㎠ (±10% depending on the court
-                                    conditions). It should have a bounce of
-                                    around 30∼35% on an unpaved surface and
-                                    measure 200~205mm in diameter. However, it
-                                    should weigh 290±10g for elementary school
-                                    students, with all other specifications
-                                    being identical.
-                                </p>
-                                <p>
-                                    At an official JOKGU competition hosted and
-                                    supervised by the KOREA JOKGU ASSOCIATION
-                                    and/or affiliated organizations, a ball
-                                    designated as the official competition ball
-                                    in accordance with the official regulations
-                                    should be used.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>Article 7 (Jokgu Shoes)</strong>
-                            <div>
-                                Jokgu shoes should be ones that have been
-                                examined and approved in accordane with the
-                                regulations of the Technical Committee of the
-                                KOREA JOKGU ASSOCIATION, and they should be an
-                                integrated type that has not been modified.
-                                <p style="padding-top: 15px">
-                                    As for the specifications, jokgu shoes
-                                    should be made of a strong material such as
-                                    leather and artificial leather, while the
-                                    soles should be synthetic rubber and consist
-                                    of tread in triangular, retangular or
-                                    circular shapes. The space of the grooves
-                                    should measure no more than 20mm each and
-                                    the height of the protrusions should be no
-                                    more than 5mm.
-                                </p>
-                                <p>
-                                    Jokgu shoes should be ones that have been
-                                    designated as jokgu shoes in consideration
-                                    of player safety, the classiness of the
-                                    competition, etc.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="definition btb">
-                            <strong>Article 8 (Proper Attire)</strong>
-                            <div>
-                                <p>
-                                    Player uniforms should match within the
-                                    team. Players should wear shorts for the
-                                    bottom, with the top displaying their
-                                    uniform number. The numbers shown on the top
-                                    and bottom pieces of the uniform should
-                                    match. Players must also wear designated
-                                    jokgu shoes.
-                                </p>
-                                <p>
-                                    Referees’ attire and accessories should be
-                                    specified in the JOKGU referee manual.
-                                </p>
-                                <p>
-                                    The team captains must put on the captain
-                                    band around their left arm before the start
-                                    of the game.
-                                </p>
-                                <p>
-                                    Wearing tights and knee guards is permitted.
-                                </p>
-                                <p>
-                                    A kerchief should be no more than 1mm thick,
-                                    and a headband should be no more than 5cm
-                                    wide and 3mm thick. However, hats are not
-                                    allowed.
-                                </p>
-                                <span></span>
-                                <p>Wearing eye protection is permitted.</p>
-                                <p>
-                                    Other types of gear, etc. are not permitted.
-                                </p>
-                            </div>
-                        </div>
-                        <h3 class="rule1">CHAPTER 3: TEAM COMPOSITION</h3>
-                        <div class="definition ttb"></div>
-                        <script>
-                            $(document).ready(function () {
-                                $("ul.tabs li").click(function () {
-                                    var tab_id = $(this).attr("data-tab");
-
-                                    $("ul.tabs li").removeClass("current");
-                                    $(".content").removeClass("current");
-
-                                    $(this).addClass("current");
-                                    $("#" + tab_id).addClass("current");
-                                });
-                            });
-                        </script>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /경기규칙 -->
-        <!-- 대회상세 -->
-        <div class="popup" id="details" style="display: block">
-            <div class="popup-wrap" id="details">
-                <div class="contents flex">
-                    <div class="contents-head">
-                        <h3 class="title">The 1st Jokgu World Championship</h3>
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-                    <div class="contents-main rule">
-                        <div class="rule-down world">
-                            <h1>The 1st Jokgu World Championship</h1>
-                            <button type="button" class="participate">
-                                Participate
-                                <img src="./img/right_arrow_wt.png" alt="" />
-                            </button>
-                        </div>
-                        <h3 class="rule1">
-                            The five-day Jokgu Festival will be held in Korea
-                            with 300 athletes from 20 different countries and
-                            7million Korean club members along with overseas
-                            branches.
-                        </h3>
-                        <table class="top-table">
-                            <caption>
-                                The 1st Jokgu World Championship
-                            </caption>
-                            <colgroup>
-                                <col style="width: 180px" />
-                                <col style="width: auto" />
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>Event</th>
-                                    <td>The 1st Jokgu World Championship</td>
-                                </tr>
-                                <tr>
-                                    <th>Date</th>
-                                    <td>2023. 8. 20~28 (5days)</td>
-                                </tr>
-                                <tr>
-                                    <th>Place</th>
-                                    <td>unknown</td>
-                                </tr>
-                                <tr>
-                                    <th>Contents</th>
-                                    <td>
-                                        Welcome Dinner / International
-                                        Competition / Culture experience etc.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Participants</th>
-                                    <td>all athletes from 20 countries</td>
-                                </tr>
-                                <tr>
-                                    <th>Host</th>
-                                    <td>Korea Jokgu Association</td>
-                                </tr>
-                                <tr>
-                                    <th>Support</th>
-                                    <td>unknown</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /대회상세 -->
-        <div id="fullpage">
-            <div class="section full1" pageNum="1">
-                <div class="cnt01">
-                    <p>JOKGU WITH WORLD</p>
-                    <span
-                        >SCROLL DOWN
-                        <h3><img src="./img/down.png" alt="" /></h3
-                    ></span>
-                </div>
-            </div>
-            <div class="section full2" pageNum="2">
-                <div class="cnt02">
-                    <p class="cnt02-title">ABOUT JOKGU</p>
-                    <div class="jokgu-info en">
-                        <h3>About Jokgu</h3>
-                        <p>
-                            Jokgu is a traditional sport that has grown into
-                            Korea's representative sport for 1,300 years. Jokgu
-                            is a sport that uses only head and foot, which is
-                            the narrowest part of the body and exchanges defense
-                            and attack between the net.
-                        </p>
-                        <p>
-                            Now Jokgu is putting every effort to be developed
-                            into a sport for not only by Koreans but also by
-                            every people all over the world.
-                        </p>
-                        <div>
-                            <a href="#"
-                                >Youtube
-                                <img src="./img/right_arrow.png" alt=""
-                            /></a>
-                            <a href="#"
-                                >Histoty
-                                <img src="./img/right_arrow.png" alt=""
-                            /></a>
-                            <a href="#"
-                                >Equipment
-                                <img src="./img/right_arrow_wt.png" alt=""
-                            /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section full3" pageNum="3">
-                <div class="cnt03">
-                    <p class="cnt03-title">OFFICIAL TECHNIQUE</p>
-                    <div class="jokgu-skill en">
-                        <h3>Techniques</h3>
-                        <div class="jokgu-skill-flex">
-                            <p>
-                                Jokgu is a tactical comprehensive sport that
-                                receives strong offensive skills such as
-                                Standing Kick, Overhead Kick, overhead Jumping
-                                Kick by using only the head and inside foot and
-                                then comprehensively connects to setting skills
-                                such as fastball attack, movements and direct
-                                attack.
-                            </p>
-                            <div class="right">
-                                <a href="#"
-                                    >Youtube
-                                    <img src="./img/right_arrow.png" alt=""
-                                /></a>
-                                <a href="#"
-                                    >Official Jokgu Rules
-                                    <img src="./img/right_arrow_wt.png" alt=""
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="responsive">
-                            <div class="cont">
-                                <img src="./img/skill1.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>뛰어차기</em>
-                            </div>
-                            <div class="cont">
-                                <img src="./img/skill2.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>서서차기</em>
-                            </div>
-                            <div class="cont">
-                                <img src="./img/skill3.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>안축받기</em>
-                            </div>
-                            <div class="cont">
-                                <img src="./img/skill4.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>머리받기</em>
-                            </div>
-                            <div class="cont">
-                                <img src="./img/skill5.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>넘어차기</em>
-                            </div>
-                            <div class="cont"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section full4" pageNum="4">
-                <div class="cnt04">
-                    <p class="cnt04-title">INTERNATIONAL COMPETION</p>
-                    <div class="itc en">
-                        <h3>International Competition</h3>
-                        <p class="world en">The 1st Jokgu World Championship</p>
-                        <p>
-                            The five-day Jokgu Festival will be held in Korea
-                            with 300 athletes from 20 different countries and
-                            7million Korean club members along with overseas
-                            branches
-                        </p>
-                        <div>
-                            <a href="#"
-                                >Details
-                                <img src="./img/right_arrow.png" alt=""
-                            /></a>
-                            <a href="#"
-                                >Participate
-                                <img src="./img/right_arrow_wt.png" alt=""
-                            /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section full5" pageNum="5">
-                <div class="cnt05">
-                    <p class="cnt05-title">INTERNATIONAL JOKGU FEDERATION</p>
-                    <div class="itc en">
-                        <h3>International Jokgu Federation</h3>
-                        <p>
-                            The Korea Jokgu Association is working with Jokgu
-                            Organizations all over the world to prepare for the
-                            International Jokgu Federation.
-                        </p>
-                        <div>
-                            <a href="#"
-                                >International Organization
-                                <img src="./img/right_arrow_wt.png" alt=""
-                            /></a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <img src="./img/jokgu1.png" alt="족구사진1" />
-                        <img src="./img/jokgu2.png" alt="족구사진2" />
-                    </div>
-                </div>
-                <span
-                    >SCROLL UP
-                    <h3><img src="./img/up.png" alt="" /></h3
-                ></span>
-                <footer class="footer">
-                    <h3 class="footer-logo">
-                        <img src="./img/footer_logo.png" alt="kja" />
-                    </h3>
-                    <div class="center">
-                        <p>
-                            (우)05540 서울송파구 올림픽로 424, 올림픽공원
-                            SK핸드볼경기장 내 129호
-                        </p>
-                        <p>jokgu@sports.or.kr</p>
-                    </div>
-                    <h3>
-                        <img src="./img/youtube.png" alt="유튜브 바로가기" />
-                    </h3>
-                </footer>
-            </div>
-        </div>
-
-        <script>
-            $("#fullpage").fullpage({
-                afterLoad: function (origin, destination, direction, trigger) {
-                    $(".quick ul li").removeClass("on");
-                    $(".quick ul li").removeClass("wt");
-                    if (destination == 1) {
-                        $(".quick ul li").eq(1).addClass("wt");
-                        $(".quick ul li").eq(2).addClass("wt");
-                        $(".quick ul li").eq(3).addClass("wt");
-                        $(".quick ul li").eq(4).addClass("wt");
-                    }
-                    if (destination == 2) {
-                        $(".quick ul li").eq(1).addClass("on");
-                    }
-                    if (destination == 3) {
-                        $(".quick ul li").eq(2).addClass("on");
-                    }
-                    if (destination == 4) {
-                        $(".quick ul li").eq(3).addClass("on wt");
-                    }
-                    if (destination == 5) {
-                        $(".quick ul li").eq(4).addClass("on");
-                    }
-
-                    $(".bottom ul li").removeClass("en");
-
-                    if (destination == 1) {
-                        $(".bottom ul li").eq(0).addClass("en");
-                    }
-                    if (destination == 2) {
-                        $(".bottom ul li").eq(1).addClass("en black");
-                    }
-                    if (destination == 3) {
-                        $(".bottom ul li").eq(2).addClass("en black");
-                    }
-                    if (destination == 4) {
-                        $(".bottom ul li").eq(3).addClass("en");
-                    }
-                    if (destination == 5) {
-                        $(".bottom ul li").eq(4).addClass("en black");
-                    }
-                },
-                anchors: [
-                    "firstPage",
-                    "secondPage",
-                    "3rdPage",
-                    "4thpage",
-                    "lastPage",
-                ],
-                responsiveWidth: 769,
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
             });
-            $(".popup").on("click", function () {
-                $(this).attr("id");
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- /히스토리 -->
+    <!-- 족구장비 -->
+    <div class="popup" id="Equipments">
+      <div class="popup-wrap" id="Equipments">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">Information about Equipments</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main eq">
+            <ul class="equipments">
+              <li class="en">
+                <img src="./img/ball.png" alt="공인구" />
+                <h3>Official Ball</h3>
+                <p>
+                  Jokgu balls are built within 12 pieces based on scientific
+                  data to decrease speed and physical shock.
+                </p>
+              </li>
+              <li class="en">
+                <img src="./img/jokgu_shoes.png" alt="족구화" />
+                <h3>Certified Jokgu Shoes</h3>
+                <p>
+                  Proof of exclusive Jokgu shoes that have verified the floor
+                  surface to protect players based on an outsole for improving
+                  the function of Jokgu.
+                </p>
+              </li>
+              <li class="en">
+                <img src="./img/net.png" alt="네트" />
+                <h3>Net & Antenna</h3>
+                <p>
+                  Dedicated net of stable material considering net play and
+                  antenna for determining accurate overnet
+                </p>
+              </li>
+              <li class="en">
+                <img src="./img/protector.png" alt="보호구" />
+                <h3>pillar and Protectors</h3>
+                <p>
+                  Authorised use of protective finishes for stable performance
+                  and safety in the event of a competitor's collision
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
             });
-<<<<<<< HEAD
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- /족구장비 -->
+    <!-- 동영상 -->
+    <div class="popup" id="videos">
+      <div class="popup-wrap" id="videos">
+        <div class="contents flex jsw">
+          <div class="videos"></div>
+          <div class="close-btn">
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
           </script>
         </div>
       </div>
     </div>
     <!-- /동영상 -->
     <!-- 경기규칙 -->
-    <div class="popup" id="rule" style="display: block">
+    <div class="popup" id="rule">
       <div class="popup-wrap" id="rule">
         <div class="contents flex">
           <div class="contents-head">
@@ -830,7 +250,8 @@
             <div class="rule-down en">
               <h1>OFFICIAL JOKGU RULES</h1>
               <button type="button">
-                Download Rules <img src="./img/downlode.png" alt="" />
+                Download Rules
+                <img src="./img/downlode.png" alt="" />
               </button>
             </div>
             <span class="enact">Established on January 12, 2017</span>
@@ -916,6 +337,10 @@
                 band at the top measuring 5cm in width. The net installation
                 should be checked and adjusted by the referee and the team
                 captains.
+                <img src="./img/antena.png" alt="" />
+                Antennae (21cm from the side lines)<br />
+                Length: 150cm <br />지주대 Support <br />
+                남자 Male 여자 Female <br />
               </div>
             </div>
             <div class="definition">
@@ -1011,43 +436,1233 @@
               </div>
             </div>
             <h3 class="rule1">CHAPTER 3: TEAM COMPOSITION</h3>
-            <div class="definition ttb"></div>
+            <div class="definition ttb">
+              <strong
+                >Article 9 (Team Composition and Player Registration)</strong
+              >
+              <div>
+                <p>
+                  Each team should be comprised of up to 8 members including the
+                  head coach and the players.
+                </p>
+                <p>
+                  The teams for the top division are selected based on the
+                  win-loss records. The members of every division must register
+                  with the Association based on their home addresses. In order
+                  to enter national competitions or higher or competitions
+                  hosted by a city or province outside their area of residence,
+                  approval from the secretariat of the affiliated municipal or
+                  provincial association must be obtained in advance.
+                </p>
+                <p>
+                  Details should be specified in the administrative regulations
+                  of each department. However, players and teams registered with
+                  any of the 17 municipal and provincial associations under the
+                  KOREA JOKGU ASSOCIATION will be sanctioned in case of
+                  participating in an event (competition) of another JOKGU
+                  organization that does not comply with the game rules and
+                  regulations of the Association, while referees will have their
+                  qualifications revoked.
+                </p>
+                <p>
+                  When entering a competition, teams and players may sign up for
+                  multiple divisions if the game schedules are not in conflict
+                  with each other. However, this is not permitted for players
+                  who belong to the top division.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 10 (Head Coach)</strong>
+              <div>
+                <p>
+                  The head coach should dress sharply and be responsible for
+                  ensuring compliance with the regulations, promoting a sense of
+                  belonging among the players on the team, participating in
+                  event, and training players mentally. In the event that an
+                  unfair decision is made by a referee or the executive board of
+                  a competition, the head coach has the right to file an appeal
+                  after the game, request a timeout during the game, or
+                  substitute players.
+                </p>
+                <p>
+                  The head coach must be the individual specified in the
+                  competition entry form and be present on the court before the
+                  start of the game. Under no circumstances whatsoever can a
+                  player act as a head coach.
+                </p>
+                <p>
+                  Irrespective of the division, the head coach must be an
+                  individual who has been registered on the member registration
+                  system of the Association and who has become qualified as an
+                  instructor. Also, all instructors must wear their respective
+                  qualification certificates issued by the Association following
+                  registration.
+                </p>
+                <p>
+                  The head coach cannot register as a player. However, the head
+                  coach may register as a player in a different division whose
+                  game schedule differs from that of the division where he/she
+                  is registered as a head coach.
+                </p>
+                <p>
+                  The head coaches in the top division must maintain their
+                  position as a head coach for at least 6 months.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 11 (Captain)</strong>
+              <div>
+                <p>
+                  Each team must appoint a captain. A captain who is not wearing
+                  a captain band cannot ask questions or make any requests
+                  regarding referee decisions.
+                </p>
+                <p>
+                  The captain may examine the court and ball, check the players
+                  on the other team, ask questions about ambiguous decisions,
+                  request an explanation of the rules applied, order a change of
+                  uniform, request a break in the event that a player gets
+                  injured, etc.
+                </p>
+                <p>
+                  The main referee may reject or approve the requests from a
+                  captain.
+                </p>
+                <p>
+                  In the event that the captain is substituted out, the captain
+                  band should be handed over to a player on the court.
+                </p>
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>Article 12 (Players)</strong>
+              <div>
+                <p>Each team should be comprised of at least four players.</p>
+                <p>
+                  If there are fewer than four players before the start of the
+                  game or during the game, the team in question will be
+                  disqualified.
+                </p>
+                <p>
+                  Players should accede to any requests from the referee to
+                  check their identity.
+                </p>
+                <p>
+                  Players must comply with the rules and be respectful to the
+                  other team.
+                </p>
+              </div>
+            </div>
+            <h3 class="rule1">CHAPTER 4: GAME GUIDELINES</h3>
+            <div class="definition ttb">
+              <strong>Article 14 (Scoring)</strong>
+              <div>
+                <p>
+                  Points are scored by grounding the ball on the other team’s
+                  court or when the other team makes a foul or becomes
+                  penalized.
+                </p>
+                <p>
+                  If an act of scoring a point and a violation of the rules
+                  occur consecutively in time, the point will be given if it was
+                  scored before the violation, time-wise, whereas it will not
+                  count if the violation occurred first.
+                </p>
+                <p>
+                  If a serve or a direct attack results in a point without any
+                  valid contact made by a player on the other team, two points
+                  will be given.
+                </p>
+                <p>
+                  A “direct attack” refers to a situation where the ball that
+                  was directed from the other team (incl. a serve) is redirected
+                  to the other side of the court before it touches the ground on
+                  one’s own side of the court (incl. blocking).
+                </p>
+                <p>
+                  If a player engages in an act that lacks sportsmanship in
+                  order to prevent the other team from scoring two points,
+                  he/she will be given a warning, and the other team will be
+                  awarded two points.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 15 (Game Progress)</strong>
+              <div>
+                <p>
+                  The skills of the game include receive, toss, kick, and serve.
+                </p>
+                <p>
+                  The ball is considered to be in play if it touches any part of
+                  the sideline or endline.
+                </p>
+                <p>
+                  Players can stand anywhere in the court, regardless of their
+                  positions.
+                </p>
+                <p>
+                  Each game consists of three sets, in principle, provided that
+                  the number of sets may be increased or decreased by the head
+                  of the competition in consideration of the overall
+                  circumstances.
+                </p>
+                <p>
+                  The minimum score to win a set is 15 points. In case of a
+                  deuce, the team that scores two points first wins. The maximum
+                  score that can be obtained is 19 points. In the final set, the
+                  teams will switch courts after one of them scores 8 points.
+                  The teams may switch courts once beyond the score of 8 points
+                  whenever such is made aware.
+                </p>
+                <span></span>
+                <p>
+                  Points can be scored irrespective of whether the team is
+                  currently playing offense or defense.
+                </p>
+
+                <p>
+                  Timeouts must be requested by the head coach and approved by
+                  the main referee. One timeout is allowed per set, and it must
+                  last no longer than one minute.
+                </p>
+                <p>
+                  Player substitution must be requested by the head coach, and
+                  it should be approved based on the following criteria:
+                </p>
+                <ul>
+                  <li>
+                    1. Each team is allowed to freely substitute up to three
+                    players per set among the players on the players’ list.
+                    However, when the captain is substituted out, the captain
+                    band must be handed over to one of the players on the court.
+                  </li>
+                  <li>
+                    2. Player changes at the start of a set are not viewed as
+                    substitutions. However, it must be notified to the main
+                    referee because otherwise, it will be viewed as a
+                    substitution.
+                  </li>
+                  <li>
+                    3. In the event of an injury during the game, two breaks for
+                    up to 3 minutes each time may be granted for each team per
+                    game. If all four players are not on the court after the 3
+                    minutes, the team in question will be disqualified.
+                  </li>
+                  <li>
+                    4. Substitution must be finished within 5 seconds after it
+                    is authorized by the main referee. If there are delays, the
+                    team will be cautioned.
+                  </li>
+                  <li>
+                    5. Under no circumstances can there be a player substitution
+                    in the absence of the head coach.
+                  </li>
+                </ul>
+                <p>
+                  Only the lower legs below the knees and the head above the
+                  chin can come in contact with the ball.
+                </p>
+                <p>
+                  Court plays can be made freely for up to 3 bounces off the
+                  ground and 3 bodily touches. A serve or an attack can be
+                  blocked (body parts that can come into contact with the ball
+                  in this case are the same as those outlined in Paragraph 9),
+                  and the team playing offense has the right to play the ball
+                  that is located above the net after a bounce (the team playing
+                  defense will lose a point to the other team if they touch the
+                  ball).
+                </p>
+                <p>
+                  The ball should only be allowed to touch the ground once in
+                  between plays and be touched once by a player for up to three
+                  touches while it is in the court (33 principle). The rules may
+                  be changed by the executive board of the competition in case
+                  of an event competition that is broadcast on television, etc.
+                </p>
+                <p>
+                  Net play is permitted, and all situations occurring at the
+                  net, except physical contact, are considered an in-play. The
+                  net boundary, however, is marked by the antennae, outside
+                  which is not considered part of the net.
+                </p>
+                <p>
+                  If the ball or a part of the body penetrates below the net,
+                  the other team will be awarded a point, regardless of whether
+                  it interfered with the defense of the other team. If a part of
+                  a player’s body enters the opponent’s court and interferes
+                  with their defense, a point will be awarded to the other team.
+                </p>
+                <p>
+                  A ball that is in midair is in play and alive until it hits
+                  the ground or another object.
+                </p>
+                <p>
+                  Questions regarding the rules applied in the game can only be
+                  asked to the main referee by the captain. An appeal can be
+                  filed to the table officials by the head coach by describing
+                  the circumstances based on the principles of 5 W’s and 1 H.
+                  The case will be judged by the Fair Sports Committee and the
+                  referee, players, executive board, etc. involved will be
+                  strictly penalized or rewarded (municipal/provincial
+                  association(s) and individuals concerned will be notified and
+                  the information will be posted on the website).
+                </p>
+                <p>
+                  No count (e.g. points not counted, or game cancellation) will
+                  be applied in the event of a natural disaster, or in case an
+                  obstacle enters into the court in the middle of the game and
+                  comes into contact with the ball, or it is deemed impossible
+                  to continue the game, or both teams have violated the game
+                  rules simultaneously, or it is impossible to make a proper
+                  judgment, or when the game did not proceed properly due to
+                  faulty facilities or equipment.
+                </p>
+                <p>
+                  Even when the ball passes through outside the antenna, if a
+                  player puts it back into the court from outside the antenna on
+                  the outside, before it bounces off the ground, and the ball is
+                  returned inside the antenna within a valid number of touches,
+                  it will be deemed that the ball is still in play.
+                </p>
+                <p>
+                  A decision based on an agreement may be requested by the
+                  captain of either team. If there is a justifiable protest or
+                  it is difficult for the main referee to make a decision on
+                  his/her own, the main and assistant referees should make a
+                  decision based on an agreement. Such decisions are final, and
+                  a decision based on an agreement is only permitted once per
+                  set.
+                </p>
+                <p>
+                  A final decision (decision based on an agreement) made by the
+                  main referee cannot be overturned. However, before a final
+                  decision (e.g. decision based on an agreement) is made, the
+                  game may be stopped if it is difficult to make an accurate
+                  decision, and the main and assistant referees should consult
+                  each other to make a final decision based on an agreement. (If
+                  a wrong decision is made without going through this procedure
+                  and it is acknowledged by the referee in question, the referee
+                  will be subject to disciplinary action, and appeal will not be
+                  accepted.) A decision based on an agreement between the main
+                  and assistant referees will only be made in the event of an
+                  uncertain decision or wrorng decision, and agreement needs not
+                  be made for every issue.
+                </p>
+                <p>
+                  A request for a video replay to check for a bad call by a
+                  referee during a competition that is being broadcast may be
+                  made by the head coach, once per game. The head coach should
+                  file an appeal with the main referee before a decision based
+                  on an agreement is made and request it to the table officials.
+                </p>
+                <p>
+                  The game may be stopped if necessary based on the judgment of
+                  the main referee.
+                </p>
+                <p>Court change takes place at the end of a set.</p>
+                <p>
+                  An “adverse weather condition” refers to a weather condition
+                  where more than half the area of the court is not in a
+                  condition that allows the ball to bounce off.
+                </p>
+                <ul>
+                  <li>
+                    1. If it decided that it is an adverse wether condition,
+                    what would have been awarded two points under normal
+                    conditions will be awarded one point instead.
+                  </li>
+                  <li>
+                    2. The game will continue even in the event of an adverse
+                    weather condition. If the weather worsens, the matter will
+                    be decided by a meeting of representatives.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 16 (Game Record Sheets)</strong>
+              <div>
+                The game record sheets are comprised of Form 1 General Records
+                and Form 2 Records for Broadcasting Purposes. Standardized forms
+                should be provided by the game committee for use.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 17 (Points Assessment Method for Ranking)</strong>
+              <div>
+                <p>
+                  The order of priority when it comes to assessing performance
+                  records is 1. Winning percentage, 2. Points scored in a set,
+                  3. Total points scored, 4. Head-to-head, and 5. Draw.
+                </p>
+                <p>
+                  A team who was disqualified will be given a score of 0 for the
+                  performance records.
+                </p>
+                <p>
+                  A team who was disqualified will be given a score of 0 for the
+                  performance records.
+                </p>
+                <p>
+                  The No. 1 team of each group after the preliminary round for
+                  each division will be entered into a random draw.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 18 (Safety Incident)</strong>
+              <div>
+                As for safety incidents during a game, the host organization
+                should subscribe to a liability insurance or an accident
+                insurance in accordance with Article 12 (Subscribing to
+                Insurance, etc.) of the Act on Promotion of Sports for All;
+                however, players who sustain an injury as a result of wearing
+                accessories shall assume full responsibility.
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>Article 19 (Commentators)</strong>
+              <div>
+                Commentators shall be appointed by the KOREA JOKGU ASSOCIATION
+                among those who are knowledgeable about the overall regulations
+                and game rules of the Association and who can speak coherently
+                and logically.
+              </div>
+            </div>
+            <h3 class="rule1">CHAPTER 5: GAME RULES</h3>
+            <div class="definition ttb">
+              <strong>Article 20 (Serve)</strong>
+              <div>
+                <p>
+                  A serve can be made freely, irrespective of any sequence or
+                  target.
+                </p>
+                <p>
+                  A person who serves before the signal or delaying the serve
+                  will be given a caution at first, but the entire team will be
+                  given a warning if it happens for the second time.
+                </p>
+                <p>
+                  After a signal is given by the main referee to begin the
+                  serve, if the server lands touches any of the lines marking a
+                  restricted area (endline, sideline, service area) or deviates
+                  from the area, a point will be awarded to the other team.
+                </p>
+                <p>
+                  A serve consists of the ball leaving the ball and coming into
+                  contact with the part of the body allowed contact before it
+                  bounces off the ground. It is finished as soon as it bounces
+                  off the part of the body that it was in contact with.
+                </p>
+                <p>
+                  The ball must be served within 5 seconds after a signal is
+                  given by the main referee. A point willl be awarded to the
+                  other team if the server exceeds the time limit.
+                </p>
+                <span></span>
+                <p>
+                  If the server serves the ball before a signal is given by the
+                  main referee and scores a point, it will not be counted, but
+                  if the server loses a point, it will be counted.
+                </p>
+
+                <p>
+                  If the server gives the ball to another player on the team
+                  after a signal to serve is given by the main referee, the team
+                  will lose a point.
+                </p>
+                <p>
+                  If the served ball enters the other team’s court after hitting
+                  the net, it is still in play, but if it fails to go over the
+                  net, the team that served the point will lose a point.
+                </p>
+                <span></span>
+                <p>
+                  A bounce is permitted after a signal to serve is given by the
+                  main referee, but if the server deviates from the service area
+                  or serves after bouncing the ball, the team will lose a point.
+                </p>
+                <p>
+                  The team that served first in the first set will also serve
+                  first in the third set, while the other team will serve first
+                  in the second set.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 21 (Game Conditions)</strong>
+              <div>
+                <p>
+                  When a player touches the net inside the antennae with any
+                  part of his/her body or anything attached to his/her body,
+                  regardless of whether he/she is playing offense or defense,
+                  his/her team will lose a point, and this will also be the case
+                  when anything he/she was wearing comes off and touches the net
+                  inside the antennae.
+                </p>
+                <p>
+                  Double touch, which means to touch the ball twice or dribble
+                  the ball, will result in the other team being awarded a point.
+                </p>
+                <p>
+                  Going over time means failing to direct the ball to the other
+                  team’s court after three touches, and it will result in the
+                  other team being awarded a point.
+                </p>
+                <p>
+                  Holding refers to a situation where the ball stays on a
+                  player’s body in the form of lifting, pressing, adhering, or
+                  pushing, and it will result in the other team being awarded a
+                  point.
+                </p>
+                <p>
+                  Over-the-net means that a part of the body or anything
+                  attached to the body goes over the net and it will result in
+                  the other team being awarded a point, regardless of the
+                  whether the player was playing offense or defense. This is
+                  also the case when anything he/she was wearing comes off and
+                  goes over the net. However, when it comes to the ball, if it
+                  is touched before it completely goes over the net, it will be
+                  considered to be in play.
+                </p>
+                <span></span>
+                <p>
+                  When it comes to touching the ball with the body, a point will
+                  be awarded to the other team if one does not touch the ball
+                  with a part of the body that is permitted (head above the
+                  chin, lower legs below the knees).
+                </p>
+
+                <p>
+                  A touch-out refers to the ball bouncing out of the court after
+                  it is touched by a defensive player, and in this case, a point
+                  will be awarded to the offensive team. When the ball comes
+                  into contact with the ground and the body of a defensive
+                  player outside the court at the same time, a point will be
+                  awarded to the offensive team.
+                </p>
+                <p>
+                  An out means that the ball goes out of the court after it is
+                  touched by the team playing offense, or it is bounced out of
+                  the court on the defensive team’s side, or the ball passes
+                  below the net, or the ball passes outside the antenna after
+                  three touches, and in such cases, a point will be awarded to
+                  the other team.
+                </p>
+                <span></span>
+                <p>
+                  If the ball passes through the area outside the antenna after
+                  it is touched by the team playing defense and bounces off the
+                  other team’s court, or a player enters the other team’s court,
+                  a point will be awarded to the other team. A point will be
+                  awarded to the other team if a player or the ball touches one
+                  of the antennae. If the ball that passes outside the antenna
+                  is touched by a player on the other team, or if a player
+                  interferes with a defensive action, a point will be awarded to
+                  the other team.
+                </p>
+                <p>
+                  If the ball touches another object midair, the team who played
+                  the ball immediately before it (by touching or bouncing) will
+                  lose a point to the other team.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 22 (Cautions)</strong>
+              <div>
+                In the event of any of the following, the player in question
+                will be verbally instructed to take corrective action:
+                <ul>
+                  <li>
+                    1. Kicking the ball to the other team instead of handing it
+                    over for a serve;
+                  </li>
+                  <li>
+                    2. Going over the net, touching the net, or any other
+                    actions or verbal gestures to interfere with the other team’
+                    attack;
+                  </li>
+                  <li>
+                    3. Verbally indicating that the ball is in, out, etc. in a
+                    way that would affect the referee’s judgment;
+                  </li>
+                  <li>4. Serving before the signal or delaying the serve;</li>
+                  <li>5. Delays in player substitution.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 23 (Warning)</strong>
+              <div>
+                In the event of any of the following, a warning will be given (a
+                team warning will be given to the head coach or to the captain
+                in the absence of the head coach):
+                <ul>
+                  <li>
+                    1. Kicking the ball out of the court out of frustration,
+                    anger, etc. (warning against the player);
+                  </li>
+                  <li>
+                    2. A player or staff other than the captain asking questions
+                    or filing complaints, thereby causing delays (warning
+                    against the team);
+                  </li>
+                  <li>
+                    3. Deliberately going over the 3-minute time limit for
+                    player substitution (warning against the team);
+                  </li>
+                  <li>
+                    4. Eating or drinking or providing food/beverage during the
+                    game (warning against the player or the team);
+                  </li>
+                  <li>
+                    5. Behavior deemed to smear the image of the competition or
+                    cause disruptions in its operation (warning against the
+                    player or the team);
+                  </li>
+                  <li>
+                    6. Two caution (warning against the player, head coach, or
+                    the team);
+                  </li>
+                  <li>
+                    7. Questioning the decision made based on an agreement
+                    between the main and assistant referees (warning against the
+                    team);
+                  </li>
+                  <li>
+                    8. An action to prevent the other team from scoring two
+                    points that lacked sportsmanship (warning against the player
+                    or the team).
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 24 (Sending a Player off the Court)</strong>
+              <div>
+                A player who is sent off the court for any of the following
+                reasons will not be allowed to play in the name game, and one of
+                the registered bench players should play in his/her place after
+                an approval is given by the head coach:
+                <ul>
+                  <li>1. Two warnings in one game;</li>
+                  <li>
+                    2. Causing delays in the game, not backing down against the
+                    referee, etc.;
+                  </li>
+                  <li>3. Acting emotional or lacking sportsmanship;</li>
+                  <li>
+                    4. Causing disruptions in the game by using abusive
+                    language.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 25 (Disqualification)</strong>
+              <div>
+                <p>
+                  Not wearing matching uniforms or not wearing jokgu shoes
+                  within 5 minutes after the start of the game;
+                </p>
+                <p>
+                  The starting lineup does not consist of four players or four
+                  players cannot be maintained on the court;
+                </p>
+                <p>
+                  The team fails to enter the game within 5 minutes after
+                  receiving the notification of entry;
+                </p>
+                <p>
+                  The team protests against a referee decision for more than 5
+                  minutes;
+                </p>
+                <p>
+                  The team causes a delay that is not related to the game for
+                  more than 5 minutes;
+                </p>
+                <span></span>
+                <p>
+                  It is impossible to continue the game due to a protest after a
+                  decision based on an agreement is made;
+                </p>
+
+                <p>The team was given two warnings in one game;</p>
+                <p>
+                  The team engages in an action that is damaging to the image of
+                  the competition.
+                </p>
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>Article 26 (Forfeiture)</strong>
+              <div>
+                <p>
+                  In the event of discovering an illegitimate player on the team
+                  during the competition period, the team will be forced to
+                  forfeit all the games, and all their game records and results
+                  will be deleted. The results of the opponent teams will not be
+                  changed, and complaints regarding an illegitimate player can
+                  only be made before the end of the game and not thereafter.
+                </p>
+                <p>
+                  A team that engages in an act to slow down or interfere with
+                  the competition;
+                </p>
+                <p>A team that commits assault;</p>
+                <p>A team that deliberately fixes games;</p>
+                <p>
+                  A team that makes it impossible for a game to proceed, as its
+                  player(s) or affiliated member(s) intrude(s) into the court or
+                  use(s) abusive language.
+                </p>
+              </div>
+            </div>
+            <h3 class="rule1">CHAPTER 6: AWARDS AND PUNISHMENT</h3>
+            <div class="definition ttb">
+              <strong>Article 27 (Awards & Punishment)</strong>
+              <div>
+                <p>
+                  For matters related to awards and punishment, the regulations
+                  of the Fair Sports Committee of the KOREA JOKGU ASSOCIATION
+                  should be observed.
+                </p>
+                <p>
+                  As for matters related to competition awards/prizes, the
+                  guidelines of the competition should be observed.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 28 (Other Regulations and Rules)</strong>
+              <div>
+                For matters not specified in these Rules and Regulations, the
+                decision made by the executive body should be observed.
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>Article 29 (Filing an Appeal)</strong>
+              <div>
+                As for appeals, the decision made by the Appeal Review Board
+                should be observed. The Chairperson of the Appeal Review Board
+                is the Chairperson of the Fair Sports Committee, and the
+                Committee should be comprised of members of the executive body,
+                referees, players, etc.
+              </div>
+            </div>
+            <h3 class="rule1">CHAPTER 7: ADDENDA</h3>
+            <div class="definition ttb">
+              <strong>Article 1</strong>
+              <div>
+                These Rules and Regulations shall be reported to the General
+                Assembly following a deliberation and resolution by the Board of
+                Directors.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 2</strong>
+              <div>
+                For any amendments, additions, deletions, etc. to the Rules and
+                Regulations, the procedure outlined in Article 1 shall be
+                observed.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 3</strong>
+              <div>
+                These Rules and Regulations shall take effect on January 12,
+                2017.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 4</strong>
+              <div>
+                The amended Rules and Regulations shall take effect on January
+                27, 2018.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 5</strong>
+              <div>
+                The amended Rules and Regulations shall take effect on February
+                9, 2019.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 6</strong>
+              <div>
+                These Rules and Regulations shall be reported to the General
+                Assembly following a deliberation and resolution by the Board of
+                Directors. The amended Rules and Regulations shall take effect
+                on May 30, 2020.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>Article 7</strong>
+              <div>
+                These Rules and Regulations shall be reported to the General
+                Assembly following a deliberation and resolution by the Board of
+                Directors. The amended Rules and Regulations shall take effect
+                on July 08, 2020.
+              </div>
+            </div>
+            <h3 class="rule1">족구전용 실내 바닥재 규격서</h3>
+            <div>
+              <table class="specifications">
+                <colgroup>
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>제품명</th>
+                    <td>족구전용 실내바닥재</td>
+                    <th>재질</th>
+                    <td>100% PVC</td>
+                  </tr>
+                  <tr>
+                    <th>사진</th>
+                    <td colspan="3"><img src="./img/PVC.png" alt="" /></td>
+                  </tr>
+                  <tr>
+                    <th>제원</th>
+                    <td colspan="3">
+                      <ul>
+                        <li>· 총 두께 : 8.0mm</li>
+                        <li>· 무게 : 5.8kg/m2</li>
+                        <li>· 충격 흡수 : EN 14808 기준 ≥25 30%</li>
+                        <li>· 수직 변형 : EN 14809 기준 ≤3.5 ≤2 mm</li>
+                        <li>· 슬라이딩 계수 : EN 13036‑4 기준 80 110</li>
+                        <li>· 볼 바운드 : EN 12235 기준 ≥90%</li>
+                        <li>· 마모저항 : EN ISO 기준 ≤1,000 ≤350mg</li>
+                        <li>· 충격저항 : EN 1517 기준 ≥8N/m</li>
+                        <li>· 압력저항 : EN 1516 기준 ≤0.5mm</li>
+                        <li>· 명도 : EN ISO 2831 기준 ≥30%</li>
+                        <li>· 회전부하저항 : EN 1560 기준 ≥1500 1500N</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="rule1">족구전용 실외 바닥재 규격서</h3>
+            <div>
+              <table class="specifications">
+                <colgroup>
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>제품명</th>
+                    <td>족구전용 실외바닥재</td>
+                    <th>재질</th>
+                    <td>인조잔디</td>
+                  </tr>
+                  <tr>
+                    <th>사진</th>
+                    <td colspan="3"><img src="./img/injo.png" alt="" /></td>
+                  </tr>
+                  <tr>
+                    <th>제원</th>
+                    <td colspan="3">
+                      <ul>
+                        <li>· 구조 : 스포츠잔디 이중구조(녹색)</li>
+                        <li>· 재질 : 바닥면 - 블랙, SBR코팅처리 / 표면 - PE</li>
+                        <li>· 길이 : 35mm</li>
+                        <li>
+                          · 보충재 : 환경부 인증 친환경 재료, 규사 20mm 이내
+                        </li>
+                        <li>
+                          · 중금속 함량 : 카드뮴, 납, 수은, 크롬 등 허용기준
+                          이하 발암물질 0.1 이하(불검출)
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="rule1">족구 지주 보호대 규격서</h3>
+            <div>
+              <table class="specifications">
+                <colgroup>
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>제품명</th>
+                    <td>족구 지주 보호대</td>
+                    <th>제조국</th>
+                    <td>대한민국</td>
+                  </tr>
+                  <tr>
+                    <th>사진</th>
+                    <td colspan="3"><img src="./img/jiju.png" alt="" /></td>
+                  </tr>
+                  <tr>
+                    <th>구성품</th>
+                    <td colspan="3">· 지주용 커버, 지주봉 커버 각 2EA 1SET</td>
+                  </tr>
+                  <tr>
+                    <th>제원</th>
+                    <td colspan="3">
+                      <ul>
+                        <li>
+                          · 제품 재질<br />
+                          - 보호 충전재 : 폴리우레탄<br />
+                          - 겉 포장재 : 타포린
+                        </li>
+                        <li>
+                          · 제품 사이즈<br />
+                          - 지주봉 길이 : 1100mm<br />
+                          - 내경 : 80mm<br />
+                          - 지주대 커버 : 높이300~450mm, 길이450~900mm<br />
+                          - 충전재 두께 : 40mm 이상
+                        </li>
+                        <li>· 제품 결속방법 : 벨크로 형태</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <script>
               $(document).ready(function () {
                 $("ul.tabs li").click(function () {
                   var tab_id = $(this).attr("data-tab");
-=======
-            $(".btn-l").on("click", function () {
-                $(`#${$(this).attr("data-btn")}`).show();
-            });
-            $(".responsive").slick({
-                dots: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                responsive: [
-                    {
-                        breakpoint: 1250,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                        },
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                        },
-                    },
->>>>>>> ac14fe32199b6f51ea2e4205c261d11bc7547143
 
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ],
-            });
-        </script>
-    </body>
+                  $("ul.tabs li").removeClass("current");
+                  $(".content").removeClass("current");
+
+                  $(this).addClass("current");
+                  $("#" + tab_id).addClass("current");
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /경기규칙 -->
+    <!-- 대회상세 -->
+    <div class="popup" id="details">
+      <div class="popup-wrap" id="details">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">The 1st Jokgu World Championship</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main rule">
+            <div class="rule-down world">
+              <h1>The 1st Jokgu World Championship</h1>
+              <button type="button" class="participate">
+                Participate
+                <img src="./img/right_arrow_wt.png" alt="" />
+              </button>
+            </div>
+            <h3 class="rule1">
+              The five-day Jokgu Festival will be held in Korea with 300
+              athletes from 20 different countries and 7million Korean club
+              members along with overseas branches.
+            </h3>
+            <table class="top-table">
+              <caption>
+                The 1st Jokgu World Championship
+              </caption>
+              <colgroup>
+                <col style="width: 180px" />
+                <col style="width: auto" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>Event</th>
+                  <td>The 1st Jokgu World Championship</td>
+                </tr>
+                <tr>
+                  <th>Date</th>
+                  <td>2023. 8. 20~28 (5days)</td>
+                </tr>
+                <tr>
+                  <th>Place</th>
+                  <td>unknown</td>
+                </tr>
+                <tr>
+                  <th>Contents</th>
+                  <td>
+                    Welcome Dinner / International Competition / Culture
+                    experience etc.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Participants</th>
+                  <td>all athletes from 20 countries</td>
+                </tr>
+                <tr>
+                  <th>Host</th>
+                  <td>Korea Jokgu Association</td>
+                </tr>
+                <tr>
+                  <th>Support</th>
+                  <td>unknown</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /대회상세 -->
+    <div id="fullpage">
+      <div class="section full1" pageNum="1">
+        <div class="cnt01">
+          <p>JOKGU WITH WORLD</p>
+          <span
+            >SCROLL DOWN
+            <h3><img src="./img/down.png" alt="" /></h3
+          ></span>
+        </div>
+      </div>
+      <div class="section full2" pageNum="2">
+        <div class="cnt02">
+          <p class="cnt02-title">ABOUT JOKGU</p>
+          <div class="jokgu-info en">
+            <h3>About Jokgu</h3>
+            <p>
+              Jokgu is a traditional sport that has grown into Korea's
+              representative sport for 1,300 years. Jokgu is a sport that uses
+              only head and foot, which is the narrowest part of the body and
+              exchanges defense and attack between the net.
+            </p>
+            <p>
+              Now Jokgu is putting every effort to be developed into a sport for
+              not only by Koreans but also by every people all over the world.
+            </p>
+            <div>
+              <a href="#" class="btn-l" data-btn="videos"
+                >Youtube <img src="./img/right_arrow.png" alt=""
+              /></a>
+              <a href="#" class="btn-l" data-btn="history"
+                >Histoty <img src="./img/right_arrow.png" alt=""
+              /></a>
+              <a href="#" class="btn-l" data-btn="Equipments"
+                >Equipment <img src="./img/right_arrow_wt.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section full3" pageNum="3">
+        <div class="cnt03">
+          <p class="cnt03-title">OFFICIAL TECHNIQUE</p>
+          <div class="jokgu-skill en">
+            <h3>Techniques</h3>
+            <div class="jokgu-skill-flex">
+              <p>
+                Jokgu is a tactical comprehensive sport that receives strong
+                offensive skills such as Standing Kick, Overhead Kick, overhead
+                Jumping Kick by using only the head and inside foot and then
+                comprehensively connects to setting skills such as fastball
+                attack, movements and direct attack.
+              </p>
+              <div class="right">
+                <a href="#"
+                  >Youtube <img src="./img/right_arrow.png" alt=""
+                /></a>
+                <a href="#" class="btn-l" data-btn="rule"
+                  >Official Jokgu Rules
+                  <img src="./img/right_arrow_wt.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="responsive">
+              <div class="cont">
+                <img src="./img/skill1.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>뛰어차기</em>
+              </div>
+              <div class="cont">
+                <img src="./img/skill2.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>서서차기</em>
+              </div>
+              <div class="cont">
+                <img src="./img/skill3.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>안축받기</em>
+              </div>
+              <div class="cont">
+                <img src="./img/skill4.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>머리받기</em>
+              </div>
+              <div class="cont">
+                <img src="./img/skill5.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>넘어차기</em>
+              </div>
+              <div class="cont"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section full4" pageNum="4">
+        <div class="cnt04">
+          <p class="cnt04-title">INTERNATIONAL COMPETION</p>
+          <div class="itc en">
+            <h3>International Competition</h3>
+            <p class="world en">The 1st Jokgu World Championship</p>
+            <p>
+              The five-day Jokgu Festival will be held in Korea with 300
+              athletes from 20 different countries and 7million Korean club
+              members along with overseas branches
+            </p>
+            <div>
+              <a href="#" class="btn-l" data-btn="details"
+                >Details <img src="./img/right_arrow.png" alt=""
+              /></a>
+              <a href="#"
+                >Participate <img src="./img/right_arrow_wt.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section full5" pageNum="5">
+        <div class="cnt05">
+          <p class="cnt05-title">INTERNATIONAL JOKGU FEDERATION</p>
+          <div class="itc en">
+            <h3>International Jokgu Federation</h3>
+            <p>
+              The Korea Jokgu Association is working with Jokgu Organizations
+              all over the world to prepare for the International Jokgu
+              Federation.
+            </p>
+            <div>
+              <a href="#"
+                >International Organization
+                <img src="./img/right_arrow_wt.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="right">
+            <img src="./img/jokgu1.png" alt="족구사진1" />
+            <img src="./img/jokgu2.png" alt="족구사진2" />
+          </div>
+        </div>
+        <span
+          >SCROLL UP
+          <h3><img src="./img/up.png" alt="" /></h3
+        ></span>
+        <footer class="footer">
+          <h3 class="footer-logo">
+            <img src="./img/footer_logo.png" alt="kja" />
+          </h3>
+          <div class="center">
+            <p>
+              (우)05540 서울송파구 올림픽로 424, 올림픽공원 SK핸드볼경기장 내
+              129호
+            </p>
+            <p>jokgu@sports.or.kr</p>
+          </div>
+          <h3>
+            <img src="./img/youtube.png" alt="유튜브 바로가기" />
+          </h3>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      $("#fullpage").fullpage({
+        afterLoad: function (origin, destination, direction, trigger) {
+          $(".quick ul li").removeClass("on");
+          $(".quick ul li").removeClass("wt");
+          if (destination == 1) {
+            $(".quick ul li").eq(1).addClass("wt");
+            $(".quick ul li").eq(2).addClass("wt");
+            $(".quick ul li").eq(3).addClass("wt");
+            $(".quick ul li").eq(4).addClass("wt");
+          }
+          if (destination == 2) {
+            $(".quick ul li").eq(1).addClass("on");
+          }
+          if (destination == 3) {
+            $(".quick ul li").eq(2).addClass("on");
+          }
+          if (destination == 4) {
+            $(".quick ul li").eq(3).addClass("on wt");
+          }
+          if (destination == 5) {
+            $(".quick ul li").eq(4).addClass("on");
+          }
+
+          $(".bottom ul li").removeClass("en");
+
+          if (destination == 1) {
+            $(".bottom ul li").eq(0).addClass("en");
+          }
+          if (destination == 2) {
+            $(".bottom ul li").eq(1).addClass("en black");
+          }
+          if (destination == 3) {
+            $(".bottom ul li").eq(2).addClass("en black");
+          }
+          if (destination == 4) {
+            $(".bottom ul li").eq(3).addClass("en");
+          }
+          if (destination == 5) {
+            $(".bottom ul li").eq(4).addClass("en black");
+          }
+        },
+        anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
+        responsiveWidth: 769,
+      });
+      $(".popup").on("click", function () {
+        $(this).attr("id");
+      });
+      $(".btn-l").on("click", function () {
+        $(`#${$(this).attr("data-btn")}`).show();
+      });
+      $(".responsive").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1250,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+  </body>
 </html>

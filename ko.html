@@ -1,988 +1,1612 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>족구연맹</title>
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/slick.css" />
-        <link rel="stylesheet" href="./css/slick-theme.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
-        />
-        <script src="jquery-3.6.3.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>족구연맹</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <script src="jquery-3.6.3.min.js"></script>
 
-        <script src="slick.min.js"></script>
-        <script src="fullpage.min.js"></script>
-    </head>
-    <body>
-        <div class="quick">
-            <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
-            <ul>
-                <li><a href="#firstPage"></a></li>
-                <li><a href="#secondPage">족구소개</a></li>
-                <li><a href="#3rdPage">족구기술</a></li>
-                <li><a href="#4thpage">국제대회</a></li>
-                <li><a href="#lastPage">국제연맹</a></li>
+    <script src="slick.min.js"></script>
+    <script src="fullpage.min.js"></script>
+  </head>
+  <body>
+    <div class="quick">
+      <h1><img src="./img/logo.png" alt="족구협회로고" /></h1>
+      <ul>
+        <li><a href="#firstPage"></a></li>
+        <li><a href="#secondPage">족구소개</a></li>
+        <li><a href="#3rdPage">족구기술</a></li>
+        <li><a href="#4thpage">국제대회</a></li>
+        <li><a href="#lastPage">국제연맹</a></li>
+      </ul>
+      <div class="btn-wrap">
+        <button type="button" class="on">KR</button>
+        <button type="button">EN</button>
+        <div class="mob-btn">
+          <button type="button">
+            <img src="./img/hamberger.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <!-- 히스토리 -->
+    <div class="popup" id="history">
+      <div class="popup-wrap" id="history">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">대한민국족구협회 연혁</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main">
+            <div class="year"><strong>2021</strong></div>
+
+            <div class="line">
+              <ul>
+                <li>
+                  <div>
+                    <div class="title">2021년 11월</div>
+                    <div class="info">
+                      KBS 스포츠예술과학원 산학협력 MOU 체결 국제풋넷연맹(UNIF)
+                      업무협약 MOU 체결<br />
+                      대한민국족구협회 홍보대사 가수 박군 위촉
+                      <br />시·도대항 족구최강전(전북 부안)
+                      <br />한국스톤(주)(전기차) 후원사 체결
+                    </div>
+                  </div>
+                  <span class="blue"></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 10월</div>
+                    <div class="info">방송해설위원회 구성</div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 7월</div>
+                    <div class="info">
+                      (주)한아테크(족구전용시설물) 후원사 체결css
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 6월</div>
+                    <div class="info">
+                      AMS코퍼레이션(족구전용바닥재) 후원사 체결
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 5월</div>
+                    <div class="info">대한민국족구협회 장애인위원회 구성</div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 3월</div>
+                    <div class="info">조이킥스포츠 공식후원사 체결</div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+                <li>
+                  <div>
+                    <span></span>
+                    <div class="title">2021년 1월</div>
+                    <div class="info">
+                      제2대(사)대한민국족구협회 회장선거 제2대 홍기용 회장 취임
+                    </div>
+                  </div>
+                  <span class="number"><span></span> <span></span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contents-main">
+            <div class="year"><strong>2021</strong></div>
+
+            <div class="line">
+              <ul>
+                <li>
+                  <div>
+                    <div class="title">2020년 11월</div>
+                    <div class="info">시·도대항 족구최강전(충남 서천)</div>
+                  </div>
+                  <span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- /히스토리 -->
+
+    <!-- 장비소개 -->
+    <div class="popup" id="Equipments">
+      <div class="popup-wrap" id="Equipments">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">족구 장비 소개</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main eq">
+            <ul class="equipments">
+              <li>
+                <img src="./img/ball.png" alt="공인구" />
+                <h3>공인구</h3>
+                <p>
+                  족구공은 빠른 속도와 신체 충격을 최소화하기 위해 과학적인
+                  데이터를 근거로 12조각 이내로 제작
+                </p>
+              </li>
+              <li>
+                <img src="./img/jokgu_shoes.png" alt="족구화" />
+                <h3>인증 족구화</h3>
+                <p>
+                  족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기 위한
+                  바닥면을 검증한 전용 족구화 인증
+                </p>
+              </li>
+              <li>
+                <img src="./img/net.png" alt="네트" />
+                <h3>네트 및 안테나</h3>
+                <p>
+                  네트플레이를 고려한 안정적인 재질의 전용 네트 및 정확한
+                  오버네트를 판단하기 위한 안테나
+                </p>
+              </li>
+              <li>
+                <img src="./img/protector.png" alt="보호구" />
+                <h3>인증 족구화</h3>
+                <p>
+                  족구의 기능향상을 위한 아웃솔을 기본으로 선수를 보호하기 위한
+                  바닥면을 검증한 전용 족구화 인증
+                </p>
+              </li>
             </ul>
-            <div class="btn-wrap">
-                <button type="button" class="on">KR</button>
-                <button type="button">EN</button>
-                <div class="mob-btn">
-                    <button type="button">
-                        <img src="./img/hamberger.png" alt="" />
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <!-- 히스토리 -->
-        <div class="popup" id="history">
-            <div class="popup-wrap" id="history">
-                <div class="contents flex">
-                    <div class="contents-head">
-                        <h3 class="title">대한민국족구협회 연혁</h3>
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-                    <div class="contents-main">
-                        <div class="year"><strong>2021</strong></div>
+          </div>
 
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <div>
-                                        <div class="title">2021년 11월</div>
-                                        <div class="info">
-                                            KBS 스포츠예술과학원 산학협력 MOU
-                                            체결 국제풋넷연맹(UNIF) 업무협약 MOU
-                                            체결<br />
-                                            대한민국족구협회 홍보대사 가수 박군
-                                            위촉
-                                            <br />시·도대항 족구최강전(전북
-                                            부안) <br />한국스톤(주)(전기차)
-                                            후원사 체결
-                                        </div>
-                                    </div>
-                                    <span class="blue"></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021년 10월</div>
-                                        <div class="info">
-                                            방송해설위원회 구성
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021년 7월</div>
-                                        <div class="info">
-                                            (주)한아테크(족구전용시설물) 후원사
-                                            체결css
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021년 6월</div>
-                                        <div class="info">
-                                            AMS코퍼레이션(족구전용바닥재) 후원사
-                                            체결
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021년 5월</div>
-                                        <div class="info">
-                                            대한민국족구협회 장애인위원회 구성
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021년 3월</div>
-                                        <div class="info">
-                                            조이킥스포츠 공식후원사 체결
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <span></span>
-                                        <div class="title">2021년 1월</div>
-                                        <div class="info">
-                                            제2대(사)대한민국족구협회 회장선거
-                                            제2대 홍기용 회장 취임
-                                        </div>
-                                    </div>
-                                    <span class="number"
-                                        ><span></span> <span></span
-                                    ></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="contents-main">
-                        <div class="year"><strong>2021</strong></div>
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
 
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <div>
-                                        <div class="title">2020년 11월</div>
-                                        <div class="info">
-                                            시·도대항 족구최강전(충남 서천)
-                                        </div>
-                                    </div>
-                                    <span></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <script>
-                        $(document).ready(function () {
-                            $("ul.tabs li").click(function () {
-                                var tab_id = $(this).attr("data-tab");
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
 
-                                $("ul.tabs li").removeClass("current");
-                                $(".content").removeClass("current");
-
-                                $(this).addClass("current");
-                                $("#" + tab_id).addClass("current");
-                            });
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <!-- /히스토리 -->
-
-        <!-- 장비소개 -->
-        <div class="popup" id="Equipments">
-            <div class="popup-wrap" id="Equipments">
-                <div class="contents flex">
-                    <div class="contents-head">
-                        <h3 class="title">족구 장비 소개</h3>
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-                    <div class="contents-main eq">
-                        <ul class="equipments">
-                            <li>
-                                <img src="./img/ball.png" alt="공인구" />
-                                <h3>공인구</h3>
-                                <p>
-                                    족구공은 빠른 속도와 신체 충격을 최소화하기
-                                    위해 과학적인 데이터를 근거로 12조각 이내로
-                                    제작
-                                </p>
-                            </li>
-                            <li>
-                                <img src="./img/jokgu_shoes.png" alt="족구화" />
-                                <h3>인증 족구화</h3>
-                                <p>
-                                    족구의 기능향상을 위한 아웃솔을 기본으로
-                                    선수를 보호하기 위한 바닥면을 검증한 전용
-                                    족구화 인증
-                                </p>
-                            </li>
-                            <li>
-                                <img src="./img/net.png" alt="네트" />
-                                <h3>네트 및 안테나</h3>
-                                <p>
-                                    네트플레이를 고려한 안정적인 재질의 전용
-                                    네트 및 정확한 오버네트를 판단하기 위한
-                                    안테나
-                                </p>
-                            </li>
-                            <li>
-                                <img src="./img/protector.png" alt="보호구" />
-                                <h3>인증 족구화</h3>
-                                <p>
-                                    족구의 기능향상을 위한 아웃솔을 기본으로
-                                    선수를 보호하기 위한 바닥면을 검증한 전용
-                                    족구화 인증
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <script>
-                        $(document).ready(function () {
-                            $("ul.tabs li").click(function () {
-                                var tab_id = $(this).attr("data-tab");
-
-                                $("ul.tabs li").removeClass("current");
-                                $(".content").removeClass("current");
-
-                                $(this).addClass("current");
-                                $("#" + tab_id).addClass("current");
-                            });
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <!-- /장비소개 -->
-        <!-- 동영상 -->
-        <div class="popup" id="videos">
-            <div class="popup-wrap" id="videos">
-                <div class="contents flex jsw">
-                    <div class="videos"></div>
-                    <div class="close-btn">
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-
-                    <script>
-                        $(document).ready(function () {
-                            $("ul.tabs li").click(function () {
-                                var tab_id = $(this).attr("data-tab");
-
-                                $("ul.tabs li").removeClass("current");
-                                $(".content").removeClass("current");
-
-                                $(this).addClass("current");
-                                $("#" + tab_id).addClass("current");
-                            });
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <!-- /동영상 -->
-        <!-- 경기규칙 -->
-        <div class="popup" id="rule">
-            <div class="popup-wrap" id="rule">
-                <div class="contents flex">
-                    <div class="contents-head">
-                        <h3 class="title">경기규칙</h3>
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-                    <div class="contents-main rule">
-                        <div class="rule-down">
-                            <h1>경기규칙</h1>
-                            <button type="button">
-                                경기규칙 다운로드
-                                <img src="./img/downlode.png" alt="" />
-                            </button>
-                        </div>
-                        <span class="enact">2017. 1. 12 제정</span>
-                        <h3 class="rule1">제1장 경기</h3>
-                        <div class="definition btb ttb">
-                            <strong>제１조(정의)</strong>
-                            <div>
-                                <p>
-                                    족구경기는 각기 4명씩으로 구성된 두 팀이
-                                    플레이를 하는 것이다. 각 팀의 목적은
-                                    발(무릎미만)과 머리(턱 이상)만을 이용해 공을
-                                    상대 팀의 코트로 넘겨 득점하거나, 상대 팀이
-                                    득점 하려는 것을 막는데 있다.
-                                </p>
-                                <p>
-                                    경기는 한 세트 15점을 먼저 선취한 팀이
-                                    2세트를 먼저 취득하게 되면 승자가 된다.
-                                </p>
-                                <p>
-                                    족구경기는 공인 심판과 공인 시설 및 용구에
-                                    의해 진행된다.
-                                </p>
-                            </div>
-                        </div>
-                        <h3 class="rule1">제2장 코트와 시설 및 장비</h3>
-                        <div class="definition ttb">
-                            <strong>제2조(족구 전용 경기장)</strong>
-                            <div>
-                                <p>
-                                    족구 전용 경기장은 사이드라인에서 10m,
-                                    엔드라인에서 15m 이내는 어떠한 장애물도
-                                    없도록 공간이 확보되어야 한다.
-                                </p>
-                                <p>
-                                    경기장의 표면은 평평하고 수평을 이루어야
-                                    하며 균일해야한다.
-                                </p>
-                                <p>
-                                    모든 경기는 별지 제1호 서식에 따른
-                                    대한민국족구협회 승인 족구 코트 매트 위에서
-                                    해야 한다.
-                                </p>
-                                <p>
-                                    경기장 바닥으로부터 천장까지 사이의 가장
-                                    낮은 장애물까지의 사이는 최소 12m이어야
-                                    한다.
-                                </p>
-                                <p>코트의 규격은 다음 각 호와 같다.</p>
-                                <ul>
-                                    <li>
-                                        1. 사이드라인은 7.5m 씩 양 팀으로 전체
-                                        15m이다.
-                                    </li>
-                                    <li>2. 엔드라인의 폭은 6.5m이다.</li>
-                                    <li>
-                                        3. 서브제한 구역은 사이드라인 연장선과
-                                        엔드라인 뒤쪽으로 3m이다.
-                                    </li>
-                                    <li>
-                                        4. 네트의 높이는 지면으로부터 105cm이다.
-                                    </li>
-                                    <li>
-                                        5. 안테나의 높이는 지면으로부터
-                                        150cm이다.
-                                    </li>
-                                    <li>
-                                        6. 안테나는 사이드라인으로부터 21cm(공의
-                                        지름)를 이격 설치한다.
-                                    </li>
-                                    <li>
-                                        7. 선수교체 지역은 부심라인에서
-                                        중앙으로부터 2m이다.
-                                    </li>
-                                </ul>
-                                <p>
-                                    실내경기장의 기온은 최저 16℃이상 25℃
-                                    이하여야 한다.
-                                </p>
-                                <p>
-                                    조명은 선수들과 경기원들의 눈부심을 최소화
-                                    하여 설치되어야 하며, 1,000룩수(lux)
-                                    이상으로 공식대회의 경우 경기장 표면 1m
-                                    위에서 측정했을 때 1,000룩스(lux) 보다
-                                    낮아서는 안 된다.〔본조신설 2022.9.24.〕
-                                </p>
-                                <img src="./img/court.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>제2조의2(생활체육 전용 경기장)</strong>
-                            <div>
-                                <p>
-                                    경기장은 바닥이 단단한 평면의 직사각형으로
-                                    코트와 자유지역으로 구성된다. 자유지역에는
-                                    어떠한 장애물도 없어야 하며, 사이드라인 쪽은
-                                    5m(2코트 이상 시 코트와 코트간격 8m 이상),
-                                    엔드라인 쪽은 8m 이상을 이격하여야 한다.
-                                    <개정2021.2.6.><개정2022.9.24.>
-                                </p>
-                                <p>
-                                    실외 족구 전용경기장의 표면은 별지 제2호
-                                    서식과 같이 인조잔디와 천연고무재 매트만을
-                                    사용하며, 모든 표면은 협회의 승인을 받아야
-                                    한다.<신설2022.9.24.>
-                                </p>
-                                <p>코트의 규격은 다음 각 호와 같다.</p>
-                                <ul>
-                                    <li>
-                                        1. 사이드라인은 7.5m 씩 양 팀으로 전체
-                                        15m이며, 초등부는 6.5m로 전 체
-                                        13m이다.<개정2022.9.24.>
-                                    </li>
-                                    <li>
-                                        2. 엔드라인의 폭은 6.5m이다. 단 초등부는
-                                        5.5m이다.<개정2022.11.30.>
-                                    </li>
-                                    <li>
-                                        3. 서브제한 구역은 사이드라인 연장선과
-                                        엔드라인 뒤쪽으로 3m이다.
-                                    </li>
-                                    <li>
-                                        4. 네트의 높이는 지면으로부터 105cm이며,
-                                        여자부와 초등부는
-                                        90cm이다.<개정2022.9.24.>
-                                    </li>
-                                    <li>
-                                        5. 안테나의 높이는 지면으로부터
-                                        150cm이다.
-                                    </li>
-                                    <li>
-                                        6. 안테나는 사이드라인으로부터 21cm(공의
-                                        지름)를 이격 설치한다.
-                                    </li>
-                                    <li>
-                                        7. 선수교체 지역은 부심라인에서
-                                        중앙으로부터 2m이다.
-                                    </li>
-                                </ul>
-                                <img src="./img/court2.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>제3조(네트)</strong>
-                            <div>
-                                네트의 길이는 7.5m, 폭 75cm로 네트플레이가
-                                가능한 그물망(정방10cm)이며, 상단의 수평 밴드는
-                                너비가 5cm이다. 설치확인은 심판 및 주장이 점검
-                                조정한다.
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>제4조(지주 및 보호대)</strong>
-                            <div>
-                                지주는 지름 7.5±2.5cm의 견고한 것으로
-                                사이드라인으로부터 1m이상 이격하여 설치하되
-                                안전을 위하여 별지 제3호에 의한 지주보호대를
-                                부착하여야 한다.<개정2022.9.24.>
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>제5조(안테나)</strong>
-                            <div>
-                                안테나는 사이드라인의 끝부분으로부터 21cm(공의
-                                지름)간격을 두고 수직으로 네트에 견고히
-                                설치하며, 네트 위 상단 부분은 잘 보이도록
-                                빨간색과 흰색의 대조적 색상을 사용한다.
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>제6조(라인)</strong>
-                            <div>
-                                모든 라인은 5cm 폭으로 바닥과 다른 색상으로
-                                구분되는 천 또는 테이프로 한다.
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>제7조(공)</strong>
-                            <div>
-                                공은 대한민국족구협회 공인규정에 의거 심의
-                                공인한 것으로 한다.
-                                <p style="padding-top: 15px">
-                                    규격은 12조각 이내로 무게는 330～360g,
-                                    공기압은 0.45bar±0.01bar(구장의 조건에 따라
-                                    ±10%추가)이며, 공의 반발높이는 20℃에서
-                                    100∼125cm, 5℃에서 90∼110cm 이내(KISS
-                                    시험기준에 따라 5cm 이상의 강철재 바닥 기준
-                                    2m 높이에서 수직으로 자유낙하)의 반발이
-                                    되고, 크기는 지름 200∼205mm이다. 단,
-                                    초등부는 290±10g 이며, 규격은
-                                    같다.<개정2021.3.27.>
-                                </p>
-                                <p>
-                                    전문체육 공인구는 12조각 이내로 무게는
-                                    360～380g, 공기압은 0.45bar±0.01bar(구장의
-                                    조건에 따라 ±10%추가)이며, 공의 반발높이는
-                                    20℃에서 90∼110cm, 5℃에서 70∼90cm 이내(KISS
-                                    시험기준에 따라 5cm 이상의 강철재 바닥 기준
-                                    2m 높이에서 수직으로 자유낙하)의 반발이
-                                    되고, 크기는 지름
-                                    200∼205mm이다.<신설2022.9.24.>
-                                </p>
-                                <p>
-                                    대회사용구는 대한민국족구협회 및
-                                    산하단체에서 주최·주관하는 공식대회 시
-                                    공인규정에 의거 대회사용구로 지정된 공을
-                                    사용한다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <strong>제8조(족구화)</strong>
-                            <div>
-                                족구화는 대한민국족구협회 기술위원회 규정에 의거
-                                심의 인정한 것이어야 하며, 개조되지 않은 일체형
-                                제품이어야 한다.
-                                <p style="padding-top: 15px">
-                                    규격은 가죽이나, 인조가죽으로 튼튼한
-                                    재질이어야 하며, 바닥은 염료를 사용하지 않은
-                                    고무나 합성고무로 요철의 형태는 자유롭게
-                                    적용하되 요와 요의 간격은 5mm 이내여야하고,
-                                    요와 철의 높이는 3mm 이내로
-                                    한다.<개정2022.9.24.>
-                                </p>
-                                <p>
-                                    가죽이나 인조가죽의 상부표피 돌출부위는 2mm
-                                    이내로 하며, 바닥 모서리는 선수의 부상과
-                                    전용바닥재 손상을 예방하기 위해 둥글게
-                                    처리한다.<신설2022.1.22.><개정2022.9.24.>
-                                </p>
-                                <p>
-                                    족구화는 대회의 품위, 전용 바닥재 손상여부,
-                                    선수 안전등을 고려하여 족구화라고 지정한
-                                    신발로 제한한다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="definition btb">
-                            <strong>제9조(복장)</strong>
-                            <div>
-                                <p>
-                                    선수의 경기복장은 팀별로 동일해야하며,
-                                    하의는 반바지로 하고, 상의는 등번호를 필히
-                                    게재하여야 한다. 등번호는 등 중앙에
-                                    위치하여야 하며 번호의 크기는 15cm 이상으로
-                                    한다. 상·하의 번호는 일치하고, 족구화를
-                                    착용하여야 한다.<개정2022.11.30.>
-                                </p>
-                                <p>
-                                    심판의 복장 및 소지품은 족구심판매뉴얼로
-                                    정하여 운영한다.
-                                </p>
-                                <p>
-                                    주장은 경기 시작 전 주장 띠를 좌측 팔에 필히
-                                    착용하여야 한다.
-                                </p>
-                                <p>
-                                    타이즈 착용 및 밀착형 무릎보호대는 허용한다.
-                                </p>
-                                <p>
-                                    두건의 두께는 1mm이하, 머리띠는 넓이 5cm이내
-                                    두께는 3mm이하의 규격을 허용하되, 모자
-                                    착용은 금한다.
-                                </p>
-                                <span></span>
-                                <p>안구보호대 착용은 허용한다.</p>
-                                <p>기타 첨부 부착물은 불허한다.</p>
-                            </div>
-                        </div>
-                        <h3 class="rule1">제3장 경기</h3>
-                        <div class="definition ttb"></div>
-                        <script>
-                            $(document).ready(function () {
-                                $("ul.tabs li").click(function () {
-                                    var tab_id = $(this).attr("data-tab");
-
-                                    $("ul.tabs li").removeClass("current");
-                                    $(".content").removeClass("current");
-
-                                    $(this).addClass("current");
-                                    $("#" + tab_id).addClass("current");
-                                });
-                            });
-                        </script>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /경기규칙 -->
-        <!-- 대회상세 -->
-        <div class="popup" id="details">
-            <div class="popup-wrap" id="details">
-                <div class="contents flex">
-                    <div class="contents-head">
-                        <h3 class="title">대회상세</h3>
-                        <button type="button">
-                            <img src="./img/close.png" alt="닫기버튼" />
-                        </button>
-                    </div>
-                    <div class="contents-main rule">
-                        <div class="rule-down world">
-                            <h1>제1회 족구 월드 챔피언쉽</h1>
-                            <button type="button" class="participate">
-                                참여하기
-                                <img src="./img/right_arrow_wt.png" alt="" />
-                            </button>
-                        </div>
-                        <h3 class="rule1">
-                            세계 20개국 300여명의 선수와 한국의 700만 동호인,
-                            해외 지부가 함께하는 5일간의 족구 축제를
-                            대한민국에서 개최합니다.
-                        </h3>
-                        <table class="top-table">
-                            <caption>
-                                제1회 족구 월드 챔피언쉽
-                            </caption>
-                            <colgroup>
-                                <col style="width: 180px" />
-                                <col style="width: auto" />
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>행사명</th>
-                                    <td>제1회 족구 월드 챔피언쉽</td>
-                                </tr>
-                                <tr>
-                                    <th>일시</th>
-                                    <td>2023. 8. 20~28(5일간)</td>
-                                </tr>
-                                <tr>
-                                    <th>장소</th>
-                                    <td>미정</td>
-                                </tr>
-                                <tr>
-                                    <th>행사내용</th>
-                                    <td>환영만찬 / 국제대회 / 문화체험 등</td>
-                                </tr>
-                                <tr>
-                                    <th>참가국</th>
-                                    <td>전 세계 20개국 참가 선수단</td>
-                                </tr>
-                                <tr>
-                                    <th>주관</th>
-                                    <td>대한민국족구협회</td>
-                                </tr>
-                                <tr>
-                                    <th>후원</th>
-                                    <td>미정</td>
-                                </tr>
-                                <tr>
-                                    <th>주관 방송사</th>
-                                    <td>
-                                        KBS N스포츠, MBC 스포츠플러스, SBS
-                                        스포츠 중 1개사
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h3 class="schedule">
-                            세부일정<span>
-                                현장 상황에 따라 변동 될 수 있음</span
-                            >
-                        </h3>
-                        <table class="btm-table">
-                            <caption>
-                                세부일정
-                            </caption>
-                            <colgroup>
-                                <col style="width: 180px" />
-                                <col style="width: auto" />
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>1일차</th>
-                                    <td>
-                                        초청 선수단 입국 및 숙소 체크인<br />
-                                        선수단 ID카드 발급<br />
-                                        환영 만찬 및 축하공연
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="btm-table">
-                            <caption>
-                                세부일정
-                            </caption>
-                            <colgroup>
-                                <col style="width: 180px" />
-                                <col style="width: auto" />
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>2~4 일차</th>
-                                    <td>
-                                        개회식<br />
-                                        조별 예선<br />
-                                        8강 경기
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="btm-table padbtm">
-                            <caption>
-                                세부일정
-                            </caption>
-                            <colgroup>
-                                <col style="width: 180px" />
-                                <col style="width: auto" />
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>5일차</th>
-                                    <td>
-                                        4강 경기<br />
-                                        결승<br />
-                                        폐회식<br />
-                                        환송 만찬 및 선수단 출국
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button type="button" class="participate2">
-                            참여하기
-                            <img src="./img/right_arrow_wt.png" alt="" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 대회상세 -->
-        <div id="fullpage">
-            <div class="section full1" pageNum="1">
-                <div class="cnt01">
-                    <p>JOKGU WITH WORLD</p>
-                    <span
-                        >SCROLL DOWN
-                        <h3><img src="./img/down.png" alt="" /></h3
-                    ></span>
-                </div>
-            </div>
-            <div class="section full2" pageNum="2">
-                <div class="cnt02">
-                    <p class="cnt02-title">ABOUT JOKGU</p>
-                    <div class="jokgu-info">
-                        <h3>족구소개</h3>
-                        <p>
-                            1,300년을 이어 대한민국 대표 스포츠로 성장한
-                            전통종목으로 족구는 신체의 가장 좁은 부위인 머리와
-                            발만을 이용해 네트를 사이에 두고 수비와 공격을 주고
-                            받는 스포츠입니다.
-                        </p>
-                        <p>
-                            이제 족구는 대한민국은 물론 전세계인이 즐기는
-                            스포츠로 성장하기 위해 모든 노력을 다 하고 있습니다.
-                        </p>
-                        <div>
-                            <a href="#"
-                                >소개 영상 보기
-                                <img src="./img/right_arrow.png" alt=""
-                            /></a>
-                            <a href="#"
-                                >족구 히스토리
-                                <img src="./img/right_arrow.png" alt=""
-                            /></a>
-                            <a href="#"
-                                >장비소개
-                                <img src="./img/right_arrow_wt.png" alt=""
-                            /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section full3" pageNum="3">
-                <div class="cnt03">
-                    <p class="cnt03-title">OFFICIAL TECHNIQUE</p>
-                    <div class="jokgu-skill">
-                        <h3>족구기술</h3>
-                        <div class="jokgu-skill-flex">
-                            <p>
-                                족구기술에 대한 간략한 설명이 들어갑니다. 그리워
-                                시인의 한 계십니다. 다 토끼, 부끄러운 이름과,
-                                밤을 보고, 잠, 이름과, 계십니다. 시인의 프랑시스
-                                마디씩 별 보고, 별 이런 버리었습니다. 별 하나에
-                                아름다운 풀
-                            </p>
-                            <div class="right">
-                                <a href="#"
-                                    >기술 영상 보기
-                                    <img src="./img/right_arrow.png" alt=""
-                                /></a>
-                                <a href="#"
-                                    >경기규칙 보기
-                                    <img src="./img/right_arrow_wt.png" alt=""
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="responsive">
-                            <div class="cont">
-                                <img src="./img/skill1.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>뛰어차기</em>
-                            </div>
-                            <div class="cont">
-                                <img src="./img/skill2.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>서서차기</em>
-                            </div>
-                            <div class="cont">
-                                <img src="./img/skill3.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>안축받기</em>
-                            </div>
-                            <div class="cont">
-                                <img src="./img/skill4.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>머리받기</em>
-                            </div>
-                            <div class="cont">
-                                <img src="./img/skill5.png" alt="" />
-                                <div class="opcity-bg"></div>
-                                <em>넘어차기</em>
-                            </div>
-                            <div class="cont">6</div>
-                            <div class="cont">7</div>
-                            <div class="cont">8</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section full4" pageNum="4">
-                <div class="cnt04">
-                    <p class="cnt04-title">INTERNATIONAL COMPETION</p>
-                    <div class="itc">
-                        <h3>국제대회</h3>
-                        <p class="world">제1회 족구 월드 챔피언쉽</p>
-                        <p>
-                            세계 20개국 300여명의 선수와 한국의 700만 동호인,
-                            해외 지부가 함께하는 5일간의 족구 축제를
-                            대한민국에서 개최합니다.
-                        </p>
-                        <div>
-                            <a href="#" class="btn-l" data-btn="history"
-                                >대회상세
-                                <img src="./img/right_arrow.png" alt=""
-                            /></a>
-                            <a href="#"
-                                >참여하기
-                                <img src="./img/right_arrow_wt.png" alt=""
-                            /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section full5" pageNum="5">
-                <div class="cnt05">
-                    <p class="cnt05-title">INTERNATIONAL JOKGU FEDERATION</p>
-                    <div class="itc">
-                        <h3>국제 족구 연맹 IJF</h3>
-                        <p>
-                            세계 20개국 300여명의 선수와 한국의 700만 동호인,
-                            해외 지부가 함께하는 5일간의 족구 축제를
-                            대한민국에서 개최합니다.
-                        </p>
-                        <div>
-                            <a href="#"
-                                >국제기구 가입절차
-                                <img src="./img/right_arrow_wt.png" alt=""
-                            /></a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <img src="./img/jokgu1.png" alt="족구사진1" />
-                        <img src="./img/jokgu2.png" alt="족구사진2" />
-                    </div>
-                </div>
-                <span
-                    >SCROLL UP
-                    <h3><img src="./img/up.png" alt="" /></h3
-                ></span>
-                <footer class="footer">
-                    <h3 class="footer-logo">
-                        <img src="./img/footer_logo.png" alt="kja" />
-                    </h3>
-                    <div class="center">
-                        <p>
-                            (우)05540 서울송파구 올림픽로 424, 올림픽공원
-                            SK핸드볼경기장 내 129호
-                        </p>
-                        <p>jokgu@sports.or.kr</p>
-                    </div>
-                    <h3>
-                        <img src="./img/youtube.png" alt="유튜브 바로가기" />
-                    </h3>
-                </footer>
-            </div>
-        </div>
-
-        <script>
-            $("#fullpage").fullpage({
-                afterLoad: function (origin, destination, direction, trigger) {
-                    $(".quick ul li").removeClass("on");
-                    $(".quick ul li").removeClass("wt");
-                    if (destination == 1) {
-                        $(".quick ul li").eq(1).addClass("wt");
-                        $(".quick ul li").eq(2).addClass("wt");
-                        $(".quick ul li").eq(3).addClass("wt");
-                        $(".quick ul li").eq(4).addClass("wt");
-                    }
-                    if (destination == 2) {
-                        $(".quick ul li").eq(1).addClass("on");
-                    }
-                    if (destination == 3) {
-                        $(".quick ul li").eq(2).addClass("on");
-                    }
-                    if (destination == 4) {
-                        $(".quick ul li").eq(3).addClass("on wt");
-                    }
-                    if (destination == 5) {
-                        $(".quick ul li").eq(4).addClass("on");
-                    }
-
-                    $(".bottom ul li").removeClass("en");
-
-                    if (destination == 1) {
-                        $(".bottom ul li").eq(0).addClass("en");
-                    }
-                    if (destination == 2) {
-                        $(".bottom ul li").eq(1).addClass("en black");
-                    }
-                    if (destination == 3) {
-                        $(".bottom ul li").eq(2).addClass("en black");
-                    }
-                    if (destination == 4) {
-                        $(".bottom ul li").eq(3).addClass("en");
-                    }
-                    if (destination == 5) {
-                        $(".bottom ul li").eq(4).addClass("en black");
-                    }
-                },
-                anchors: [
-                    "firstPage",
-                    "secondPage",
-                    "3rdPage",
-                    "4thpage",
-                    "lastPage",
-                ],
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
             });
-            $(".popup").on("click", function () {
-                $(this).attr("id");
-            });
-            $(".btn-l").on("click", function () {
-                $(`#${$(this).attr("data-btn")}`).show();
-            });
-            $(".responsive").slick({
-                dots: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                responsive: [
-                    {
-                        breakpoint: 1250,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                        },
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                        },
-                    },
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- /장비소개 -->
+    <!-- 동영상 -->
+    <div class="popup" id="videos">
+      <div class="popup-wrap" id="videos">
+        <div class="contents flex jsw">
+          <div class="videos">
+            <iframe
+              width="960"
+              height="540"
+              src="https://www.youtube.com/embed/fgQqBRMfSjw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="close-btn">
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
 
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ],
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
             });
-        </script>
-    </body>
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- /동영상 -->
+    <!-- 경기규칙 -->
+    <div class="popup" id="rule">
+      <div class="popup-wrap" id="rule">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">경기규칙</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main rule">
+            <div class="rule-down">
+              <h1>경기규칙</h1>
+              <button type="button">
+                경기규칙 다운로드
+                <img src="./img/downlode.png" alt="" />
+              </button>
+            </div>
+            <span class="enact">2017. 1. 12 제정</span>
+            <h3 class="rule1">제1장 경기</h3>
+            <div class="definition btb ttb">
+              <strong>제１조(정의)</strong>
+              <div>
+                <p>
+                  족구경기는 각기 4명씩으로 구성된 두 팀이 플레이를 하는 것이다.
+                  각 팀의 목적은 발(무릎미만)과 머리(턱 이상)만을 이용해 공을
+                  상대 팀의 코트로 넘겨 득점하거나, 상대 팀이 득점 하려는 것을
+                  막는데 있다.
+                </p>
+                <p>
+                  경기는 한 세트 15점을 먼저 선취한 팀이 2세트를 먼저 취득하게
+                  되면 승자가 된다.
+                </p>
+                <p>족구경기는 공인 심판과 공인 시설 및 용구에 의해 진행된다.</p>
+              </div>
+            </div>
+            <h3 class="rule1">제2장 코트와 시설 및 장비</h3>
+            <div class="definition ttb">
+              <strong>제2조(족구 전용 경기장)</strong>
+              <div>
+                <p>
+                  족구 전용 경기장은 사이드라인에서 10m, 엔드라인에서 15m 이내는
+                  어떠한 장애물도 없도록 공간이 확보되어야 한다.
+                </p>
+                <p>
+                  경기장의 표면은 평평하고 수평을 이루어야 하며 균일해야한다.
+                </p>
+                <p>
+                  모든 경기는 별지 제1호 서식에 따른 대한민국족구협회 승인 족구
+                  코트 매트 위에서 해야 한다.
+                </p>
+                <p>
+                  경기장 바닥으로부터 천장까지 사이의 가장 낮은 장애물까지의
+                  사이는 최소 12m이어야 한다.
+                </p>
+                <p>코트의 규격은 다음 각 호와 같다.</p>
+                <ul>
+                  <li>1. 사이드라인은 7.5m 씩 양 팀으로 전체 15m이다.</li>
+                  <li>2. 엔드라인의 폭은 6.5m이다.</li>
+                  <li>
+                    3. 서브제한 구역은 사이드라인 연장선과 엔드라인 뒤쪽으로
+                    3m이다.
+                  </li>
+                  <li>4. 네트의 높이는 지면으로부터 105cm이다.</li>
+                  <li>5. 안테나의 높이는 지면으로부터 150cm이다.</li>
+                  <li>
+                    6. 안테나는 사이드라인으로부터 21cm(공의 지름)를 이격
+                    설치한다.
+                  </li>
+                  <li>7. 선수교체 지역은 부심라인에서 중앙으로부터 2m이다.</li>
+                </ul>
+                <p>실내경기장의 기온은 최저 16℃이상 25℃ 이하여야 한다.</p>
+                <p>
+                  조명은 선수들과 경기원들의 눈부심을 최소화 하여 설치되어야
+                  하며, 1,000룩수(lux) 이상으로 공식대회의 경우 경기장 표면 1m
+                  위에서 측정했을 때 1,000룩스(lux) 보다 낮아서는 안
+                  된다.〔본조신설 2022.9.24.〕
+                </p>
+                <img src="./img/jokgu-pro.png" alt="" />
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제2조의2(생활체육 전용 경기장)</strong>
+              <div>
+                <p>
+                  경기장은 바닥이 단단한 평면의 직사각형으로 코트와 자유지역으로
+                  구성된다. 자유지역에는 어떠한 장애물도 없어야 하며, 사이드라인
+                  쪽은 5m(2코트 이상 시 코트와 코트간격 8m 이상), 엔드라인 쪽은
+                  8m 이상을 이격하여야 한다. <개정2021.2.6.><개정2022.9.24.>
+                </p>
+                <p>
+                  실외 족구 전용경기장의 표면은 별지 제2호 서식과 같이
+                  인조잔디와 천연고무재 매트만을 사용하며, 모든 표면은 협회의
+                  승인을 받아야 한다.<신설2022.9.24.>
+                </p>
+                <p>코트의 규격은 다음 각 호와 같다.</p>
+                <ul>
+                  <li>
+                    1. 사이드라인은 7.5m 씩 양 팀으로 전체 15m이며, 초등부는
+                    6.5m로 전 체 13m이다.<개정2022.9.24.>
+                  </li>
+                  <li>
+                    2. 엔드라인의 폭은 6.5m이다. 단 초등부는
+                    5.5m이다.<개정2022.11.30.>
+                  </li>
+                  <li>
+                    3. 서브제한 구역은 사이드라인 연장선과 엔드라인 뒤쪽으로
+                    3m이다.
+                  </li>
+                  <li>
+                    4. 네트의 높이는 지면으로부터 105cm이며, 여자부와 초등부는
+                    90cm이다.<개정2022.9.24.>
+                  </li>
+                  <li>5. 안테나의 높이는 지면으로부터 150cm이다.</li>
+                  <li>
+                    6. 안테나는 사이드라인으로부터 21cm(공의 지름)를 이격
+                    설치한다.
+                  </li>
+                  <li>7. 선수교체 지역은 부심라인에서 중앙으로부터 2m이다.</li>
+                </ul>
+                <img src="./img/jokgu-life.png" alt="" />
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제3조(네트)</strong>
+              <div>
+                네트의 길이는 7.5m, 폭 75cm로 네트플레이가 가능한
+                그물망(정방10cm)이며, 상단의 수평 밴드는 너비가 5cm이다.
+                설치확인은 심판 및 주장이 점검 조정한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제4조(지주 및 보호대)</strong>
+              <div>
+                지주는 지름 7.5±2.5cm의 견고한 것으로 사이드라인으로부터 1m이상
+                이격하여 설치하되 안전을 위하여 별지 제3호에 의한 지주보호대를
+                부착하여야 한다.<개정2022.9.24.>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제5조(안테나)</strong>
+              <div>
+                안테나는 사이드라인의 끝부분으로부터 21cm(공의 지름)간격을 두고
+                수직으로 네트에 견고히 설치하며, 네트 위 상단 부분은 잘 보이도록
+                빨간색과 흰색의 대조적 색상을 사용한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제6조(라인)</strong>
+              <div>
+                모든 라인은 5cm 폭으로 바닥과 다른 색상으로 구분되는 천 또는
+                테이프로 한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제7조(공)</strong>
+              <div>
+                공은 대한민국족구협회 공인규정에 의거 심의 공인한 것으로 한다.
+                <p style="padding-top: 15px">
+                  규격은 12조각 이내로 무게는 330～360g, 공기압은
+                  0.45bar±0.01bar(구장의 조건에 따라 ±10%추가)이며, 공의
+                  반발높이는 20℃에서 100∼125cm, 5℃에서 90∼110cm 이내(KISS
+                  시험기준에 따라 5cm 이상의 강철재 바닥 기준 2m 높이에서
+                  수직으로 자유낙하)의 반발이 되고, 크기는 지름 200∼205mm이다.
+                  단, 초등부는 290±10g 이며, 규격은 같다.<개정2021.3.27.>
+                </p>
+                <p>
+                  전문체육 공인구는 12조각 이내로 무게는 360～380g, 공기압은
+                  0.45bar±0.01bar(구장의 조건에 따라 ±10%추가)이며, 공의
+                  반발높이는 20℃에서 90∼110cm, 5℃에서 70∼90cm 이내(KISS
+                  시험기준에 따라 5cm 이상의 강철재 바닥 기준 2m 높이에서
+                  수직으로 자유낙하)의 반발이 되고, 크기는 지름
+                  200∼205mm이다.<신설2022.9.24.>
+                </p>
+                <p>
+                  대회사용구는 대한민국족구협회 및 산하단체에서 주최·주관하는
+                  공식대회 시 공인규정에 의거 대회사용구로 지정된 공을 사용한다.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제8조(족구화)</strong>
+              <div>
+                족구화는 대한민국족구협회 기술위원회 규정에 의거 심의 인정한
+                것이어야 하며, 개조되지 않은 일체형 제품이어야 한다.
+                <p style="padding-top: 15px">
+                  규격은 가죽이나, 인조가죽으로 튼튼한 재질이어야 하며, 바닥은
+                  염료를 사용하지 않은 고무나 합성고무로 요철의 형태는 자유롭게
+                  적용하되 요와 요의 간격은 5mm 이내여야하고, 요와 철의 높이는
+                  3mm 이내로 한다.<개정2022.9.24.>
+                </p>
+                <p>
+                  가죽이나 인조가죽의 상부표피 돌출부위는 2mm 이내로 하며, 바닥
+                  모서리는 선수의 부상과 전용바닥재 손상을 예방하기 위해 둥글게
+                  처리한다.<신설2022.1.22.><개정2022.9.24.>
+                </p>
+                <p>
+                  족구화는 대회의 품위, 전용 바닥재 손상여부, 선수 안전등을
+                  고려하여 족구화라고 지정한 신발로 제한한다.
+                </p>
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>제9조(복장)</strong>
+              <div>
+                <p>
+                  선수의 경기복장은 팀별로 동일해야하며, 하의는 반바지로 하고,
+                  상의는 등번호를 필히 게재하여야 한다. 등번호는 등 중앙에
+                  위치하여야 하며 번호의 크기는 15cm 이상으로 한다. 상·하의
+                  번호는 일치하고, 족구화를 착용하여야 한다.<개정2022.11.30.>
+                </p>
+                <p>심판의 복장 및 소지품은 족구심판매뉴얼로 정하여 운영한다.</p>
+                <p>
+                  주장은 경기 시작 전 주장 띠를 좌측 팔에 필히 착용하여야 한다.
+                </p>
+                <p>타이즈 착용 및 밀착형 무릎보호대는 허용한다.</p>
+                <p>
+                  두건의 두께는 1mm이하, 머리띠는 넓이 5cm이내 두께는 3mm이하의
+                  규격을 허용하되, 모자 착용은 금한다.
+                </p>
+                <span></span>
+                <p>안구보호대 착용은 허용한다.</p>
+                <p>기타 첨부 부착물은 불허한다.</p>
+              </div>
+            </div>
+            <h3 class="rule1">제3장 팀 구성</h3>
+            <div class="definition ttb">
+              <strong>제10조(팀 구성 및 선수 등록)</strong>
+              <div>
+                <p>
+                  한 팀은 감독, 선수를 포함하여 최대 8명으로 구성하며, 선수의
+                  동일한 등번호 사용은 금지한다.<개정2022.11.30.>
+                </p>
+                <p>
+                  최강부는 성적 산출에 의해 선정하되, 모든 부서의 선수는
+                  주소지를 기준으로 협회에 등록을 하여야 하며, 전국초청대회이상
+                  및 타 시·도 대회에 출전 할 때는 소속 시·도협회 사무국의 승인을
+                  받아야 한다.
+                </p>
+                <p>
+                  세부사항은 부별 관리규정으로 정하여 운영한다. 단,
+                  대한민국족구협회 산하 17개 시·도협회에 등록된 선수 및 팀은
+                  협회의 경기규칙 및 제 규정을 준수하지 않는 타 족구 단체의
+                  행사(대회)에 참여시 제재를 감수 하여야 하며, 심판은 자격을
+                  취소한다.
+                </p>
+                <p>
+                  팀 및 선수가 대회에 참가신청 시 부별 경기 일차가 다를 경우는
+                  중복 참가신청이 가능하다. 단, 최강부 참가 선수는 제외한다.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제11조(감독)</strong>
+              <div>
+                <p>
+                  감독의 복장은 단정하여야 하며, 규정준수, 팀의 소속감고취,
+                  행사참여, 정신교육의 책임을 가지며 대회집행부 및 심판진의
+                  불합리한 진행이 야기될 시 경기 종료 후 이의 신청, 경기 시
+                  작전타임, 선수교체의 권한을 갖는다.
+                </p>
+                <p>
+                  감독은 참가 신청서에 명시된 자만이 수행 할 수 있으며, 경기
+                  시작전 해당 코트에 위치하여야 한다. 어떠한 경우라도 선수가
+                  감독대행을 할 수 없다.
+                </p>
+                <p>
+                  모든 부서의 감독은 반드시 지도자 자격을 취득한 사람으로 협회의
+                  경기인등록시스템에 등록된 사람만이 감독으로 등록 할 수 있다.
+                  또한 모든 지도자는 협회에 등록 후 발급받은 자격증을 패용하여야
+                  한다.
+                </p>
+                <p>
+                  감독은 선수로 등록 할 수 없다. 단, 경기 일차가 다른 타 부서의
+                  경우는 선수로 등록 할 수 있다.
+                </p>
+                <p>
+                  최강부 감독은 최초 등록 후 최소 6개월은 감독직을 유지하여야
+                  한다.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제12조(주장)</strong>
+              <div>
+                <p>
+                  각 팀은 주장을 선임하여야 하며, 주장 띠 미착용 시 심판판정에
+                  대한 질의 및 기타 요구를 할 수 없다.
+                </p>
+                <p>
+                  주장은 경기장, 공의 점검, 상대 팀 선수확인, 애매한 판정에 대한
+                  질의 및 규칙 적용에 대한 해석요구, 복장교환, 환자 발생 시 휴식
+                  등의 요구를 할 수 있다.
+                </p>
+                <p>
+                  주장의 요구를 주심의 판단에 따라 반려 또는 승인 할 수 있다.
+                </p>
+                <p>주장이 교체 시 주장띠는 주전 선수 중에 인계하여야 한다.</p>
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>제13조(선수)</strong>
+              <div>
+                <p>팀 선수는 경기 전 최소 4명을 구성해야 한다.</p>
+                <p>
+                  경기 시작 전 또는 경기 중 4명의 선수 미달일 경우 실격패
+                  처리한다.
+                </p>
+                <p>심판이 신분확인을 요청 할 경우에는 반드시 응해야 한다.</p>
+                <p>
+                  배번은 자유롭게 하고, 경기진행 후 변경은 불가하며, 대회 시작
+                  30분전까지 출전선수의 확인을 받는다.
+                </p>
+              </div>
+            </div>
+            <h3 class="rule1">제4장 경기방식</h3>
+            <div class="definition ttb">
+              <strong>제15조(득·실점)</strong>
+              <div>
+                <p>
+                  득점은 상대편 코트에 공이 정상적으로 성공하거나 상대팀이 반칙
+                  또는 벌칙을 받는 경우이며, 득점에 반하여 상대 팀은 실점이
+                  된다.
+                </p>
+                <p>
+                  득점의 행위가 종료 후 동작이 연결되어 규칙을 위반할 경우
+                  시간차상 득점이 우선하면 득점으로 인정되며, 규칙위반이
+                  우선하면 실점이다. <개정2020.7.9> ③∼⑤ 항 <삭제2021.2.6.>
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제16조(경기진행)</strong>
+              <div>
+                <p>
+                  경기는 받기(리시브), 띄우기(토스), 차기(킥), 주기(서브)로
+                  이루어진다.
+                </p>
+                <p>
+                  사이드라인과 엔드라인의 어느 부분이라도 공의 터치 시는
+                  인플레이이다.
+                </p>
+                <p>선수의 위치는 포지션에 관계없이 자유롭게 위치한다.</p>
+                <p>
+                  모든 경기는 3세트를 원칙으로 한다. 단, 대회의 장이 여건을
+                  고려하여 증·감할 수 있다.
+                </p>
+                <p>
+                  세트점수는 15점으로 듀스 시 2점을 먼저 선취한 팀이 승이며,
+                  상한 점수는 19점이다. 최종세트는 8점을 선취한 경우 코트를
+                  교체한다. 단, 최종세트 경기 중 코트교체 시점 8점을 초과하였을
+                  시는 확인된 상황에서 코트를 교체한다.
+                </p>
+                <span></span>
+                <p>점수는 공격과 수비에 관계없이 교차점수를 적용한다.</p>
+
+                <p>
+                  작전시간은 해당 팀 감독의 요청으로 주심의 승인이 있어야 하며,
+                  1세트 1회 1분 이내로 실시한다.
+                </p>
+                <p>
+                  선수의 교체는 해당 팀 감독의 요청으로 주심이 다음 각 호의
+                  기준에 의하여 승인한다.
+                </p>
+                <ul>
+                  <li>
+                    1. 선수명단에 게재된 선수 중에 매 세트 당 3명 이내에
+                    자유롭게 교체할 수 있다. 단, 주장이 교체될 시 경기 중인
+                    선수에게 주장 띠를 인계하여야 한다.
+                  </li>
+                  <li>
+                    2. 어떠한 경우라도 감독의 부재시에는 선수교체가 불가능하며,
+                    다음 세트가 시작 시 출전한 선수는 교체로 보지 않는다. 단,
+                    주심에게 반드시 통보하여야 한다. <개정2022.11.30.>
+                  </li>
+                  <li>
+                    3. 다음 세트 시작 시 주심에게 미 통보 출전 선수<br />
+                    - 감독이 있을 경우 : 선수교체로 본다. <br />- 감독이 없을
+                    경우 : 팀 경고<신설2022.11.30.>
+                  </li>
+                  <li>
+                    4. 경기 중 환자 발생 시 경기당 선수별 3분 이내 2회에 한하여
+                    휴식을 부여할 수 있으나, 3분 후 해당세트에 4명의 선수 미
+                    구성 시 실격처리 한다. <개정2020.7.9><개정2021.2.6.>
+                  </li>
+                  <li>
+                    5. 주심의 교체 승인 후 5초 이내에 이루어져야 하며, 지연 시
+                    팀 주의다.
+                  </li>
+                </ul>
+                <p>
+                  신체의 허용부위는 무릎미만의 다리와 턱 이상의 머리만을
+                  사용한다.
+                </p>
+                <p>
+                  코트플레이는 3바운드 3터치 이내에 자유롭게 할 수 있으며,
+                  서브나 공격을 가로막기(허용부위는 제9항과 같다)를 할 수 있고,
+                  바운드 후 네트 상단에 위치한 공은 공격 측에 우선권을
+                  부여한다.(수비 측 터치 시 실점)
+                </p>
+                <p>
+                  바운드와 선수의 공 터치는 각 1회씩 3회 이내에만
+                  허용한다.(33원칙) 단, 최강부는 2바운드 3터치를 원칙으로 한다.
+                  방송중계 등 이벤트 경기에는 집행부에서 별도 운영 할 수
+                  있다.<개정2021.11.13.>
+                </p>
+                <p>
+                  네트플레이는 허용되며, 신체를 제외한 네트에서 발생하는 모든
+                  상황은 인플레이이다. 다만 안테나를 기준으로 내측만이 네트이며,
+                  이외는 타 물체이다.
+                </p>
+                <p>
+                  네트 하단으로 완전하게 통과한 공과 신체는 상대의 수비방해와
+                  관계없이 실점으로 처리되며, 상대코트에 일부 침범된 신체로 인해
+                  수비 방해 시 실점이다. <개정2020.7.9>
+                </p>
+                <p>
+                  허공에 진행 중인 공은 인플레이 상황으로 지면이나 타 물체에
+                  닿기 전까지는 살아있는 공이다.
+                </p>
+                <p>
+                  경기의 적용규칙에 대한 질의는 주장만이 주심에게 할 수 있으며,
+                  이의 신청은 경기 종료 후 감독이 6하 원칙에 의거 본부석에
+                  제출하여야 한다. 접수된 이의소청은 스포츠공정위원회 결과에
+                  따라 해당 심판, 선수, 집행부등에 강력한 신상필벌이 따른다. (각
+                  시·도협회 및 해당자에게 통보, 홈페이지 게재)
+                </p>
+                <p>
+                  노카운트는 경기 중 천재지변이나 기타 장애물이 코트내로
+                  유입되어 경기중인 공에 닿거나, 경기가 속행될 수 없다고 판단될
+                  시 또는 양 팀 동시 규칙위반 또는 판정 불가능 시 적용하며, 경기
+                  시설물이나 용구의 이상으로 정상적인 경기가 이루어지지 않을
+                  경우 적용한다. <개정2020.7.9>
+                </p>
+                <p>
+                  안테나외측통과는 수비 터치 후 안테나 외측으로 통과한 공을
+                  바운드되기 전 다시 같은 측면의 안테나 외측으로 백코트하여
+                  유효터치 이내에 네트 내측으로 넘길 시 인플레이이다.
+                </p>
+                <p>
+                  합의판정은 각 팀의 주장이 요청하며, 정당한 어필이나 주심의
+                  독단적으로 판단이 어려울 경우 주·부심이 합의판정 한다.
+                  주·부심의 합의는 최종 판정이며, 합의판정은 세트 당 1회만
+                  허용한다. 단, 합의판정을 신청해서 판정이 번복된 경우에는
+                  합의판정 가능 횟수가 차감되지 않는다.<개정2021.11.13.>
+                </p>
+                <p>
+                  주심이 내린 최종판정(합의판정)은 번복할 수 없다. 단
+                  최종판정(예: 합의판정한 경우)이 되기 전 정확한 판단이 어려울
+                  경우 경기를 중단 시킨 다음 주·부심이 합의 후 최종판정을 하며,
+                  방송경기 중 정확한 판단이 어려울 경우 주심은 비디오 판독을
+                  요청할 수 있다. (본 절차를 거치지 않고 심판이 인정하는 오심은
+                  징계의 처벌을 감수하며, 이에 이의신청은 받아들이지 않는다)
+                  불확실한 판정 또는 어긋난 판정에서만 주·부심이 합의판정을
+                  하며, 모든 사안에 대하여 합의하지 않는다.<개정2022.1.22.>
+                </p>
+                <p>
+                  방송경기 중 오심에 대한 비디오 판독요청은 해당 팀 감독의
+                  요청으로 합의판정 전 주심에게 요청하며 한 세트 당 1회만
+                  허용한다. 단, 판정이 번복된 경우에는 비디오 판독요청 가능
+                  횟수가 차감되지 않는다.<개정2022.1.22.>
+                </p>
+                <p>
+                  경기중단은 주심의 판단으로 경기를 중단시킬 필요성이 있을 때
+                  적용한다.
+                </p>
+                <p>코트 교체는 세트 종료 시 실시한다.</p>
+                <p>
+                  우천상황은 사용하는 경기장의 과반수이상 코트 면이 바운드가
+                  형성 되지 않을 시를 말한다.
+                </p>
+                <ul>
+                  <li>1. <삭제2021.3.27.></li>
+                  <li>
+                    2. 우천상황이라도 경기의 진행은 실시하며, 기상 악화시는 별도
+                    대표자 회의로 결정한다.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제17조(경기 기록지)</strong>
+              <div>
+                경기 기록지는 서식1:일반용, 서식2:방송용으로 분류하며,
+                경기위원회에서 표준화하여 사용한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제18조(성적 산출법)</strong>
+              <div>
+                <p>
+                  성적 산출순서는 1.승률, 2.세트득실, 3.점수득실, 4.승자승,
+                  5.추첨 순으로 정한다.
+                </p>
+                <p>성적 산출에서 실격패를 당한 팀의 성적은 0점으로 처리한다.</p>
+                <p>
+                  본선대진표는 대한민국족구협회 홈페이지에 공지된 대진표를
+                  사용한다.
+                </p>
+                <p><삭제2022.11.30.></p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제19조(안전사고)</strong>
+              <div>
+                경기 중 안전사고는 생활체육진흥법 제12조(보험 등 가입)에 따라
+                주최자 배상책임보험 또는 상해보험 중 가입하여야 하며, 장신구
+                착용으로 인한 부상 시 본인이 일체의 책임을 감수한다.
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>제20조(해설자)</strong>
+              <div>
+                협회 제규정과 경기규칙에 해박한 지식을 가지고, 논리 정연한
+                사람으로 대한민국족구협회에서 선정 위촉한다.
+              </div>
+            </div>
+            <h3 class="rule1">제5장 경기규칙</h3>
+            <div class="definition ttb">
+              <strong>제21조(서브)</strong>
+              <div>
+                <p>
+                  서브는 우수비부터 시계방향으로 로테이션으로 실시한다. 단, 위반
+                  시 실점처리 한다.<개정2022.4.30.>
+                </p>
+                <p>
+                  서브의 시작신호 전 서브 및 지연은 1차 주의이며, 2차부터는 실점
+                  처리한다. <개정2020.7.9.><개정2021.2.6.>
+                </p>
+                <p>
+                  주심의 서브 시작 신호 후 착지한 신체가 제한구역(엔드라인,
+                  사이드라인, 후의 3m)선에 닿거나 이탈시 실점이다.
+                </p>
+                <p>
+                  서브 행위는 공이 손에서 이탈하여 바운드되기 전 신체의
+                  허용부위에서 떠나는 순간까지이며, 떠난 순간 해제된다.
+                </p>
+                <p>
+                  서브는 주심의 시작 신호 후 5초 이내에 실시하여야 하며, 시간
+                  초과 시 실점이다.
+                </p>
+                <span></span>
+                <p>
+                  주심의 서브 시작 신호 전 서브하여 득점하면 노카운트이고,
+                  실점은 그대로 실점 처리한다.
+                </p>
+
+                <p>
+                  주심 시작 신호 후 같은 팀 타 선수에게 공을 넘길시 실점이다.
+                </p>
+                <p>
+                  서브한 공이 네트를 맞고 넘어갈 경우 인플레이이며, 네트를 넘지
+                  못할 시 실점이다.
+                </p>
+                <span></span>
+                <p>
+                  주심의 신호 후 바운드는 허용되나, 서브구역을 이탈하거나 바운드
+                  후 서브 시는 실점이다.
+                </p>
+                <p>
+                  1세트에 서브를 선행한 팀이 3세트에도 실시하며, 2세트는
+                  상대팀이 실시한다.
+                </p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제22조(경기상태)</strong>
+              <div>
+                <p>
+                  네트 터치는 공격, 수비에 관계없이 신체 및 신체에 부착된 어느
+                  것이라도 안테나 내측 터치 시 실점이며, 신체에서 이탈되어
+                  안테나 내측 터치 시에도 실점이다. 이때에는 부심이 즉시 휘슬을
+                  불어 실점 처리한다.<개정2021.2.6.>
+                </p>
+                <p>
+                  투 터치는 연속으로 몸에 두 번 이상 닿거나 구르는 상황으로
+                  실점이다.
+                </p>
+                <p>
+                  오버 타임은 3번의 터치 후 공을 상대편으로 넘기지 못한 경우로
+                  실점이다.
+                </p>
+                <p>
+                  홀딩은 공이 신체에 머물러 있는 경우로, 터치 형태가 아닌 들어
+                  올리거나, 누르거나, 붙어있거나, 밀어서 터치하는 경우로
+                  실점이다.
+                </p>
+                <p>
+                  오버 네트는 공격, 수비에 관계없이 신체 및 신체에 부착된 어느
+                  것이라도 네트 상단을 넘었을 시 실점이며, 신체에서 이탈하여
+                  네트 상단을 넘었을 시에도 실점이다. 단 공은 일부가 넘는다
+                  하여도 완전히 넘기 전에 터치하면 인플레이이다.
+                </p>
+                <span></span>
+                <p>
+                  바디 터치는 신체 중 허용된 부위(턱 이상 머리와 무릎미만
+                  다리)가 아닌 부위에 터치 시 실점이다.
+                </p>
+
+                <p>
+                  터치아웃은 공격 팀의 공격이 상대 수비수 터치 후 코트 밖으로
+                  바운드될 시 실점이다.<개정2022.11.30.>
+                </p>
+                <p>
+                  아웃은 공격 팀의 공이 코트 밖으로 나가거나, 수비 팀의 진행
+                  중인 공이 코트 밖으로 바운드되는 경우, 네트 아래로 공이 완전히
+                  통과 하는 경우, 3회 터치 후 안테나 외측으로 통과 시 실점이다.
+                </p>
+                <span></span>
+                <p>
+                  안테나외측 통과 및 터치는 수비 측 터치 후 안테나 외측으로
+                  진입하여 상대코트에 바운드되거나, 상대코트로 선수가 진입 시
+                  실점이다. 안테나에 신체나 공이 터치 시 실점이다. 또한 안테나
+                  외측으로 통과된 공을 상대선수가 터치 시 상대팀의 실점이며,
+                  수비방해 시에도 실점이다.
+                </p>
+                <p>
+                  경기 중 공이 허공에서 타 물체에 닿았을 경우 직전에 행위(터치
+                  또는 바운드)를 한 팀이 실점이다.
+                </p>
+                <p><삭제2020.7.9></p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제23조(주의)</strong>
+              <div>
+                다음 각 호에 해당하는 경우는 구두로 지적 시정하게 한다.
+                <ul>
+                  <li>1. 공을 상대에게 차 넘기는 행위</li>
+                  <li>
+                    2. 상대 공격시 오버 또는 네트터치 등 공격을 저지하는 발언
+                  </li>
+                  <li>3. 심판판정에 영향을 주는 아웃, 인 등을 표출하는 언행</li>
+                  <li>4. 시작 신호 전 서브와 서브 지연 시 <개정2020.7.9></li>
+                  <li>5. 선수 교체 지연 시(팀)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제24조(경고)</strong>
+              <div>
+                다음 각 호에 해당하는 경우는 경고로, 팀 경고는 감독에게, 부재 시
+                주장에게 주어진다.
+                <ul>
+                  <li>1. 감정적으로 공을 밖으로 차 버리는 행위(선수)</li>
+                  <li>
+                    2. 주장 이외의 선수, 임원이 질의나, 이의로 경기를 지연시키는
+                    행위(팀)
+                  </li>
+                  <li>
+                    3. 세트 교체 최대 3분 이상을 고의로 지연시키는 행위(팀)
+                  </li>
+                  <li>4. 경기 중 식음 및 제공하는 행위(선수, 팀)</li>
+                  <li>
+                    5. 대회 품위 손상 및 운용에 차질을 끼칠 수 있다고 판단되는
+                    행위(선수, 감독, 팀)
+                  </li>
+                  <li>6. 주의 2회 시(선수, 감독, 팀)</li>
+                  <li>7. 주·부심 합의판정 후 질의 시(팀)</li>
+                  <li>
+                    8. 세트 교체 시 주심에게 미통보 선수 교체(감독부재일 경우 팀
+                    경고)<신설2022.11.30.>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제25조(퇴장)</strong>
+              <div>
+                다음 각 호에 해당하는 경우는 퇴장으로 선수는 다음 한 경기에 출전
+                할 수 없으며, 해당 팀의 감독 승인 후 등록후보 중 교체하여
+                잔여경기를 진행한다.
+                <ul>
+                  <li>1. 한 경기에서 2회 경고 시</li>
+                  <li>2. 경기에 불응하거나, 경기 지연 시</li>
+                  <li>3. 감정적 비신사적 행위 시</li>
+                  <li>4. 폭언으로 경기에 지장을 초래 시</li>
+                </ul>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제26조(실격패)</strong>
+              <div>
+                <p>
+                  경기 개시 후 5분 이내에 경기 복장 미 통일 시와 족구화 미착용
+                  시
+                </p>
+                <p>선수 4인 미 구성 또는 유지할 수 없는 경우</p>
+                <p>출전 통보를 받고 5분 이내 미 출전 시</p>
+                <p>판정 불복으로 5분 이상 경과한 경우</p>
+                <p>경기에 상관없이 5분 이상 지연할 경우</p>
+                <span></span>
+                <p>합의판정 후 항의로 인하여 경기진행이 불가능 할 경우</p>
+
+                <p>한 경기 중 팀경고 2회 시<개정2021.3.27.></p>
+                <p>기타 대회품위를 손상 또는 격하시키는 행위</p>
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>제27조(몰수패)</strong>
+              <div>
+                <p>
+                  대회 기간 중 부정선수 적발 시 전 게임 몰수이며, 모든
+                  경기기록과 경기결과는 삭제한다. 몰수패를 당한 상대팀의
+                  경기결과에는 변함이 없으나, 부정선수에 대한 이의제기는
+                  해당경기 종료 이전까지이며, 이후에는 할 수 없다.
+                </p>
+                <p>대회의 전복 또는 태업을 조장하는 행위 시 전 경기 몰수</p>
+                <p>폭행을 행위 한 팀</p>
+                <p>의도적으로 승부를 조작하는 팀</p>
+                <p>
+                  대회기간 중 선수 외 소속팀 관계자 등이 경기장 난입 및 폭언으로
+                  경기진행을 불가능 하게 하는 팀<개정2021.11.13.>
+                </p>
+              </div>
+            </div>
+            <h3 class="rule1">제6장 상 및 벌칙</h3>
+            <div class="definition ttb">
+              <strong>제28조(상·벌)</strong>
+              <div>
+                <p>
+                  대한민국족구협회 스포츠공정위원회 규정에서 정한대로 운영한다.
+                </p>
+                <p>대회시상은 대회요강에 준한다.</p>
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제29조(이외의 규정/규칙)</strong>
+              <div>
+                본 규정과 규칙에 없는 항목은 해당 집행부의 결정에 따른다.
+              </div>
+            </div>
+            <div class="definition btb">
+              <strong>제30조(이의 소청)</strong>
+              <div>
+                이의소청은 이의 신청에 의거, 이의소청심사위원회 결정에 따른다.
+                이의소청심사위원회 의장은 스포츠공정위원장이 되며, 집행부, 심판,
+                선수 등이 참여하는 위원회를 구성 조치한다.
+              </div>
+            </div>
+            <h3 class="rule1">제7장 부 칙</h3>
+            <div class="definition ttb">
+              <strong>제1조</strong>
+              <div>본 규정은 이사회 심의 의결 후 총회에 보고한다.</div>
+            </div>
+            <div class="definition">
+              <strong>제2조</strong>
+              <div>
+                본 규정의 개정, 추가, 삭제 등의 절차도 부칙 제1조와 같다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제3조</strong>
+              <div>본 규정은 2017년 1월 12일부터 시행한다.</div>
+            </div>
+            <div class="definition">
+              <strong>제4조</strong>
+              <div>본 규정은 2018년 1월 27일부로 개정 시행한다.</div>
+            </div>
+            <div class="definition">
+              <strong>제5조</strong>
+              <div>본 규정은 2019년 2월 9일부로 개정 시행한다.</div>
+            </div>
+            <div class="definition">
+              <strong>제6조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2020년
+                5월 30일부로 개정 시행한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제7조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2020년
+                7월 9일부로 개정 시행한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제8조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2021년
+                2월 6일부로 개정 시행한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제9조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2021년
+                3월 27일부로 개정 시행한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제10조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2021년
+                11월 13일부로 개정 시행한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제11조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2022년
+                1월 22일부로 개정 시행한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제12조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2022년
+                4월 30일부로 개정 시행한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제13조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2022년
+                9월 24일부로 개정 시행한다.
+              </div>
+            </div>
+            <div class="definition">
+              <strong>제14조</strong>
+              <div>
+                본 규정은 이사회 심의 의결 후 시행하며 총회에 보고한다. 2022년
+                11월 30일부로 개정 시행한다.
+              </div>
+            </div>
+            <h3 class="rule1">족구전용 실내 바닥재 규격서</h3>
+            <div>
+              <table class="specifications">
+                <colgroup>
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>제품명</th>
+                    <td>족구전용 실내바닥재</td>
+                    <th>재질</th>
+                    <td>100% PVC</td>
+                  </tr>
+                  <tr>
+                    <th>사진</th>
+                    <td colspan="3"><img src="./img/PVC.png" alt="" /></td>
+                  </tr>
+                  <tr>
+                    <th>제원</th>
+                    <td colspan="3">
+                      <ul>
+                        <li>· 총 두께 : 8.0mm</li>
+                        <li>· 무게 : 5.8kg/m2</li>
+                        <li>· 충격 흡수 : EN 14808 기준 ≥25 30%</li>
+                        <li>· 수직 변형 : EN 14809 기준 ≤3.5 ≤2 mm</li>
+                        <li>· 슬라이딩 계수 : EN 13036‑4 기준 80 110</li>
+                        <li>· 볼 바운드 : EN 12235 기준 ≥90%</li>
+                        <li>· 마모저항 : EN ISO 기준 ≤1,000 ≤350mg</li>
+                        <li>· 충격저항 : EN 1517 기준 ≥8N/m</li>
+                        <li>· 압력저항 : EN 1516 기준 ≤0.5mm</li>
+                        <li>· 명도 : EN ISO 2831 기준 ≥30%</li>
+                        <li>· 회전부하저항 : EN 1560 기준 ≥1500 1500N</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="rule1">족구전용 실외 바닥재 규격서</h3>
+            <div>
+              <table class="specifications">
+                <colgroup>
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>제품명</th>
+                    <td>족구전용 실외바닥재</td>
+                    <th>재질</th>
+                    <td>인조잔디</td>
+                  </tr>
+                  <tr>
+                    <th>사진</th>
+                    <td colspan="3"><img src="./img/injo.png" alt="" /></td>
+                  </tr>
+                  <tr>
+                    <th>제원</th>
+                    <td colspan="3">
+                      <ul>
+                        <li>· 구조 : 스포츠잔디 이중구조(녹색)</li>
+                        <li>· 재질 : 바닥면 - 블랙, SBR코팅처리 / 표면 - PE</li>
+                        <li>· 길이 : 35mm</li>
+                        <li>
+                          · 보충재 : 환경부 인증 친환경 재료, 규사 20mm 이내
+                        </li>
+                        <li>
+                          · 중금속 함량 : 카드뮴, 납, 수은, 크롬 등 허용기준
+                          이하 발암물질 0.1 이하(불검출)
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="rule1">족구 지주 보호대 규격서</h3>
+            <div>
+              <table class="specifications">
+                <colgroup>
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>제품명</th>
+                    <td>족구 지주 보호대</td>
+                    <th>제조국</th>
+                    <td>대한민국</td>
+                  </tr>
+                  <tr>
+                    <th>사진</th>
+                    <td colspan="3"><img src="./img/jiju.png" alt="" /></td>
+                  </tr>
+                  <tr>
+                    <th>구성품</th>
+                    <td colspan="3">· 지주용 커버, 지주봉 커버 각 2EA 1SET</td>
+                  </tr>
+                  <tr>
+                    <th>제원</th>
+                    <td colspan="3">
+                      <ul>
+                        <li>
+                          · 제품 재질<br />
+                          - 보호 충전재 : 폴리우레탄<br />
+                          - 겉 포장재 : 타포린
+                        </li>
+                        <li>
+                          · 제품 사이즈<br />
+                          - 지주봉 길이 : 1100mm<br />
+                          - 내경 : 80mm<br />
+                          - 지주대 커버 : 높이300~450mm, 길이450~900mm<br />
+                          - 충전재 두께 : 40mm 이상
+                        </li>
+                        <li>· 제품 결속방법 : 벨크로 형태</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <script>
+              $(document).ready(function () {
+                $("ul.tabs li").click(function () {
+                  var tab_id = $(this).attr("data-tab");
+
+                  $("ul.tabs li").removeClass("current");
+                  $(".content").removeClass("current");
+
+                  $(this).addClass("current");
+                  $("#" + tab_id).addClass("current");
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /경기규칙 -->
+    <!-- 대회상세 -->
+    <div class="popup" id="details">
+      <div class="popup-wrap" id="details">
+        <div class="contents flex">
+          <div class="contents-head">
+            <h3 class="title">대회상세</h3>
+            <button type="button">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+          <div class="contents-main rule">
+            <div class="rule-down world">
+              <h1>제1회 족구 월드 챔피언쉽</h1>
+              <button type="button" class="participate">
+                참여하기
+                <img src="./img/right_arrow_wt.png" alt="" />
+              </button>
+            </div>
+            <h3 class="rule1">
+              세계 20개국 300여명의 선수와 한국의 700만 동호인, 해외 지부가
+              함께하는 5일간의 족구 축제를 대한민국에서 개최합니다.
+            </h3>
+            <table class="top-table">
+              <caption>
+                제1회 족구 월드 챔피언쉽
+              </caption>
+              <colgroup>
+                <col style="width: 180px" />
+                <col style="width: auto" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>행사명</th>
+                  <td>제1회 족구 월드 챔피언쉽</td>
+                </tr>
+                <tr>
+                  <th>일시</th>
+                  <td>2023. 8. 20~28(5일간)</td>
+                </tr>
+                <tr>
+                  <th>장소</th>
+                  <td>미정</td>
+                </tr>
+                <tr>
+                  <th>행사내용</th>
+                  <td>환영만찬 / 국제대회 / 문화체험 등</td>
+                </tr>
+                <tr>
+                  <th>참가국</th>
+                  <td>전 세계 20개국 참가 선수단</td>
+                </tr>
+                <tr>
+                  <th>주관</th>
+                  <td>대한민국족구협회</td>
+                </tr>
+                <tr>
+                  <th>후원</th>
+                  <td>미정</td>
+                </tr>
+                <tr>
+                  <th>주관 방송사</th>
+                  <td>KBS N스포츠, MBC 스포츠플러스, SBS 스포츠 중 1개사</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="schedule">
+              세부일정<span> 현장 상황에 따라 변동 될 수 있음</span>
+            </h3>
+            <table class="btm-table">
+              <caption>
+                세부일정
+              </caption>
+              <colgroup>
+                <col style="width: 180px" />
+                <col style="width: auto" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>1일차</th>
+                  <td>
+                    초청 선수단 입국 및 숙소 체크인<br />
+                    선수단 ID카드 발급<br />
+                    환영 만찬 및 축하공연
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="btm-table">
+              <caption>
+                세부일정
+              </caption>
+              <colgroup>
+                <col style="width: 180px" />
+                <col style="width: auto" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>2~4 일차</th>
+                  <td>
+                    개회식<br />
+                    조별 예선<br />
+                    8강 경기
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="btm-table padbtm">
+              <caption>
+                세부일정
+              </caption>
+              <colgroup>
+                <col style="width: 180px" />
+                <col style="width: auto" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>5일차</th>
+                  <td>
+                    4강 경기<br />
+                    결승<br />
+                    폐회식<br />
+                    환송 만찬 및 선수단 출국
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="button" class="participate2">
+              참여하기
+              <img src="./img/right_arrow_wt.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 대회상세 -->
+    <div id="fullpage">
+      <div class="section full1" pageNum="1">
+        <div class="cnt01">
+          <p>JOKGU WITH WORLD</p>
+          <span
+            >SCROLL DOWN
+            <h3><img src="./img/down.png" alt="" /></h3
+          ></span>
+        </div>
+      </div>
+      <div class="section full2" pageNum="2">
+        <div class="cnt02">
+          <p class="cnt02-title">ABOUT JOKGU</p>
+          <div class="jokgu-info">
+            <h3>족구소개</h3>
+            <p>
+              1,300년을 이어 대한민국 대표 스포츠로 성장한 전통종목으로 족구는
+              신체의 가장 좁은 부위인 머리와 발만을 이용해 네트를 사이에 두고
+              수비와 공격을 주고 받는 스포츠입니다.
+            </p>
+            <p>
+              이제 족구는 대한민국은 물론 전세계인이 즐기는 스포츠로 성장하기
+              위해 모든 노력을 다 하고 있습니다.
+            </p>
+            <div>
+              <a href="#" class="btn-l" data-btn="videos"
+                >소개 영상 보기 <img src="./img/right_arrow.png" alt=""
+              /></a>
+              <a href="#" class="btn-l" data-btn="history"
+                >족구 히스토리 <img src="./img/right_arrow.png" alt=""
+              /></a>
+              <a href="#" class="btn-l" data-btn="Equipments"
+                >장비소개 <img src="./img/right_arrow_wt.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section full3" pageNum="3">
+        <div class="cnt03">
+          <p class="cnt03-title">OFFICIAL TECHNIQUE</p>
+          <div class="jokgu-skill">
+            <h3>족구기술</h3>
+            <div class="jokgu-skill-flex">
+              <p>
+                족구기술에 대한 간략한 설명이 들어갑니다. 그리워 시인의 한
+                계십니다. 다 토끼, 부끄러운 이름과, 밤을 보고, 잠, 이름과,
+                계십니다. 시인의 프랑시스 마디씩 별 보고, 별 이런 버리었습니다.
+                별 하나에 아름다운 풀
+              </p>
+              <div class="right">
+                <a href="#"
+                  >기술 영상 보기 <img src="./img/right_arrow.png" alt=""
+                /></a>
+                <a href="#" class="btn-l" data-btn="rule"
+                  >경기규칙 보기 <img src="./img/right_arrow_wt.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="responsive">
+              <div class="cont">
+                <img src="./img/skill1.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>뛰어차기</em>
+              </div>
+              <div class="cont">
+                <img src="./img/skill2.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>서서차기</em>
+              </div>
+              <div class="cont">
+                <img src="./img/skill3.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>안축받기</em>
+              </div>
+              <div class="cont">
+                <img src="./img/skill4.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>머리받기</em>
+              </div>
+              <div class="cont">
+                <img src="./img/skill5.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>넘어차기</em>
+              </div>
+              <div class="cont">6</div>
+              <div class="cont">7</div>
+              <div class="cont">8</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section full4" pageNum="4">
+        <div class="cnt04">
+          <p class="cnt04-title">INTERNATIONAL COMPETION</p>
+          <div class="itc">
+            <h3>국제대회</h3>
+            <p class="world">제1회 족구 월드 챔피언쉽</p>
+            <p>
+              세계 20개국 300여명의 선수와 한국의 700만 동호인, 해외 지부가
+              함께하는 5일간의 족구 축제를 대한민국에서 개최합니다.
+            </p>
+            <div>
+              <a href="#" class="btn-l" data-btn="details"
+                >대회상세 <img src="./img/right_arrow.png" alt=""
+              /></a>
+              <a href="#"
+                >참여하기 <img src="./img/right_arrow_wt.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section full5" pageNum="5">
+        <div class="cnt05">
+          <p class="cnt05-title">INTERNATIONAL JOKGU FEDERATION</p>
+          <div class="itc">
+            <h3>국제 족구 연맹 IJF</h3>
+            <p>
+              세계 20개국 300여명의 선수와 한국의 700만 동호인, 해외 지부가
+              함께하는 5일간의 족구 축제를 대한민국에서 개최합니다.
+            </p>
+            <div>
+              <a href="#"
+                >국제기구 가입절차 <img src="./img/right_arrow_wt.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="right">
+            <img src="./img/jokgu1.png" alt="족구사진1" />
+            <img src="./img/jokgu2.png" alt="족구사진2" />
+          </div>
+        </div>
+        <span
+          >SCROLL UP
+          <h3><img src="./img/up.png" alt="" /></h3
+        ></span>
+        <footer class="footer">
+          <h3 class="footer-logo">
+            <img src="./img/footer_logo.png" alt="kja" />
+          </h3>
+          <div class="center">
+            <p>
+              (우)05540 서울송파구 올림픽로 424, 올림픽공원 SK핸드볼경기장 내
+              129호
+            </p>
+            <p>jokgu@sports.or.kr</p>
+          </div>
+          <h3>
+            <img src="./img/youtube.png" alt="유튜브 바로가기" />
+          </h3>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      $("#fullpage").fullpage({
+        afterLoad: function (origin, destination, direction, trigger) {
+          $(".quick ul li").removeClass("on");
+          $(".quick ul li").removeClass("wt");
+          if (destination == 1) {
+            $(".quick ul li").eq(1).addClass("wt");
+            $(".quick ul li").eq(2).addClass("wt");
+            $(".quick ul li").eq(3).addClass("wt");
+            $(".quick ul li").eq(4).addClass("wt");
+          }
+          if (destination == 2) {
+            $(".quick ul li").eq(1).addClass("on");
+          }
+          if (destination == 3) {
+            $(".quick ul li").eq(2).addClass("on");
+          }
+          if (destination == 4) {
+            $(".quick ul li").eq(3).addClass("on wt");
+          }
+          if (destination == 5) {
+            $(".quick ul li").eq(4).addClass("on");
+          }
+
+          $(".bottom ul li").removeClass("en");
+
+          if (destination == 1) {
+            $(".bottom ul li").eq(0).addClass("en");
+          }
+          if (destination == 2) {
+            $(".bottom ul li").eq(1).addClass("en black");
+          }
+          if (destination == 3) {
+            $(".bottom ul li").eq(2).addClass("en black");
+          }
+          if (destination == 4) {
+            $(".bottom ul li").eq(3).addClass("en");
+          }
+          if (destination == 5) {
+            $(".bottom ul li").eq(4).addClass("en black");
+          }
+        },
+        anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
+      });
+      $(".popup").on("click", function () {
+        $(this).attr("id");
+      });
+      $(".btn-l").on("click", function () {
+        $(`#${$(this).attr("data-btn")}`).show();
+      });
+      $(".responsive").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1250,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+  </body>
 </html>
