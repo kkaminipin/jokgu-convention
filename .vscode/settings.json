@@ -1,25 +1,25 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
 
-  "scss.lint.unknownAtRules": "ignore",
+    "scss.lint.unknownAtRules": "ignore",
 
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
 
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
 
-  "cSpell.words": [
-    "fileupload",
-    "purgecss",
-    "swiper",
-    "tailwindcss",
-    "tailwindjs"
-  ],
-  "liveServer.settings.port": 5501
+    "cSpell.words": [
+        "fileupload",
+        "purgecss",
+        "swiper",
+        "tailwindcss",
+        "tailwindjs"
+    ],
+    "liveServer.settings.port": 5502
 }
