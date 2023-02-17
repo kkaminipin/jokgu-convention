@@ -1403,7 +1403,7 @@ body {
   position: absolute;
   top: 160px;
   left: 5%;
-  z-index: 1;
+  z-index: 0;
 }
 
 .full5 .fp-tableCell {
@@ -1470,13 +1470,20 @@ body {
   color: #fff;
 }
 .full5 .cnt05 .right {
+  width: 20%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   gap: 20px;
   left: 55%;
   top: 350px;
 }
+
+.full5 .cnt05 .right img {
+  width: 100%;
+  max-width: 100%;
+}
+
 .footer {
   width: 100%;
   background-color: #26282e;
@@ -1499,7 +1506,7 @@ body {
   font-size: 16px;
   color: #adb2b8;
 }
-@media screen and (max-width: 1644px) {
+/* @media screen and (max-width: 1644px) {
   .full5 .cnt05 .right {
     position: absolute;
     z-index: 2;
@@ -1508,8 +1515,8 @@ body {
     flex-wrap: wrap;
     left: 55%;
     top: 120px;
-  }
-}
+  } */
+
 @media screen and (max-width: 1250px) {
   .full2 .cnt02 .jokgu-info {
     position: absolute;
@@ -1650,7 +1657,7 @@ body {
     width: 614px;
     height: 520px;
   }
-  .full5 .cnt05 .right {
+  /* .full5 .cnt05 .right {
     position: absolute;
     z-index: 1;
     display: flex;
@@ -1658,7 +1665,7 @@ body {
     flex-wrap: wrap;
     left: 65%;
     top: 120px;
-  }
+  } */
   .footer {
     width: 100%;
     background-color: #26282e;
@@ -2179,10 +2186,10 @@ body {
     left: 40px;
     top: 545px;
     flex-wrap: nowrap;
+    width: 40%;
   }
   .full5 .cnt05 .right img {
-    width: 240px;
-    height: 240px;
+    width: 100%;
   }
 } /*# sourceMappingURL=style.css.map */
 @media screen and (max-width: 430px) {
