@@ -1263,10 +1263,22 @@ body {
   margin-bottom: 4px;
   color: #111;
 }
-.full3 .cnt03 .jokgu-skill .right a:nth-child(2) {
+.full3 .cnt03 .jokgu-skill .right button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 282px;
+  height: 60px;
+  justify-content: space-between;
+
   background-color: #111;
+  margin-bottom: 4px;
   color: #fff;
 }
+
 .full3 .cnt03 .jokgu-skill-flex {
   max-width: 1200px;
   margin: 0 auto;
