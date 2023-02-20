@@ -34,7 +34,9 @@
         <button type="button">EN</button>
         <div class="mob-btn">
           <button type="button">
-            <img src="./img/hamberger.png" alt="" />
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
       </div>
@@ -2358,6 +2360,22 @@
           }
           if (destination == 5) {
             $(".quick ul li").eq(4).addClass("on");
+          }
+          $(".btn-wrap .mob-btn span").removeClass("on");
+          if (destination == 2) {
+            $(".btn-wrap .mob-btn span").eq(0).addClass("on");
+            $(".btn-wrap .mob-btn span").eq(1).addClass("on");
+            $(".btn-wrap .mob-btn span").eq(2).addClass("on");
+          }
+          if (destination == 3) {
+            $(".btn-wrap .mob-btn span").eq(0).addClass("on");
+            $(".btn-wrap .mob-btn span").eq(1).addClass("on");
+            $(".btn-wrap .mob-btn span").eq(2).addClass("on");
+          }
+          if (destination == 5) {
+            $(".btn-wrap .mob-btn span").eq(0).addClass("on");
+            $(".btn-wrap .mob-btn span").eq(1).addClass("on");
+            $(".btn-wrap .mob-btn span").eq(2).addClass("on");
           }
 
           $(".bottom ul li").removeClass("en");
