@@ -62,7 +62,11 @@
                 /></a>
               </li>
               <li>
-                <a href="#">
+                <a
+                  href="https://www.youtube.com/@user-op7fx7fn1k
+                "
+                  target="_blank"
+                >
                   <img src="./img/youtube.png" alt="" />
                   <h4>족구 유튜브채널 바로가기</h4>
                 </a>
@@ -907,7 +911,18 @@
     <div class="popup" id="videos">
       <div class="popup-wrap" id="videos">
         <div class="contents flex jsw">
-          <div class="videos"></div>
+          <div class="videos">
+            <iframe
+              class="jokgu-youtube"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/fgQqBRMfSjw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div class="close">
             <button type="button">
               <img src="./img/close.png" alt="닫기버튼" />
@@ -930,7 +945,45 @@
         </div>
       </div>
     </div>
-    <!-- /동영상 -->
+    <!-- /동영상2 -->
+    <div class="popup" id="videos2">
+      <div class="popup-wrap" id="videos2">
+        <div class="contents flex jsw">
+          <div class="videos">
+            <iframe
+              class="jokgu-youtube"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/DPEQ0iaTMng"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div>
+            <button type="button" class="close">
+              <img src="./img/close.png" alt="닫기버튼" />
+            </button>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              $("ul.tabs li").click(function () {
+                var tab_id = $(this).attr("data-tab");
+
+                $("ul.tabs li").removeClass("current");
+                $(".content").removeClass("current");
+
+                $(this).addClass("current");
+                $("#" + tab_id).addClass("current");
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- /동영상2 -->
     <!-- 경기규칙 -->
     <div class="popup" id="rule">
       <div class="popup-wrap" id="rule">
@@ -1916,10 +1969,11 @@
           <div class="contents-main rule">
             <div class="rule-down world">
               <h1>제1회 족구 월드 챔피언쉽</h1>
-              <button type="button" class="participate">
-                참여하기
-                <img src="./img/right_arrow_wt.png" alt="" />
-              </button>
+              <a href="https://forms.gle/BgiDr689RtPzHtmh8" target="_blank"
+                ><button type="button" class="participate">
+                  참여하기
+                  <img src="./img/right_arrow_wt.png" alt="" /></button
+              ></a>
             </div>
             <h3 class="rule1">
               세계 20개국 300여명의 선수와 한국의 700만 동호인, 해외 지부가
@@ -2090,7 +2144,7 @@
                 띄우기 기술을 종합적으로 연결하는 전술적 종합 스포츠입니다.
               </p>
               <div class="right">
-                <a href="#"
+                <a href="#" class="btn-l" data-btn="videos2"
                   >기술 영상 보기 <img src="./img/right_arrow.png" alt=""
                 /></a>
                 <button type="button" class="btn-l" data-btn="rule">
@@ -2147,7 +2201,7 @@
               <button type="button" class="btn-l" data-btn="details">
                 대회상세 <img src="./img/right_arrow.png" alt="" />
               </button>
-              <a href="#"
+              <a href="https://forms.gle/BgiDr689RtPzHtmh8" target="_blank"
                 >참여하기 <img src="./img/right_arrow_wt.png" alt=""
               /></a>
             </div>
@@ -2191,7 +2245,12 @@
             <p>jokgu@sports.or.kr</p>
           </div>
           <h3>
-            <img src="./img/youtube.png" alt="유튜브 바로가기" />
+            <a
+              href="https://www.youtube.com/@user-op7fx7fn1k
+            "
+              target="_blank"
+              ><img src="./img/youtube.png" alt="유튜브 바로가기"
+            /></a>
           </h3>
         </footer>
       </div>
@@ -2268,7 +2327,9 @@
           return false;
         });
       });
-
+      $(".close").click(() => {
+        $(".popup").hide();
+      });
       $(".close").click(function () {
         $(".pop_up").stop().fadeOut();
         // $('body').removeClass('fixed');

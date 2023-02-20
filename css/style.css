@@ -64,10 +64,26 @@ li {
   background-color: rgba(0, 0, 0, 0);
 }
 .popup-wrap .contents.jsw .videos {
-  background-color: #000;
-  width: 960px;
-  height: inherit;
+  position: relative;
+
+  width: 100%;
+
+  height: 0;
+
+  padding-bottom: 56.25%;
 }
+.popup-wrap .contents.jsw .jokgu-youtube {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+}
+
 .popup-wrap .contents.jsw .close {
   width: 55px;
   height: 55px;
@@ -1862,10 +1878,8 @@ body {
     padding: 0px;
   }
   .popup-wrap .contents.jsw {
-    height: 282px;
     flex-direction: column-reverse;
     align-items: end;
-    margin-top: 200px;
   }
   .popup-wrap .contents-main .equipments li p {
     width: 370px;
