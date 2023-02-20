@@ -1178,7 +1178,7 @@ body {
   text-align: left;
   color: #444;
 }
-.full2 .cnt02 .jokgu-info div a {
+.full2 .cnt02 .jokgu-info div button {
   font-size: 18px;
   font-weight: 600;
   padding: 20px;
@@ -1193,7 +1193,7 @@ body {
   margin-bottom: 4px;
   color: #111;
 }
-.full2 .cnt02 .jokgu-info div a:last-child {
+.full2 .cnt02 .jokgu-info div button:last-child {
   background-color: #111;
   color: #fff;
 }
@@ -1373,7 +1373,7 @@ body {
   text-align: left;
   color: #fff;
 }
-.full4 .cnt04 .itc div a {
+.full4 .cnt04 .itc div button {
   font-size: 18px;
   font-weight: 600;
   padding: 20px;
@@ -1386,10 +1386,20 @@ body {
   margin-bottom: 4px;
   color: #111;
 }
-.full4 .cnt04 .itc div a:nth-child(2) {
+.full4 .cnt04 .itc div a {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 282px;
+  height: 60px;
+  justify-content: space-between;
   background-color: #0c4fff;
+  margin-bottom: 4px;
   color: #fff;
 }
+
 .full5 .cnt05 {
   position: relative;
 }
@@ -1626,10 +1636,21 @@ body {
     margin-bottom: 4px;
     color: #111;
   }
-  .full3 .cnt03 .jokgu-skill .right a:nth-child(2) {
+  .full3 .cnt03 .jokgu-skill .right button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 282px;
+    height: 60px;
+    justify-content: space-between;
     background-color: #111;
+    margin-bottom: 4px;
     color: #fff;
   }
+
   .full3 .cnt03 .jokgu-skill-flex {
     max-width: 1200px;
     margin: 0 auto;
@@ -1762,6 +1783,7 @@ body {
     height: 207px;
   }
   .popup-wrap {
+    position: fixed;
     padding: 100px;
   }
   .popup-wrap .contents {
