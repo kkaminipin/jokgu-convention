@@ -54,7 +54,7 @@
         <div class="contents flex">
           <div class="contents-head">
             <h3 class="title">History of Korean Jokgu Association</h3>
-            <button type="button">
+            <button type="button" class="close">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
           </div>
@@ -900,7 +900,7 @@
         <div class="contents flex">
           <div class="contents-head">
             <h3 class="title">Information about Equipments</h3>
-            <button type="button">
+            <button type="button" class="close">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
           </div>
@@ -964,7 +964,7 @@
       <div class="popup-wrap" id="videos">
         <div class="contents flex jsw">
           <div class="videos"></div>
-          <div class="close-btn">
+          <div class="close">
             <button type="button">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
@@ -1000,7 +1000,7 @@
           <div class="contents-main rule">
             <div class="rule-down en">
               <h1>OFFICIAL JOKGU RULES</h1>
-              <button type="button">
+              <button type="button" class="close">
                 Download Rules
                 <img src="./img/downlode.png" alt="" />
               </button>
@@ -2113,7 +2113,7 @@
         <div class="contents flex">
           <div class="contents-head">
             <h3 class="title">The 1st Jokgu World Championship</h3>
-            <button type="button">
+            <button type="button" class="close">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
           </div>
@@ -2380,6 +2380,28 @@
         },
         anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
         responsiveWidth: 769,
+      });
+
+      $(".btn-l").click(function () {
+        $(".pop_up").stop().fadeIn();
+        // $('body').addClass('fixed');
+        $("body").on("scroll touchmove mousewheel", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          return false;
+        });
+      });
+
+      $(".close").click(function () {
+        $(".pop_up").stop().fadeOut();
+        // $('body').removeClass('fixed');
+        $("body").off("scroll touchmove mousewheel");
+      });
+      $(".popup").on("click", function () {
+        $(this).attr("id");
+      });
+      $(".btn-l").on("click", function () {
+        $(`#${$(this).attr("data-btn")}`).show();
       });
       $(".popup").on("click", function () {
         $(this).attr("id");

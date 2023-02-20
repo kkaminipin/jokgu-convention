@@ -68,7 +68,7 @@ li {
   width: 960px;
   height: inherit;
 }
-.popup-wrap .contents.jsw .close-btn {
+.popup-wrap .contents.jsw .close {
   width: 55px;
   height: 55px;
   background-color: #0c4fff;
@@ -1406,9 +1406,6 @@ body {
   z-index: 0;
 }
 
-.full5 .fp-tableCell {
-  height: 1080px !important;
-}
 .full5 span {
   position: absolute;
   bottom: 160px;
@@ -1694,6 +1691,42 @@ body {
   }
 }
 
+@media screen and (max-width: 971px) {
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg {
+    width: 270px;
+    height: 270px;
+  }
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont img {
+    width: 270px !important;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg {
+    width: 240px;
+    height: 240px;
+  }
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont img {
+    width: 240px !important;
+    height: 240px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .popup-wrap .contents-main .equipments li.en h3 {
     width: 227px;
@@ -1795,7 +1828,7 @@ body {
   }
   .full1 {
     background-color: #000;
-    background-image: url(/img/m_main_banner.png);
+    background-image: url("../img/m_main_banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1830,7 +1863,7 @@ body {
   }
   .full2 {
     background-color: #fff;
-    background-image: url(/img/m_jokgu_info.png);
+    background-image: url("../img/m_jokgu_info.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1838,12 +1871,17 @@ body {
   .full2 .cnt02-title {
     display: none;
   }
+
+  .full2 .cnt02 .jokgu-info.en {
+    max-width: 370px;
+    width: 90%;
+  }
   .full2 .cnt02 .jokgu-info {
     position: absolute;
     top: 140px;
     left: 40px;
     z-index: 2;
-    width: 406px;
+
     width: 100%;
     max-width: 370px;
     height: 520px;
@@ -1861,8 +1899,7 @@ body {
   }
   .full2 .cnt02 .jokgu-info p {
     height: auto;
-    width: 361px;
-    width: 100%;
+    width: 90%;
     margin: 25px 0;
     font-size: 16px;
     line-height: 1.78;
@@ -1870,6 +1907,11 @@ body {
     text-align: left;
     color: #444;
     word-break: break-all;
+    margin-right: 0px;
+  }
+  .full2 .cnt02 .jokgu-info div {
+    width: 282px;
+    margin-right: 0px;
   }
   .full2 .cnt02 .jokgu-info.en p {
     margin-top: 10px;
@@ -1887,6 +1929,7 @@ body {
     background-color: #fff;
     margin-bottom: 4px;
     color: #111;
+    margin-right: 0px;
   }
   .full2 .cnt02 .jokgu-info div a:nth-child(3) {
     background-color: #111;
@@ -2054,7 +2097,7 @@ body {
   }
   .full4 {
     background-color: #000;
-    background-image: url(/img/m_itc.png);
+    background-image: url("../img/m_itc.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2194,7 +2237,7 @@ body {
 } /*# sourceMappingURL=style.css.map */
 @media screen and (max-width: 430px) {
   .full2 .cnt02 .jokgu-info {
-    top: 100px;
+    top: 40px;
     left: 10px;
     z-index: 2;
     max-width: 300px;
@@ -2218,7 +2261,7 @@ body {
     flex-wrap: nowrap;
   }
   .full3 .cnt03 .jokgu-skill.en {
-    top: 100px;
+    top: 40px;
   }
 }
 

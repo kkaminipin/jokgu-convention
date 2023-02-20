@@ -54,7 +54,7 @@
         <div class="contents flex">
           <div class="contents-head">
             <h3 class="title">대한민국족구협회 연혁</h3>
-            <button type="button">
+            <button type="button" class="close">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
           </div>
@@ -812,7 +812,7 @@
         <div class="contents flex">
           <div class="contents-head">
             <h3 class="title">족구 장비 소개</h3>
-            <button type="button">
+            <button type="button" class="close">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
           </div>
@@ -874,18 +874,8 @@
     <div class="popup" id="videos">
       <div class="popup-wrap" id="videos">
         <div class="contents flex jsw">
-          <div class="videos">
-            <iframe
-              width="960"
-              height="540"
-              src="https://www.youtube.com/embed/fgQqBRMfSjw"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="close-btn">
+          <div class="videos"></div>
+          <div class="close">
             <button type="button">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
@@ -914,7 +904,7 @@
         <div class="contents flex">
           <div class="contents-head">
             <h3 class="title">경기규칙</h3>
-            <button type="button">
+            <button type="button" class="close">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
           </div>
@@ -1886,7 +1876,7 @@
         <div class="contents flex">
           <div class="contents-head">
             <h3 class="title">대회상세</h3>
-            <button type="button">
+            <button type="button" class="close">
               <img src="./img/close.png" alt="닫기버튼" />
             </button>
           </div>
@@ -2102,9 +2092,7 @@
                 <div class="opcity-bg"></div>
                 <em>넘어차기</em>
               </div>
-              <div class="cont">6</div>
-              <div class="cont">7</div>
-              <div class="cont">8</div>
+              <div class="cont"></div>
             </div>
           </div>
         </div>
@@ -2215,6 +2203,23 @@
           }
         },
         anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
+        responsiveWidth: 769,
+      });
+
+      $(".btn-l").click(function () {
+        $(".pop_up").stop().fadeIn();
+        // $('body').addClass('fixed');
+        $("body").on("scroll touchmove mousewheel", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          return false;
+        });
+      });
+
+      $(".close").click(function () {
+        $(".pop_up").stop().fadeOut();
+        // $('body').removeClass('fixed');
+        $("body").off("scroll touchmove mousewheel");
       });
       $(".popup").on("click", function () {
         $(this).attr("id");
