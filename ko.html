@@ -33,11 +33,42 @@
         <button type="button" class="on">KR</button>
         <button type="button">EN</button>
         <div class="mob-btn">
-          <button type="button">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <button type="button" class="hamburger"></button>
+          <div class="gnb-mo">
+            <ul class="gnb-nav">
+              <li><a href="#firstPage"></a></li>
+              <li>
+                <a href="#secondPage"
+                  ><h3>족구소개</h3>
+                  <img src="./img/right_arrow.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#3rdPage"
+                  ><h3>족구기술</h3>
+                  <img src="./img/right_arrow.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#4thpage"
+                  ><h3>국제대회</h3>
+                  <img src="./img/right_arrow.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#lastPage"
+                  ><h3>국제연맹</h3>
+                  <img src="./img/right_arrow.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/youtube.png" alt="" />
+                  <h4>족구 유튜브채널 바로가기</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -2054,10 +2085,9 @@
             <h3>족구기술</h3>
             <div class="jokgu-skill-flex">
               <p>
-                족구기술에 대한 간략한 설명이 들어갑니다. 그리워 시인의 한
-                계십니다. 다 토끼, 부끄러운 이름과, 밤을 보고, 잠, 이름과,
-                계십니다. 시인의 프랑시스 마디씩 별 보고, 별 이런 버리었습니다.
-                별 하나에 아름다운 풀
+                족구경기는 강한 서서차기, 넘어차기, 뛰어차기 등의공격기술을
+                안축과 머리를 이용하여 받아내고 다시 속공, 이동, 직상 등의
+                띄우기 기술을 종합적으로 연결하는 전술적 종합 스포츠입니다.
               </p>
               <div class="right">
                 <a href="#"
@@ -2094,7 +2124,11 @@
                 <div class="opcity-bg"></div>
                 <em>넘어차기</em>
               </div>
-              <div class="cont"></div>
+              <div class="cont">
+                <img src="./img/skill6.png" alt="" />
+                <div class="opcity-bg"></div>
+                <em>띄우기 </em>
+              </div>
             </div>
           </div>
         </div>
@@ -2127,13 +2161,12 @@
             <h3>국제 족구 연맹 IJF</h3>
             <p>
               대한민국족구협회는 전세계에 있는 족구 단체와 협력하여
-              국제족구연맹를 준비하고 있습니다. 국제 족구 연맹에 대한 간략한
-              설명이 들어갑니다. 그리워 시인의 한 계십니다.
+              국제족구연맹를 준비하고 있습니다.
             </p>
             <div>
-              <a href="#"
+              <!-- <a href="#"
                 >국제기구 가입절차 <img src="./img/right_arrow_wt.png" alt=""
-              /></a>
+              /></a> -->
             </div>
           </div>
           <div class="right">
@@ -2273,6 +2306,25 @@
           // instead of a settings object
         ],
       });
+
+      let hamburger = document.querySelector(".hamburger");
+
+      hamburger.addEventListener("click", function () {
+        let gnb = document.querySelector(".gnb-mo");
+
+        hamburger.classList.toggle("toggle");
+        gnb.classList.toggle("toggle");
+      });
+
+      let gnbMoBtn = document.querySelectorAll(".gnb-nav > li > a");
+
+      for (let i = 0; i < gnbMoBtn.length; i++) {
+        gnbMoBtn[i].addEventListener("click", (event) => gnbSlide(gnbMoBtn[i]));
+      }
+
+      function gnbSlide(click) {
+        click.closest("li").classList.toggle("toggle");
+      }
     </script>
   </body>
 </html>

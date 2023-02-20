@@ -1094,6 +1094,22 @@ body {
   border: solid 1px #666;
   color: #aaaaaa;
 }
+.quick .btn-wrap .mob-btn {
+  width: 24px;
+  height: 24px;
+}
+.quick .btn-wrap .mob-btn .hamburger {
+  width: 24px !important;
+  height: 24px !important;
+  background: url(/img/hamberger.png) no-repeat;
+  display: none;
+  cursor: pointer;
+  margin-top: 4px;
+}
+.quick .btn-wrap .mob-btn .hamburger.toggle {
+  margin-top: 0px;
+  background-image: url(/img/close.png);
+}
 .quick .btn-wrap button.on {
   background-color: #0c4fff;
   border: none;
@@ -1724,6 +1740,60 @@ body {
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .gnb-mo {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+    height: 377px;
+    right: 0;
+    top: 81px;
+    background: #fff;
+    transition: 0.2s;
+    z-index: 5;
+  }
+  .gnb-mo.toggle {
+    display: block;
+  }
+  .gnb-nav {
+    padding: 15px 10px;
+    height: 377px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+  }
+  .gnb-nav li h3 {
+    color: #111;
+  }
+  .gnb-nav li h4 {
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.56px;
+    text-align: center;
+    color: #111;
+    width: 174px;
+    height: 32px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    line-height: 32px;
+  }
+  .gnb-nav li:nth-child(6) a {
+    justify-content: center;
+    gap: 10px;
+  }
+  .gnb-nav li a {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 28px 0px 30px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
 @media screen and (max-width: 971px) {
   .full3
     .cnt03
@@ -1761,6 +1831,24 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .quick .btn-wrap .mob-btn .hamburger {
+    display: block;
+  }
+  .full1 {
+    height: 840px !important;
+  }
+  .full2 {
+    height: 1102px !important;
+  }
+  .full3 {
+    height: 932px !important;
+  }
+  .full4 {
+    height: 1112px !important;
+  }
+  .full5 {
+    height: 1095px !important;
+  }
   .popup-wrap .contents-main .equipments li.en h3 {
     width: 227px;
   }
@@ -1796,7 +1884,7 @@ body {
   }
   .popup-wrap {
     position: fixed;
-    padding: 100px;
+    padding: 0px;
   }
   .popup-wrap .contents {
     min-width: 370px;
@@ -1832,9 +1920,13 @@ body {
   }
   .quick {
     padding: 16px 20px 16px 20px;
+    position: absolute;
   }
   .quick ul {
     display: none;
+  }
+  .quick ul.gnb-nav {
+    display: block;
   }
   .quick .btn-wrap {
     align-items: center;
