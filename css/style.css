@@ -1,6 +1,7 @@
 * {
   font-family: "Pretendard", sans-serif !important;
 }
+
 ul,
 li {
   margin: 0;
@@ -1017,6 +1018,9 @@ li {
   right: -38px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
+}
+.bottom ul li a {
+  color: rgba(0, 0, 0, 0);
 }
 .quick ul li.on.wt a {
   color: #fff;
