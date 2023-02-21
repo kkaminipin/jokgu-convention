@@ -1285,7 +1285,7 @@ body {
   align-items: center;
   gap: 4px;
 }
-.full3 .cnt03 .jokgu-skill .right a {
+.full3 .cnt03 .jokgu-skill .right button {
   font-size: 18px;
   font-weight: 600;
   padding: 20px;
@@ -1300,7 +1300,7 @@ body {
   margin-bottom: 4px;
   color: #111;
 }
-.full3 .cnt03 .jokgu-skill .right button {
+.full3 .cnt03 .jokgu-skill .right button:nth-child(2) {
   font-size: 18px;
   font-weight: 600;
   padding: 20px;
@@ -1670,7 +1670,7 @@ body {
     align-items: center;
     gap: 4px;
   }
-  .full3 .cnt03 .jokgu-skill .right a {
+  .full3 .cnt03 .jokgu-skill .right button {
     font-size: 18px;
     font-weight: 600;
     padding: 20px;
@@ -1685,7 +1685,7 @@ body {
     margin-bottom: 4px;
     color: #111;
   }
-  .full3 .cnt03 .jokgu-skill .right button {
+  .full3 .cnt03 .jokgu-skill .right button:nth-child(2) {
     font-size: 18px;
     font-weight: 600;
     padding: 20px;
@@ -1886,6 +1886,8 @@ body {
     flex-direction: column-reverse;
     align-items: end;
     height: 540px;
+    justify-content: flex-end;
+    margin-top: 180px;
   }
   .popup-wrap .contents-main .equipments li p {
     width: 370px;
