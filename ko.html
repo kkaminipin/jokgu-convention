@@ -2098,7 +2098,10 @@
     <div id="fullpage">
       <div class="section full1" pageNum="1">
         <div class="cnt01">
-          <p>JOKGU WITH WORLD</p>
+          <p>
+            JOKGU <em class="size-s">WITH</em>
+            <em class="size-m">WORLD</em>
+          </p>
           <span
             >SCROLL DOWN
             <h3><img src="./img/down.png" alt="" /></h3
@@ -2155,34 +2158,93 @@
             </div>
             <div class="responsive">
               <div class="cont">
-                <img src="./img/skill1.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>뛰어차기</em>
-              </div>
-              <div class="cont">
                 <img src="./img/skill2.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>서서차기</em>
-              </div>
-              <div class="cont">
-                <img src="./img/skill3.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>안축받기</em>
-              </div>
-              <div class="cont">
-                <img src="./img/skill4.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>머리받기</em>
+                <button type="button" class="skill two">
+                  서서차기
+                </button >
+                <div class="opcity-bg two">
+                    <p>
+                      <h3>서서차기</h3>
+                      <span></span>
+                      <p>족구경기의 가장 기본적인 공격기술로 낮고빠른 구질로 상대코트이 공간을 공략하고 강약을 조절하여 득점으로 연결하는 기술
+                      </p>
+                    </p>
+                  </div>
               </div>
               <div class="cont">
                 <img src="./img/skill5.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>넘어차기</em>
+                <button type="button" class="skill two">
+                  넘어차기
+                </button >
+                <div class="opcity-bg two">
+                    <p>
+                      <h3>넘어차기</h3>
+                      <span></span>
+                      <p>강한 비거리와 코스를 공략하기 위한 공격기술로 한손으로 몸의 중심을 잡아 찍어차는 기술과 다양한 기술을 혼합하는 공격기술
+
+                      </p>
+                    </p>
+                  </div>
+              </div>
+              <div class="cont">
+                <img src="./img/skill1.png" alt="" />
+                <button type="button" class="skill">
+                  뛰어차기
+                </button >
+                <div class="opcity-bg">
+                    <p>
+                      <h3>뛰어차기</h3>
+                      <span></span>
+                      <p>강력한 비거리를 만들어
+                        상대수비를 공략하는 공격기술
+                         허리힘을 이용한 빠른 회전을
+                        이용해 찍어차기는 대표 공격기술</p>
+                    </p>
+                  </div>
+              </div>
+             
+              <div class="cont">
+                <img src="./img/skill3.png" alt="" />
+                <button type="button" class="skill">
+                  안축받기
+                </button >
+                <div class="opcity-bg">
+                    <p>
+                      <h3>안축받기</h3>
+                      <span></span>
+                      <p>발의 가장 넓은 부위를 이용하여 낮거나 짧게 진행하는 공을 수비하기위한 대표 수비기술
+                      </p>
+                    </p>
+                  </div>
+              </div>
+              <div class="cont">
+                <img src="./img/skill4.png" alt="" />
+                <button type="button" class="skill">
+                  머리받기
+                </button >
+                <div class="opcity-bg">
+                    <p>
+                      <h3>머리받기</h3>
+                      <span></span>
+                      <p>상대적으로 높은 바운드의 공을 안정적으로 제어하여 토스와 연결하는 수비기술
+
+                      </p>
+                    </p>
+                  </div>
               </div>
               <div class="cont">
                 <img src="./img/skill6.png" alt="" />
-                <div class="opcity-bg"></div>
-                <em>띄우기 </em>
+                <button type="button" class="skill">
+                  띄우기
+                </button >
+                <div class="opcity-bg">
+                    <p>
+                      <h3>띄우기</h3>
+                      <span></span>
+                      <p>공격적인 전술을 완성하기 위한 속공, 이동, 직상 등의 구분으로 상대 수비대형을 공략하기 위한 연결기술
+                      </p>
+                    </p>
+                  </div>
               </div>
             </div>
           </div>
@@ -2258,6 +2320,7 @@
     </div>
 
     <script>
+      
       $("#fullpage").fullpage({
         afterLoad: function (origin, destination, direction, trigger) {
           $(".quick ul li").removeClass("on");
@@ -2317,7 +2380,18 @@
         },
         anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
         responsiveWidth: 769,
+        
       });
+
+$('.skill').click(function(){
+    $(this).hide();
+    $(this).next().show();
+})
+
+$('.opcity-bg').click(function(){
+  $(this).hide();
+  $(this).prev().show();
+})
 
       $(".btn-l").click(function () {
         $(".pop_up").stop().fadeIn();
@@ -2350,7 +2424,7 @@
         slidesToScroll: 4,
         responsive: [
           {
-            breakpoint: 1250,
+            breakpoint: 1251,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,

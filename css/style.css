@@ -1143,17 +1143,28 @@ body {
   position: relative;
 }
 .full1 .cnt01 p {
-  max-width: 766px;
+  max-width: 850px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
-  font-size: 120px;
+  font-size: 140px;
   font-weight: 900;
   color: #fff;
   line-height: 1;
+}
+.full1 .cnt01 p .size-s {
+  font-size: 50px;
+  display: inline-block;
+  padding-top: 50px;
+}
+
+.full1 .cnt01 p .size-m {
+  font-size: 100px;
+  display: block;
+  text-align: end;
 }
 .full1 .cnt01 span {
   position: absolute;
@@ -1337,6 +1348,7 @@ body {
 .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont {
   position: relative;
 }
+
 .full3
   .cnt03
   .jokgu-skill
@@ -1345,22 +1357,99 @@ body {
   .slick-track
   .cont
   .opcity-bg {
+  display: none;
   position: absolute;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
   width: 282px;
   height: 282px;
-  top: 0;
-  opacity: 0.7;
+  top: 0px;
 }
-.full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont em {
+.full3
+  .cnt03
+  .jokgu-skill
+  .responsive
+  .slick-list
+  .slick-track
+  .cont
+  .opcity-bg
+  h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
   color: #fff;
+  height: 24px;
+  margin-top: 50px;
+  padding-left: 0px;
+}
+
+.full3
+  .cnt03
+  .jokgu-skill
+  .responsive
+  .slick-list
+  .slick-track
+  .cont
+  .opcity-bg
+  span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  margin: 20px auto;
+}
+
+.full3
+  .cnt03
+  .jokgu-skill
+  .responsive
+  .slick-list
+  .slick-track
+  .cont
+  .opcity-bg
+  p {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: -0.72px;
+  text-align: center;
+  color: #fff;
+}
+
+.full3
+  .cnt03
+  .jokgu-skill
+  .responsive
+  .slick-list
+  .slick-track
+  .cont
+  button.en {
+  width: 150px;
+  height: 68px;
+}
+
+.full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont button {
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  background-color: #111;
   position: absolute;
   z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont img {
   width: 282px !important;
   height: 282px;
@@ -1616,12 +1705,11 @@ body {
     .cont
     .opcity-bg {
     position: absolute;
-    background-color: #111;
+
     z-index: 1;
     width: 310px;
     height: 310px;
     top: 0;
-    opacity: 0.7;
     margin-right: 10px;
   }
   .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont {
@@ -1630,8 +1718,7 @@ body {
   .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont img {
     width: 310px !important;
     height: 310px;
-    opacity: 0.7;
-    background-color: #111;
+
     margin-right: 10px;
   }
   .full3 .cnt03 .jokgu-skill {
@@ -1831,6 +1918,17 @@ body {
     width: 270px !important;
     height: 270px;
   }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    h3 {
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1849,9 +1947,91 @@ body {
     width: 240px !important;
     height: 240px;
   }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    h3 {
+    font-size: 18px;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    button.en {
+    width: 140px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg.en
+    h3 {
+    line-height: 1;
+  }
+
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    h3 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    span {
+    margin: 10px auto;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    p {
+    font-size: 14px;
+  }
   .quick .btn-wrap .mob-btn .hamburger {
     display: block;
   }
@@ -1996,17 +2176,25 @@ body {
     background-position: center;
   }
   .full1 .cnt01 p {
-    max-width: 766px;
+    max-width: 410px;
     position: absolute;
     top: 120px !important;
     left: 50%;
     transform: translate(-50%);
     text-align: center;
     width: 100%;
-    font-size: 48px;
+    font-size: 70px;
     font-weight: 900;
     color: #fff;
     line-height: 1;
+  }
+
+  .full1 .cnt01 p .size-s {
+    padding-top: 25px;
+    font-size: 30px;
+  }
+  .full1 .cnt01 p .size-m {
+    font-size: 50px;
   }
   .full1 .cnt01 span {
     position: absolute;
@@ -2253,8 +2441,7 @@ body {
   .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont img {
     width: 170px !important;
     height: 170px;
-    opacity: 0.7;
-    background-color: #111;
+
     margin-right: 10px;
   }
   .full4 {
@@ -2428,6 +2615,19 @@ body {
 }
 
 @media screen and (max-width: 376px) {
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    button.en {
+    width: 120px;
+    height: 44px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
   .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont {
     width: 140px !important;
     height: 140px;
@@ -2468,12 +2668,45 @@ body {
   .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont img {
     width: 140px !important;
     height: 140px;
-    opacity: 0.7;
-    background-color: #111;
+
     margin-right: 10px;
   }
   .slick-dots {
     max-width: 290px !important;
     left: 0px;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    h3 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    span {
+    display: none;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    .opcity-bg
+    p {
+    font-size: 12px;
   }
 }
