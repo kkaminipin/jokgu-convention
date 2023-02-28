@@ -59,6 +59,7 @@ li {
   overflow-y: scroll;
 }
 .popup-wrap .contents.jsw {
+  overflow-y: inherit;
   max-width: 1015px;
   display: flex;
   flex-direction: row;
@@ -1432,22 +1433,21 @@ body {
   .slick-track
   .cont
   button.en {
-  width: 150px;
+  width: 282px;
   height: 68px;
 }
 
 .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont button {
   color: #fff;
-  width: 120px;
-  height: 40px;
+  width: 100%;
+  max-width: 282px;
+  height: 50px;
   padding: 10px;
   text-align: center;
-  background-color: #111;
   position: absolute;
   z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
 
 .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont img {
@@ -1663,6 +1663,21 @@ body {
   } */
 
 @media screen and (max-width: 1250px) {
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont button {
+    width: 310px;
+    max-width: 310px;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    button.en {
+    max-width: 310px;
+    width: 310px;
+  }
   .full2 .cnt02 .jokgu-info {
     position: absolute;
     top: 270px;
@@ -1910,6 +1925,21 @@ body {
     .slick-list
     .slick-track
     .cont
+    button.en {
+    left: 0;
+    width: 270px;
+  }
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont button {
+    left: 0;
+    width: 270px;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
     .opcity-bg {
     width: 270px;
     height: 270px;
@@ -1932,6 +1962,19 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    button.en {
+    width: 240px;
+  }
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont button {
+    width: 240px;
+  }
   .full3
     .cnt03
     .jokgu-skill
@@ -1972,6 +2015,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont button {
+    width: 170px;
+  }
   .full3
     .cnt03
     .jokgu-skill
@@ -1980,10 +2026,7 @@ body {
     .slick-track
     .cont
     button.en {
-    width: 140px;
-    height: 48px;
-    font-size: 14px;
-    line-height: 1.1;
+    width: 170px;
   }
 
   .full3
@@ -2615,6 +2658,9 @@ body {
 }
 
 @media screen and (max-width: 376px) {
+  .full3 .cnt03 .jokgu-skill .responsive .slick-list .slick-track .cont button {
+    width: 140px;
+  }
   .full3
     .cnt03
     .jokgu-skill
@@ -2708,5 +2754,15 @@ body {
     .opcity-bg
     p {
     font-size: 12px;
+  }
+  .full3
+    .cnt03
+    .jokgu-skill
+    .responsive
+    .slick-list
+    .slick-track
+    .cont
+    button.en {
+    width: 140px;
   }
 }

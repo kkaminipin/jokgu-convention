@@ -2158,7 +2158,7 @@
             </div>
             <div class="responsive">
               <div class="cont">
-                <img src="./img/skill2.png" alt="" />
+                <img src="./img/skill2.png" alt="" class="click" />
                 <button type="button" class="skill two">
                   서서차기
                 </button >
@@ -2172,7 +2172,7 @@
                   </div>
               </div>
               <div class="cont">
-                <img src="./img/skill5.png" alt="" />
+                <img src="./img/skill5.png" alt=""  class="click"/>
                 <button type="button" class="skill two">
                   넘어차기
                 </button >
@@ -2187,7 +2187,7 @@
                   </div>
               </div>
               <div class="cont">
-                <img src="./img/skill1.png" alt="" />
+                <img src="./img/skill1.png" alt="" class="click"/>
                 <button type="button" class="skill">
                   뛰어차기
                 </button >
@@ -2204,7 +2204,7 @@
               </div>
              
               <div class="cont">
-                <img src="./img/skill3.png" alt="" />
+                <img src="./img/skill3.png" alt="" class="click"/>
                 <button type="button" class="skill">
                   안축받기
                 </button >
@@ -2218,7 +2218,7 @@
                   </div>
               </div>
               <div class="cont">
-                <img src="./img/skill4.png" alt="" />
+                <img src="./img/skill4.png" alt="" class="click" />
                 <button type="button" class="skill">
                   머리받기
                 </button >
@@ -2233,7 +2233,7 @@
                   </div>
               </div>
               <div class="cont">
-                <img src="./img/skill6.png" alt="" />
+                <img src="./img/skill6.png" alt="" class="click"/>
                 <button type="button" class="skill">
                   띄우기
                 </button >
@@ -2382,6 +2382,12 @@
         responsiveWidth: 769,
         
       });
+
+      $('.click').click(function(){
+    
+    $(this).next().hide();
+    $(this).next().next().show();
+})
 
 $('.skill').click(function(){
     $(this).hide();
