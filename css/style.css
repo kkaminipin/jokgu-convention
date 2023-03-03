@@ -1432,6 +1432,21 @@ body {
   .slick-list
   .slick-track
   .cont
+  .opcity-bg
+  p.skill-en {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.full3
+  .cnt03
+  .jokgu-skill
+  .responsive
+  .slick-list
+  .slick-track
+  .cont
   button.en {
   width: 282px;
   height: 68px;
